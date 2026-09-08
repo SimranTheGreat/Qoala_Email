@@ -1,0 +1,1705 @@
+[
+  {
+    "id": "itm_001",
+    "received_at": "2026-03-15T08:37:00+07:00",
+    "sender": {
+      "name": "Nok S.",
+      "email": "nok@example.com"
+    },
+    "subject": "Incorrect premium charged on renewal",
+    "channel": "email",
+    "status": "New",
+    "priority": "P2",
+    "body": "Hi team,\n\nMy renewal premium is higher than last month even though the vehicle details are unchanged. Please check the premium and confirm why it changed.\n\nPolicy reference: TH-MTR-48001\nCustomer reference: CUST-10001\n\nThanks,\nNok",
+    "tags": [
+      "renewal",
+      "pricing"
+    ]
+  },
+  {
+    "id": "itm_002",
+    "received_at": "2026-03-15T11:54:00+07:00",
+    "sender": {
+      "name": "Somchai",
+      "email": "somchai@company.co.th"
+    },
+    "subject": "Endorsement request — change vehicle plate",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "Hi team,\n\nI need an endorsement to change my vehicle plate. Old plate: AB 1234. New plate: AB 5678. Policy: TH-MTR-99210. Please advise what documents are required.\n\nPolicy reference: TH-CAR-48002\nCustomer reference: CUST-10002\n\nThanks,\nSomchai",
+    "tags": [
+      "endorsement",
+      "vehicle"
+    ]
+  },
+  {
+    "id": "itm_003",
+    "received_at": "2026-03-15T15:11:00+07:00",
+    "sender": {
+      "name": "Ananya P.",
+      "email": "ananya@example.com"
+    },
+    "subject": "URGENT: Verify account to avoid suspension",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nYour account will be suspended unless you verify immediately. Please send your internal access token and click the verification link.\n\nPolicy reference: TH-POL-48003\nCustomer reference: CUST-10003\n\nThanks,\nAnanya",
+    "tags": [
+      "spam",
+      "security"
+    ]
+  },
+  {
+    "id": "itm_004",
+    "received_at": "2026-03-15T17:28:00+07:00",
+    "sender": {
+      "name": "Arun K.",
+      "email": "arun@example.com"
+    },
+    "subject": "Claim status update requested",
+    "channel": "email",
+    "status": "New",
+    "priority": "P2",
+    "body": "Hi team,\n\nCould you please provide an update on my claim? I submitted the repair documents several days ago and have not received a status update.\n\nPolicy reference: TH-INS-48004\nCustomer reference: CUST-10004\n\nThanks,\nArun",
+    "tags": [
+      "claim",
+      "status"
+    ]
+  },
+  {
+    "id": "itm_005",
+    "received_at": "2026-03-15T20:45:00+07:00",
+    "sender": {
+      "name": "Priya M.",
+      "email": "priya@example.com"
+    },
+    "subject": "Missing document for claim",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI received a request for another document for my claim, but I am not sure which document is missing. Can you clarify what you need from me?\n\nPolicy reference: TH-AB-48005\nCustomer reference: CUST-10005\n\nThanks,\nPriya",
+    "tags": [
+      "claim",
+      "documents"
+    ]
+  },
+  {
+    "id": "itm_006",
+    "received_at": "2026-03-16T00:02:00+07:00",
+    "sender": {
+      "name": "Daniel R.",
+      "email": "daniel@example.com"
+    },
+    "subject": "Can I add a driver to my policy?",
+    "channel": "chat",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nI would like to add another driver to my existing policy. Please let me know the eligibility requirements and whether the premium will change.\n\nPolicy reference: TH-MTR-48006\nCustomer reference: CUST-10006\n\nThanks,\nDaniel",
+    "tags": [
+      "policy",
+      "driver"
+    ]
+  },
+  {
+    "id": "itm_007",
+    "received_at": "2026-03-16T03:19:00+07:00",
+    "sender": {
+      "name": "Mei L.",
+      "email": "mei@example.com"
+    },
+    "subject": "Payment failed but money was deducted",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nThe payment page showed an error, but the amount was deducted from my bank account. Please check whether the payment went through and confirm what I should do.\n\nPolicy reference: TH-CAR-48007\nCustomer reference: CUST-10007\n\nThanks,\nMei",
+    "tags": [
+      "billing",
+      "payment"
+    ]
+  },
+  {
+    "id": "itm_008",
+    "received_at": "2026-03-16T05:36:00+07:00",
+    "sender": {
+      "name": "Krit T.",
+      "email": "krit@company.co.th"
+    },
+    "subject": "Request for policy cancellation",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI would like to cancel my current policy. Please explain the cancellation process, effective date, and whether there is any refund.\n\nPolicy reference: TH-POL-48008\nCustomer reference: CUST-10008\n\nThanks,\nKrit",
+    "tags": [
+      "cancellation",
+      "policy"
+    ]
+  },
+  {
+    "id": "itm_009",
+    "received_at": "2026-03-16T08:53:00+07:00",
+    "sender": {
+      "name": "Sarah W.",
+      "email": "sarah@example.com"
+    },
+    "subject": "Where can I download my policy documents?",
+    "channel": "chat",
+    "status": "Done",
+    "priority": "P3",
+    "body": "Hi team,\n\nI need a copy of my current policy documents. Where can I download them from the customer portal?\n\nPolicy reference: TH-INS-48009\nCustomer reference: CUST-10009\n\nThanks,\nSarah",
+    "tags": [
+      "documents",
+      "policy"
+    ]
+  },
+  {
+    "id": "itm_010",
+    "received_at": "2026-03-16T12:10:00+07:00",
+    "sender": {
+      "name": "James C.",
+      "email": "james@example.com"
+    },
+    "subject": "Accident claim — vehicle damage",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI was involved in an accident and my vehicle has significant damage. I need to understand how to start a claim and which evidence I should provide.\n\nPolicy reference: TH-AB-48010\nCustomer reference: CUST-10010\n\nThanks,\nJames",
+    "tags": [
+      "claim",
+      "accident"
+    ]
+  },
+  {
+    "id": "itm_011",
+    "received_at": "2026-03-16T14:27:00+07:00",
+    "sender": {
+      "name": "Maya S.",
+      "email": "maya@example.com"
+    },
+    "subject": "Change address on policy",
+    "channel": "email",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nI have moved to a new address and need to update my policy records. Please let me know if any proof of address is required.\n\nPolicy reference: TH-MTR-48011\nCustomer reference: CUST-10011\n\nThanks,\nMaya",
+    "tags": [
+      "endorsement",
+      "address"
+    ]
+  },
+  {
+    "id": "itm_012",
+    "received_at": "2026-03-16T17:44:00+07:00",
+    "sender": {
+      "name": "Ravi N.",
+      "email": "ravi@example.com"
+    },
+    "subject": "Renewal reminder received",
+    "channel": "chat",
+    "status": "Done",
+    "priority": "P3",
+    "body": "Hi team,\n\nI received a renewal reminder. Can you confirm the renewal date and whether I need to take any action?\n\nPolicy reference: TH-CAR-48012\nCustomer reference: CUST-10012\n\nThanks,\nRavi",
+    "tags": [
+      "renewal"
+    ]
+  },
+  {
+    "id": "itm_013",
+    "received_at": "2026-03-16T21:01:00+07:00",
+    "sender": {
+      "name": "Emily B.",
+      "email": "emily@example.com"
+    },
+    "subject": "Premium increased after vehicle change",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nAfter updating my vehicle information, my premium increased substantially. Please explain how the new premium was calculated.\n\nPolicy reference: TH-POL-48013\nCustomer reference: CUST-10013\n\nThanks,\nEmily",
+    "tags": [
+      "pricing",
+      "vehicle"
+    ]
+  },
+  {
+    "id": "itm_014",
+    "received_at": "2026-03-17T00:18:00+07:00",
+    "sender": {
+      "name": "Tom H.",
+      "email": "tom@example.com"
+    },
+    "subject": "Incorrect billing amount",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nThe invoice amount does not match the amount shown when I purchased the policy. Please review the billing details and correct the invoice if necessary.\n\nPolicy reference: TH-INS-48014\nCustomer reference: CUST-10014\n\nThanks,\nTom",
+    "tags": [
+      "billing",
+      "invoice"
+    ]
+  },
+  {
+    "id": "itm_015",
+    "received_at": "2026-03-17T02:35:00+07:00",
+    "sender": {
+      "name": "Lisa P.",
+      "email": "lisa@example.com"
+    },
+    "subject": "General question about coverage",
+    "channel": "chat",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nCould you explain what is covered under my current policy and whether roadside assistance is included?\n\nPolicy reference: TH-AB-48015\nCustomer reference: CUST-10015\n\nThanks,\nLisa",
+    "tags": [
+      "coverage",
+      "general"
+    ]
+  },
+  {
+    "id": "itm_016",
+    "received_at": "2026-03-17T05:52:00+07:00",
+    "sender": {
+      "name": "Michael D.",
+      "email": "michael@example.com"
+    },
+    "subject": "Urgent claim assistance needed",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI need urgent help with a claim because the incident has just occurred and the vehicle is currently not safe to drive.\n\nPolicy reference: TH-MTR-48016\nCustomer reference: CUST-10016\n\nThanks,\nMichael",
+    "tags": [
+      "urgent",
+      "claim"
+    ]
+  },
+  {
+    "id": "itm_017",
+    "received_at": "2026-03-17T09:09:00+07:00",
+    "sender": {
+      "name": "Ploy N.",
+      "email": "ploy@company.co.th"
+    },
+    "subject": "Please update beneficiary details",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI need to update the beneficiary information associated with my policy. Please tell me what forms or supporting documents are required.\n\nPolicy reference: TH-CAR-48017\nCustomer reference: CUST-10017\n\nThanks,\nPloy",
+    "tags": [
+      "endorsement",
+      "beneficiary"
+    ]
+  },
+  {
+    "id": "itm_018",
+    "received_at": "2026-03-17T11:26:00+07:00",
+    "sender": {
+      "name": "Ben A.",
+      "email": "ben@example.com"
+    },
+    "subject": "Spam: Congratulations, you won",
+    "channel": "email",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nCongratulations! You have won a large cash prize. Send your account details to claim your reward immediately.\n\nPolicy reference: TH-POL-48018\nCustomer reference: CUST-10018\n\nThanks,\nBen",
+    "tags": [
+      "spam",
+      "suspicious"
+    ]
+  },
+  {
+    "id": "itm_019",
+    "received_at": "2026-03-17T14:43:00+07:00",
+    "sender": {
+      "name": "Sofia G.",
+      "email": "sofia@example.com"
+    },
+    "subject": "Duplicate charge on card",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI can see two charges for the same policy payment on my card statement. Please investigate and confirm whether one of the charges will be refunded.\n\nPolicy reference: TH-INS-48019\nCustomer reference: CUST-10019\n\nThanks,\nSofia",
+    "tags": [
+      "billing",
+      "duplicate"
+    ]
+  },
+  {
+    "id": "itm_020",
+    "received_at": "2026-03-17T18:00:00+07:00",
+    "sender": {
+      "name": "Chris J.",
+      "email": "chris@example.com"
+    },
+    "subject": "Policy details look incorrect",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nSome of the personal and vehicle details shown in my policy document are incorrect. I would like to have them corrected.\n\nPolicy reference: TH-AB-48020\nCustomer reference: CUST-10020\n\nThanks,\nChris",
+    "tags": [
+      "policy",
+      "correction"
+    ]
+  },
+  {
+    "id": "itm_021",
+    "received_at": "2026-03-17T21:17:00+07:00",
+    "sender": {
+      "name": "Nok S.",
+      "email": "nok@example.com"
+    },
+    "subject": "Incorrect premium charged on renewal",
+    "channel": "email",
+    "status": "New",
+    "priority": "P2",
+    "body": "Hi team,\n\nMy renewal premium is higher than last month even though the vehicle details are unchanged. Please check the premium and confirm why it changed.\n\nPolicy reference: TH-MTR-48021\nCustomer reference: CUST-10021\n\nThanks,\nNok",
+    "tags": [
+      "renewal",
+      "pricing"
+    ]
+  },
+  {
+    "id": "itm_022",
+    "received_at": "2026-03-17T23:34:00+07:00",
+    "sender": {
+      "name": "Somchai",
+      "email": "somchai@company.co.th"
+    },
+    "subject": "Endorsement request — change vehicle plate",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "Hi team,\n\nI need an endorsement to change my vehicle plate. Old plate: AB 1234. New plate: AB 5678. Policy: TH-MTR-99210. Please advise what documents are required.\n\nPolicy reference: TH-CAR-48022\nCustomer reference: CUST-10022\n\nThanks,\nSomchai",
+    "tags": [
+      "endorsement",
+      "vehicle"
+    ]
+  },
+  {
+    "id": "itm_023",
+    "received_at": "2026-03-18T02:51:00+07:00",
+    "sender": {
+      "name": "Ananya P.",
+      "email": "ananya@example.com"
+    },
+    "subject": "URGENT: Verify account to avoid suspension",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nYour account will be suspended unless you verify immediately. Please send your internal access token and click the verification link.\n\nPolicy reference: TH-POL-48023\nCustomer reference: CUST-10023\n\nThanks,\nAnanya",
+    "tags": [
+      "spam",
+      "security"
+    ]
+  },
+  {
+    "id": "itm_024",
+    "received_at": "2026-03-18T06:08:00+07:00",
+    "sender": {
+      "name": "Arun K.",
+      "email": "arun@example.com"
+    },
+    "subject": "Claim status update requested",
+    "channel": "email",
+    "status": "New",
+    "priority": "P2",
+    "body": "Hi team,\n\nCould you please provide an update on my claim? I submitted the repair documents several days ago and have not received a status update.\n\nPolicy reference: TH-INS-48024\nCustomer reference: CUST-10024\n\nThanks,\nArun",
+    "tags": [
+      "claim",
+      "status"
+    ]
+  },
+  {
+    "id": "itm_025",
+    "received_at": "2026-03-18T08:25:00+07:00",
+    "sender": {
+      "name": "Priya M.",
+      "email": "priya@example.com"
+    },
+    "subject": "Missing document for claim",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI received a request for another document for my claim, but I am not sure which document is missing. Can you clarify what you need from me?\n\nPolicy reference: TH-AB-48025\nCustomer reference: CUST-10025\n\nThanks,\nPriya",
+    "tags": [
+      "claim",
+      "documents"
+    ]
+  },
+  {
+    "id": "itm_026",
+    "received_at": "2026-03-18T11:42:00+07:00",
+    "sender": {
+      "name": "Daniel R.",
+      "email": "daniel@example.com"
+    },
+    "subject": "Can I add a driver to my policy?",
+    "channel": "chat",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nI would like to add another driver to my existing policy. Please let me know the eligibility requirements and whether the premium will change.\n\nPolicy reference: TH-MTR-48026\nCustomer reference: CUST-10026\n\nThanks,\nDaniel",
+    "tags": [
+      "policy",
+      "driver"
+    ]
+  },
+  {
+    "id": "itm_027",
+    "received_at": "2026-03-18T14:59:00+07:00",
+    "sender": {
+      "name": "Mei L.",
+      "email": "mei@example.com"
+    },
+    "subject": "Renewal premium issue and missing payment receipt",
+    "channel": "email",
+    "status": "New",
+    "priority": "P2",
+    "body": "Hi team,\n\nMy renewal premium appears higher than expected, and I also cannot find the payment receipt in the portal. Could you check both the premium calculation and payment record?\n\nPolicy reference: TH-CAR-48027\nCustomer reference: CUST-10027\n\nThanks,\nMei",
+    "tags": [
+      "renewal",
+      "pricing",
+      "billing"
+    ]
+  },
+  {
+    "id": "itm_028",
+    "received_at": "2026-03-18T18:16:00+07:00",
+    "sender": {
+      "name": "Krit T.",
+      "email": "krit@company.co.th"
+    },
+    "subject": "Request for policy cancellation",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI would like to cancel my current policy. Please explain the cancellation process, effective date, and whether there is any refund.\n\nPolicy reference: TH-POL-48028\nCustomer reference: CUST-10028\n\nThanks,\nKrit",
+    "tags": [
+      "cancellation",
+      "policy"
+    ]
+  },
+  {
+    "id": "itm_029",
+    "received_at": "2026-03-18T20:33:00+07:00",
+    "sender": {
+      "name": "Sarah W.",
+      "email": "sarah@example.com"
+    },
+    "subject": "Where can I download my policy documents?",
+    "channel": "chat",
+    "status": "Done",
+    "priority": "P3",
+    "body": "Hi team,\n\nI need a copy of my current policy documents. Where can I download them from the customer portal?\n\nPolicy reference: TH-INS-48029\nCustomer reference: CUST-10029\n\nThanks,\nSarah",
+    "tags": [
+      "documents",
+      "policy"
+    ]
+  },
+  {
+    "id": "itm_030",
+    "received_at": "2026-03-18T23:50:00+07:00",
+    "sender": {
+      "name": "James C.",
+      "email": "james@example.com"
+    },
+    "subject": "Accident claim — vehicle damage",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI was involved in an accident and my vehicle has significant damage. I need to understand how to start a claim and which evidence I should provide.\n\nPolicy reference: TH-AB-48030\nCustomer reference: CUST-10030\n\nThanks,\nJames",
+    "tags": [
+      "claim",
+      "accident"
+    ]
+  },
+  {
+    "id": "itm_031",
+    "received_at": "2026-03-19T03:07:00+07:00",
+    "sender": {
+      "name": "Maya S.",
+      "email": "maya@example.com"
+    },
+    "subject": "Change address on policy",
+    "channel": "email",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nI have moved to a new address and need to update my policy records. Please let me know if any proof of address is required.\n\nPolicy reference: TH-MTR-48031\nCustomer reference: CUST-10031\n\nThanks,\nMaya",
+    "tags": [
+      "endorsement",
+      "address"
+    ]
+  },
+  {
+    "id": "itm_032",
+    "received_at": "2026-03-19T05:24:00+07:00",
+    "sender": {
+      "name": "Ravi N.",
+      "email": "ravi@example.com"
+    },
+    "subject": "Renewal reminder received",
+    "channel": "chat",
+    "status": "Done",
+    "priority": "P3",
+    "body": "Hi team,\n\nI received a renewal reminder. Can you confirm the renewal date and whether I need to take any action?\n\nPolicy reference: TH-CAR-48032\nCustomer reference: CUST-10032\n\nThanks,\nRavi",
+    "tags": [
+      "renewal"
+    ]
+  },
+  {
+    "id": "itm_033",
+    "received_at": "2026-03-15T08:41:00+07:00",
+    "sender": {
+      "name": "Emily B.",
+      "email": "emily@example.com"
+    },
+    "subject": "Premium increased after vehicle change",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nAfter updating my vehicle information, my premium increased substantially. Please explain how the new premium was calculated.\n\nPolicy reference: TH-POL-48033\nCustomer reference: CUST-10033\n\nThanks,\nEmily",
+    "tags": [
+      "pricing",
+      "vehicle"
+    ]
+  },
+  {
+    "id": "itm_034",
+    "received_at": "2026-03-15T11:58:00+07:00",
+    "sender": {
+      "name": "Tom H.",
+      "email": "tom@example.com"
+    },
+    "subject": "URGENT: Accident claim and roadside assistance",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hello,\n\nThis is urgent. I was involved in an accident and need to know how to open a claim and whether roadside assistance can arrange towing. Please respond as soon as possible.\n\nPolicy reference: TH-INS-48034\nCustomer reference: CUST-10034\n\nRegards,\nTom",
+    "tags": [
+      "urgent",
+      "claim",
+      "roadside"
+    ]
+  },
+  {
+    "id": "itm_035",
+    "received_at": "2026-03-15T15:15:00+07:00",
+    "sender": {
+      "name": "Lisa P.",
+      "email": "lisa@example.com"
+    },
+    "subject": "General question about coverage",
+    "channel": "chat",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nCould you explain what is covered under my current policy and whether roadside assistance is included?\n\nPolicy reference: TH-AB-48035\nCustomer reference: CUST-10035\n\nThanks,\nLisa",
+    "tags": [
+      "coverage",
+      "general"
+    ]
+  },
+  {
+    "id": "itm_036",
+    "received_at": "2026-03-15T17:32:00+07:00",
+    "sender": {
+      "name": "Michael D.",
+      "email": "michael@example.com"
+    },
+    "subject": "Urgent claim assistance needed",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI need urgent help with a claim because the incident has just occurred and the vehicle is currently not safe to drive.\n\nPolicy reference: TH-MTR-48036\nCustomer reference: CUST-10036\n\nThanks,\nMichael",
+    "tags": [
+      "urgent",
+      "claim"
+    ]
+  },
+  {
+    "id": "itm_037",
+    "received_at": "2026-03-15T20:49:00+07:00",
+    "sender": {
+      "name": "Ploy N.",
+      "email": "ploy@company.co.th"
+    },
+    "subject": "Please update beneficiary details",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI need to update the beneficiary information associated with my policy. Please tell me what forms or supporting documents are required.\n\nPolicy reference: TH-CAR-48037\nCustomer reference: CUST-10037\n\nThanks,\nPloy",
+    "tags": [
+      "endorsement",
+      "beneficiary"
+    ]
+  },
+  {
+    "id": "itm_038",
+    "received_at": "2026-03-16T00:06:00+07:00",
+    "sender": {
+      "name": "Ben A.",
+      "email": "ben@example.com"
+    },
+    "subject": "Spam: Congratulations, you won",
+    "channel": "email",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nCongratulations! You have won a large cash prize. Send your account details to claim your reward immediately.\n\nPolicy reference: TH-POL-48038\nCustomer reference: CUST-10038\n\nThanks,\nBen",
+    "tags": [
+      "spam",
+      "suspicious"
+    ]
+  },
+  {
+    "id": "itm_039",
+    "received_at": "2026-03-16T02:23:00+07:00",
+    "sender": {
+      "name": "Sofia G.",
+      "email": "sofia@example.com"
+    },
+    "subject": "Duplicate charge on card",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI can see two charges for the same policy payment on my card statement. Please investigate and confirm whether one of the charges will be refunded.\n\nPolicy reference: TH-INS-48039\nCustomer reference: CUST-10039\n\nThanks,\nSofia",
+    "tags": [
+      "billing",
+      "duplicate"
+    ]
+  },
+  {
+    "id": "itm_040",
+    "received_at": "2026-03-16T05:40:00+07:00",
+    "sender": {
+      "name": "Chris J.",
+      "email": "chris@example.com"
+    },
+    "subject": "Policy details look incorrect",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nSome of the personal and vehicle details shown in my policy document are incorrect. I would like to have them corrected.\n\nPolicy reference: TH-AB-48040\nCustomer reference: CUST-10040\n\nThanks,\nChris",
+    "tags": [
+      "policy",
+      "correction"
+    ]
+  },
+  {
+    "id": "itm_041",
+    "received_at": "2026-03-16T08:57:00+07:00",
+    "sender": {
+      "name": "Nok S.",
+      "email": "nok@example.com"
+    },
+    "subject": "Incorrect premium charged on renewal",
+    "channel": "email",
+    "status": "New",
+    "priority": "P2",
+    "body": "Hi team,\n\nMy renewal premium is higher than last month even though the vehicle details are unchanged. Please check the premium and confirm why it changed.\n\nPolicy reference: TH-MTR-48041\nCustomer reference: CUST-10041\n\nThanks,\nNok",
+    "tags": [
+      "renewal",
+      "pricing"
+    ]
+  },
+  {
+    "id": "itm_042",
+    "received_at": "2026-03-16T12:14:00+07:00",
+    "sender": {
+      "name": "Somchai",
+      "email": "somchai@company.co.th"
+    },
+    "subject": "Endorsement request — change vehicle plate",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "Hi team,\n\nI need an endorsement to change my vehicle plate. Old plate: AB 1234. New plate: AB 5678. Policy: TH-MTR-99210. Please advise what documents are required.\n\nPolicy reference: TH-CAR-48042\nCustomer reference: CUST-10042\n\nThanks,\nSomchai",
+    "tags": [
+      "endorsement",
+      "vehicle"
+    ]
+  },
+  {
+    "id": "itm_043",
+    "received_at": "2026-03-16T14:31:00+07:00",
+    "sender": {
+      "name": "Ananya P.",
+      "email": "ananya@example.com"
+    },
+    "subject": "Suspicious email asking for login credentials",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI received an email asking me to provide my password and verification code to prevent policy suspension. Is this legitimate?\n\nPolicy reference: TH-POL-48043\n\nThanks,\nAnanya",
+    "tags": [
+      "security",
+      "spam",
+      "suspicious"
+    ]
+  },
+  {
+    "id": "itm_044",
+    "received_at": "2026-03-16T17:48:00+07:00",
+    "sender": {
+      "name": "Arun K.",
+      "email": "arun@example.com"
+    },
+    "subject": "Claim status update requested",
+    "channel": "email",
+    "status": "New",
+    "priority": "P2",
+    "body": "Hi team,\n\nCould you please provide an update on my claim? I submitted the repair documents several days ago and have not received a status update.\n\nPolicy reference: TH-INS-48044\nCustomer reference: CUST-10044\n\nThanks,\nArun",
+    "tags": [
+      "claim",
+      "status"
+    ]
+  },
+  {
+    "id": "itm_045",
+    "received_at": "2026-03-16T21:05:00+07:00",
+    "sender": {
+      "name": "Priya M.",
+      "email": "priya@example.com"
+    },
+    "subject": "Missing document for claim",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI received a request for another document for my claim, but I am not sure which document is missing. Can you clarify what you need from me?\n\nPolicy reference: TH-AB-48045\nCustomer reference: CUST-10045\n\nThanks,\nPriya",
+    "tags": [
+      "claim",
+      "documents"
+    ]
+  },
+  {
+    "id": "itm_046",
+    "received_at": "2026-03-16T23:22:00+07:00",
+    "sender": {
+      "name": "Daniel R.",
+      "email": "daniel@example.com"
+    },
+    "subject": "Can I add a driver to my policy?",
+    "channel": "chat",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nI would like to add another driver to my existing policy. Please let me know the eligibility requirements and whether the premium will change.\n\nPolicy reference: TH-MTR-48046\nCustomer reference: CUST-10046\n\nThanks,\nDaniel",
+    "tags": [
+      "policy",
+      "driver"
+    ]
+  },
+  {
+    "id": "itm_047",
+    "received_at": "2026-03-17T02:39:00+07:00",
+    "sender": {
+      "name": "Mei L.",
+      "email": "mei@example.com"
+    },
+    "subject": "Payment failed but money was deducted",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nThe payment page showed an error, but the amount was deducted from my bank account. Please check whether the payment went through and confirm what I should do.\n\nPolicy reference: TH-CAR-48047\nCustomer reference: CUST-10047\n\nThanks,\nMei",
+    "tags": [
+      "billing",
+      "payment"
+    ]
+  },
+  {
+    "id": "itm_048",
+    "received_at": "2026-03-17T05:56:00+07:00",
+    "sender": {
+      "name": "Krit T.",
+      "email": "krit@company.co.th"
+    },
+    "subject": "Request for policy cancellation",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI would like to cancel my current policy. Please explain the cancellation process, effective date, and whether there is any refund.\n\nPolicy reference: TH-POL-48048\nCustomer reference: CUST-10048\n\nThanks,\nKrit",
+    "tags": [
+      "cancellation",
+      "policy"
+    ]
+  },
+  {
+    "id": "itm_049",
+    "received_at": "2026-03-17T09:13:00+07:00",
+    "sender": {
+      "name": "Sarah W.",
+      "email": "sarah@example.com"
+    },
+    "subject": "Where can I download my policy documents?",
+    "channel": "chat",
+    "status": "Done",
+    "priority": "P3",
+    "body": "Hi team,\n\nI need a copy of my current policy documents. Where can I download them from the customer portal?\n\nPolicy reference: TH-INS-48049\nCustomer reference: CUST-10049\n\nThanks,\nSarah",
+    "tags": [
+      "documents",
+      "policy"
+    ]
+  },
+  {
+    "id": "itm_050",
+    "received_at": "2026-03-17T11:30:00+07:00",
+    "sender": {
+      "name": "James C.",
+      "email": "james@example.com"
+    },
+    "subject": "Accident claim — vehicle damage",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI was involved in an accident and my vehicle has significant damage. I need to understand how to start a claim and which evidence I should provide.\n\nPolicy reference: TH-AB-48050\nCustomer reference: CUST-10050\n\nThanks,\nJames",
+    "tags": [
+      "claim",
+      "accident"
+    ]
+  },
+  {
+    "id": "itm_051",
+    "received_at": "2026-03-17T14:47:00+07:00",
+    "sender": {
+      "name": "Maya S.",
+      "email": "maya@example.com"
+    },
+    "subject": "Change address on policy",
+    "channel": "email",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nI have moved to a new address and need to update my policy records. Please let me know if any proof of address is required.\n\nPolicy reference: TH-MTR-48051\nCustomer reference: CUST-10051\n\nThanks,\nMaya",
+    "tags": [
+      "endorsement",
+      "address"
+    ]
+  },
+  {
+    "id": "itm_052",
+    "received_at": "2026-03-17T18:04:00+07:00",
+    "sender": {
+      "name": "Ravi N.",
+      "email": "ravi@example.com"
+    },
+    "subject": "Renewal reminder received",
+    "channel": "chat",
+    "status": "Done",
+    "priority": "P3",
+    "body": "Hi team,\n\nI received a renewal reminder. Can you confirm the renewal date and whether I need to take any action?\n\nPolicy reference: TH-CAR-48052\nCustomer reference: CUST-10052\n\nThanks,\nRavi",
+    "tags": [
+      "renewal"
+    ]
+  },
+  {
+    "id": "itm_053",
+    "received_at": "2026-03-17T20:21:00+07:00",
+    "sender": {
+      "name": "Emily B.",
+      "email": "emily@example.com"
+    },
+    "subject": "Premium increased after vehicle change",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nAfter updating my vehicle information, my premium increased substantially. Please explain how the new premium was calculated.\n\nPolicy reference: TH-POL-48053\nCustomer reference: CUST-10053\n\nThanks,\nEmily",
+    "tags": [
+      "pricing",
+      "vehicle"
+    ]
+  },
+  {
+    "id": "itm_054",
+    "received_at": "2026-03-17T23:38:00+07:00",
+    "sender": {
+      "name": "Tom H.",
+      "email": "tom@example.com"
+    },
+    "subject": "Incorrect billing amount",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nThe invoice amount does not match the amount shown when I purchased the policy. Please review the billing details and correct the invoice if necessary.\n\nPolicy reference: TH-INS-48054\nCustomer reference: CUST-10054\n\nThanks,\nTom",
+    "tags": [
+      "billing",
+      "invoice"
+    ]
+  },
+  {
+    "id": "itm_055",
+    "received_at": "2026-03-18T02:55:00+07:00",
+    "sender": {
+      "name": "Lisa P.",
+      "email": "lisa@example.com"
+    },
+    "subject": "General question about coverage",
+    "channel": "chat",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nCould you explain what is covered under my current policy and whether roadside assistance is included?\n\nPolicy reference: TH-AB-48055\nCustomer reference: CUST-10055\n\nThanks,\nLisa",
+    "tags": [
+      "coverage",
+      "general"
+    ]
+  },
+  {
+    "id": "itm_056",
+    "received_at": "2026-03-18T06:12:00+07:00",
+    "sender": {
+      "name": "Michael D.",
+      "email": "michael@example.com"
+    },
+    "subject": "Urgent claim assistance needed",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI need urgent help with a claim because the incident has just occurred and the vehicle is currently not safe to drive.\n\nPolicy reference: TH-MTR-48056\nCustomer reference: CUST-10056\n\nThanks,\nMichael",
+    "tags": [
+      "urgent",
+      "claim"
+    ]
+  },
+  {
+    "id": "itm_057",
+    "received_at": "2026-03-18T08:29:00+07:00",
+    "sender": {
+      "name": "Ploy N.",
+      "email": "ploy@company.co.th"
+    },
+    "subject": "Please update beneficiary details",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI need to update the beneficiary information associated with my policy. Please tell me what forms or supporting documents are required.\n\nPolicy reference: TH-CAR-48057\nCustomer reference: CUST-10057\n\nThanks,\nPloy",
+    "tags": [
+      "endorsement",
+      "beneficiary"
+    ]
+  },
+  {
+    "id": "itm_058",
+    "received_at": "2026-03-18T11:46:00+07:00",
+    "sender": {
+      "name": "Ben A.",
+      "email": "ben@example.com"
+    },
+    "subject": "Renewal premium issue and missing payment receipt",
+    "channel": "email",
+    "status": "New",
+    "priority": "P2",
+    "body": "Hi team,\n\nMy renewal premium appears higher than expected, and I also cannot find the payment receipt in the portal. Could you check both the premium calculation and payment record?\n\nPolicy reference: TH-POL-48058\nCustomer reference: CUST-10058\n\nThanks,\nBen",
+    "tags": [
+      "renewal",
+      "pricing",
+      "billing"
+    ]
+  },
+  {
+    "id": "itm_059",
+    "received_at": "2026-03-18T15:03:00+07:00",
+    "sender": {
+      "name": "Sofia G.",
+      "email": "sofia@example.com"
+    },
+    "subject": "Duplicate charge on card",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI can see two charges for the same policy payment on my card statement. Please investigate and confirm whether one of the charges will be refunded.\n\nPolicy reference: TH-INS-48059\nCustomer reference: CUST-10059\n\nThanks,\nSofia",
+    "tags": [
+      "billing",
+      "duplicate"
+    ]
+  },
+  {
+    "id": "itm_060",
+    "received_at": "2026-03-18T17:20:00+07:00",
+    "sender": {
+      "name": "Chris J.",
+      "email": "chris@example.com"
+    },
+    "subject": "Policy details look incorrect",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nSome of the personal and vehicle details shown in my policy document are incorrect. I would like to have them corrected.\n\nPolicy reference: TH-AB-48060\nCustomer reference: CUST-10060\n\nThanks,\nChris",
+    "tags": [
+      "policy",
+      "correction"
+    ]
+  },
+  {
+    "id": "itm_061",
+    "received_at": "2026-03-18T20:37:00+07:00",
+    "sender": {
+      "name": "Nok S.",
+      "email": "nok@example.com"
+    },
+    "subject": "Incorrect premium charged on renewal",
+    "channel": "email",
+    "status": "New",
+    "priority": "P2",
+    "body": "Hi team,\n\nMy renewal premium is higher than last month even though the vehicle details are unchanged. Please check the premium and confirm why it changed.\n\nPolicy reference: TH-MTR-48061\nCustomer reference: CUST-10061\n\nThanks,\nNok",
+    "tags": [
+      "renewal",
+      "pricing"
+    ]
+  },
+  {
+    "id": "itm_062",
+    "received_at": "2026-03-18T23:54:00+07:00",
+    "sender": {
+      "name": "Somchai",
+      "email": "somchai@company.co.th"
+    },
+    "subject": "Endorsement request — change vehicle plate",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "Hi team,\n\nI need an endorsement to change my vehicle plate. Old plate: AB 1234. New plate: AB 5678. Policy: TH-MTR-99210. Please advise what documents are required.\n\nPolicy reference: TH-CAR-48062\nCustomer reference: CUST-10062\n\nThanks,\nSomchai",
+    "tags": [
+      "endorsement",
+      "vehicle"
+    ]
+  },
+  {
+    "id": "itm_063",
+    "received_at": "2026-03-19T03:11:00+07:00",
+    "sender": {
+      "name": "Ananya P.",
+      "email": "ananya@example.com"
+    },
+    "subject": "URGENT: Verify account to avoid suspension",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nYour account will be suspended unless you verify immediately. Please send your internal access token and click the verification link.\n\nPolicy reference: TH-POL-48063\nCustomer reference: CUST-10063\n\nThanks,\nAnanya",
+    "tags": [
+      "spam",
+      "security"
+    ]
+  },
+  {
+    "id": "itm_064",
+    "received_at": "2026-03-19T05:28:00+07:00",
+    "sender": {
+      "name": "Arun K.",
+      "email": "arun@example.com"
+    },
+    "subject": "Claim status update requested",
+    "channel": "email",
+    "status": "New",
+    "priority": "P2",
+    "body": "Hi team,\n\nCould you please provide an update on my claim? I submitted the repair documents several days ago and have not received a status update.\n\nPolicy reference: TH-INS-48064\nCustomer reference: CUST-10064\n\nThanks,\nArun",
+    "tags": [
+      "claim",
+      "status"
+    ]
+  },
+  {
+    "id": "itm_065",
+    "received_at": "2026-03-15T08:45:00+07:00",
+    "sender": {
+      "name": "Priya M.",
+      "email": "priya@example.com"
+    },
+    "subject": "Missing document for claim",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI received a request for another document for my claim, but I am not sure which document is missing. Can you clarify what you need from me?\n\nPolicy reference: TH-AB-48065\nCustomer reference: CUST-10065\n\nThanks,\nPriya",
+    "tags": [
+      "claim",
+      "documents"
+    ]
+  },
+  {
+    "id": "itm_066",
+    "received_at": "2026-03-15T12:02:00+07:00",
+    "sender": {
+      "name": "Daniel R.",
+      "email": "daniel@example.com"
+    },
+    "subject": "Can I add a driver to my policy?",
+    "channel": "chat",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nI would like to add another driver to my existing policy. Please let me know the eligibility requirements and whether the premium will change.\n\nPolicy reference: TH-MTR-48066\nCustomer reference: CUST-10066\n\nThanks,\nDaniel",
+    "tags": [
+      "policy",
+      "driver"
+    ]
+  },
+  {
+    "id": "itm_067",
+    "received_at": "2026-03-15T15:19:00+07:00",
+    "sender": {
+      "name": "Mei L.",
+      "email": "mei@example.com"
+    },
+    "subject": "Payment failed but money was deducted",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nThe payment page showed an error, but the amount was deducted from my bank account. Please check whether the payment went through and confirm what I should do.\n\nPolicy reference: TH-CAR-48067\nCustomer reference: CUST-10067\n\nThanks,\nMei",
+    "tags": [
+      "billing",
+      "payment"
+    ]
+  },
+  {
+    "id": "itm_068",
+    "received_at": "2026-03-15T17:36:00+07:00",
+    "sender": {
+      "name": "Krit T.",
+      "email": "krit@company.co.th"
+    },
+    "subject": "Request for policy cancellation",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI would like to cancel my current policy. Please explain the cancellation process, effective date, and whether there is any refund.\n\nPolicy reference: TH-POL-48068\nCustomer reference: CUST-10068\n\nThanks,\nKrit",
+    "tags": [
+      "cancellation",
+      "policy"
+    ]
+  },
+  {
+    "id": "itm_069",
+    "received_at": "2026-03-15T20:53:00+07:00",
+    "sender": {
+      "name": "Sarah W.",
+      "email": "sarah@example.com"
+    },
+    "subject": "Where can I download my policy documents?",
+    "channel": "chat",
+    "status": "Done",
+    "priority": "P3",
+    "body": "Hi team,\n\nI need a copy of my current policy documents. Where can I download them from the customer portal?\n\nPolicy reference: TH-INS-48069\nCustomer reference: CUST-10069\n\nThanks,\nSarah",
+    "tags": [
+      "documents",
+      "policy"
+    ]
+  },
+  {
+    "id": "itm_070",
+    "received_at": "2026-03-16T00:10:00+07:00",
+    "sender": {
+      "name": "James C.",
+      "email": "james@example.com"
+    },
+    "subject": "Accident claim — vehicle damage",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI was involved in an accident and my vehicle has significant damage. I need to understand how to start a claim and which evidence I should provide.\n\nPolicy reference: TH-AB-48070\nCustomer reference: CUST-10070\n\nThanks,\nJames",
+    "tags": [
+      "claim",
+      "accident"
+    ]
+  },
+  {
+    "id": "itm_071",
+    "received_at": "2026-03-16T02:27:00+07:00",
+    "sender": {
+      "name": "Maya S.",
+      "email": "maya@example.com"
+    },
+    "subject": "Change address on policy",
+    "channel": "email",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nI have moved to a new address and need to update my policy records. Please let me know if any proof of address is required.\n\nPolicy reference: TH-MTR-48071\nCustomer reference: CUST-10071\n\nThanks,\nMaya",
+    "tags": [
+      "endorsement",
+      "address"
+    ]
+  },
+  {
+    "id": "itm_072",
+    "received_at": "2026-03-16T05:44:00+07:00",
+    "sender": {
+      "name": "Ravi N.",
+      "email": "ravi@example.com"
+    },
+    "subject": "URGENT: Accident claim and roadside assistance",
+    "channel": "chat",
+    "status": "Done",
+    "priority": "P1",
+    "body": "Hello,\n\nThis is urgent. I was involved in an accident and need to know how to open a claim and whether roadside assistance can arrange towing. Please respond as soon as possible.\n\nPolicy reference: TH-CAR-48072\nCustomer reference: CUST-10072\n\nRegards,\nRavi",
+    "tags": [
+      "urgent",
+      "claim",
+      "roadside"
+    ]
+  },
+  {
+    "id": "itm_073",
+    "received_at": "2026-03-16T09:01:00+07:00",
+    "sender": {
+      "name": "Emily B.",
+      "email": "emily@example.com"
+    },
+    "subject": "Premium increased after vehicle change",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nAfter updating my vehicle information, my premium increased substantially. Please explain how the new premium was calculated.\n\nPolicy reference: TH-POL-48073\nCustomer reference: CUST-10073\n\nThanks,\nEmily",
+    "tags": [
+      "pricing",
+      "vehicle"
+    ]
+  },
+  {
+    "id": "itm_074",
+    "received_at": "2026-03-16T12:18:00+07:00",
+    "sender": {
+      "name": "Tom H.",
+      "email": "tom@example.com"
+    },
+    "subject": "Incorrect billing amount",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nThe invoice amount does not match the amount shown when I purchased the policy. Please review the billing details and correct the invoice if necessary.\n\nPolicy reference: TH-INS-48074\nCustomer reference: CUST-10074\n\nThanks,\nTom",
+    "tags": [
+      "billing",
+      "invoice"
+    ]
+  },
+  {
+    "id": "itm_075",
+    "received_at": "2026-03-16T14:35:00+07:00",
+    "sender": {
+      "name": "Lisa P.",
+      "email": "lisa@example.com"
+    },
+    "subject": "General question about coverage",
+    "channel": "chat",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nCould you explain what is covered under my current policy and whether roadside assistance is included?\n\nPolicy reference: TH-AB-48075\nCustomer reference: CUST-10075\n\nThanks,\nLisa",
+    "tags": [
+      "coverage",
+      "general"
+    ]
+  },
+  {
+    "id": "itm_076",
+    "received_at": "2026-03-16T17:52:00+07:00",
+    "sender": {
+      "name": "Michael D.",
+      "email": "michael@example.com"
+    },
+    "subject": "Urgent claim assistance needed",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI need urgent help with a claim because the incident has just occurred and the vehicle is currently not safe to drive.\n\nPolicy reference: TH-MTR-48076\nCustomer reference: CUST-10076\n\nThanks,\nMichael",
+    "tags": [
+      "urgent",
+      "claim"
+    ]
+  },
+  {
+    "id": "itm_077",
+    "received_at": "2026-03-16T21:09:00+07:00",
+    "sender": {
+      "name": "Ploy N.",
+      "email": "ploy@company.co.th"
+    },
+    "subject": "Please update beneficiary details",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI need to update the beneficiary information associated with my policy. Please tell me what forms or supporting documents are required.\n\nPolicy reference: TH-CAR-48077\nCustomer reference: CUST-10077\n\nThanks,\nPloy",
+    "tags": [
+      "endorsement",
+      "beneficiary"
+    ]
+  },
+  {
+    "id": "itm_078",
+    "received_at": "2026-03-16T23:26:00+07:00",
+    "sender": {
+      "name": "Ben A.",
+      "email": "ben@example.com"
+    },
+    "subject": "Spam: Congratulations, you won",
+    "channel": "email",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nCongratulations! You have won a large cash prize. Send your account details to claim your reward immediately.\n\nPolicy reference: TH-POL-48078\nCustomer reference: CUST-10078\n\nThanks,\nBen",
+    "tags": [
+      "spam",
+      "suspicious"
+    ]
+  },
+  {
+    "id": "itm_079",
+    "received_at": "2026-03-17T02:43:00+07:00",
+    "sender": {
+      "name": "Sofia G.",
+      "email": "sofia@example.com"
+    },
+    "subject": "Duplicate charge on card",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI can see two charges for the same policy payment on my card statement. Please investigate and confirm whether one of the charges will be refunded.\n\nPolicy reference: TH-INS-48079\nCustomer reference: CUST-10079\n\nThanks,\nSofia",
+    "tags": [
+      "billing",
+      "duplicate"
+    ]
+  },
+  {
+    "id": "itm_080",
+    "received_at": "2026-03-17T06:00:00+07:00",
+    "sender": {
+      "name": "Chris J.",
+      "email": "chris@example.com"
+    },
+    "subject": "Policy details look incorrect",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nSome of the personal and vehicle details shown in my policy document are incorrect. I would like to have them corrected.\n\nPolicy reference: TH-AB-48080\nCustomer reference: CUST-10080\n\nThanks,\nChris",
+    "tags": [
+      "policy",
+      "correction"
+    ]
+  },
+  {
+    "id": "itm_081",
+    "received_at": "2026-03-17T09:17:00+07:00",
+    "sender": {
+      "name": "Nok S.",
+      "email": "nok@example.com"
+    },
+    "subject": "Incorrect premium charged on renewal",
+    "channel": "email",
+    "status": "New",
+    "priority": "P2",
+    "body": "Hi team,\n\nMy renewal premium is higher than last month even though the vehicle details are unchanged. Please check the premium and confirm why it changed.\n\nPolicy reference: TH-MTR-48081\nCustomer reference: CUST-10081\n\nThanks,\nNok",
+    "tags": [
+      "renewal",
+      "pricing"
+    ]
+  },
+  {
+    "id": "itm_082",
+    "received_at": "2026-03-17T11:34:00+07:00",
+    "sender": {
+      "name": "Somchai",
+      "email": "somchai@company.co.th"
+    },
+    "subject": "Endorsement request — change vehicle plate",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "Hi team,\n\nI need an endorsement to change my vehicle plate. Old plate: AB 1234. New plate: AB 5678. Policy: TH-MTR-99210. Please advise what documents are required.\n\nPolicy reference: TH-CAR-48082\nCustomer reference: CUST-10082\n\nThanks,\nSomchai",
+    "tags": [
+      "endorsement",
+      "vehicle"
+    ]
+  },
+  {
+    "id": "itm_083",
+    "received_at": "2026-03-17T14:51:00+07:00",
+    "sender": {
+      "name": "Ananya P.",
+      "email": "ananya@example.com"
+    },
+    "subject": "URGENT: Verify account to avoid suspension",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nYour account will be suspended unless you verify immediately. Please send your internal access token and click the verification link.\n\nPolicy reference: TH-POL-48083\nCustomer reference: CUST-10083\n\nThanks,\nAnanya",
+    "tags": [
+      "spam",
+      "security"
+    ]
+  },
+  {
+    "id": "itm_084",
+    "received_at": "2026-03-17T18:08:00+07:00",
+    "sender": {
+      "name": "Arun K.",
+      "email": "arun@example.com"
+    },
+    "subject": "Suspicious email asking for login credentials",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI received an email asking me to provide my password and verification code to prevent policy suspension. Is this legitimate?\n\nPolicy reference: TH-INS-48084\n\nThanks,\nArun",
+    "tags": [
+      "security",
+      "spam",
+      "suspicious"
+    ]
+  },
+  {
+    "id": "itm_085",
+    "received_at": "2026-03-17T20:25:00+07:00",
+    "sender": {
+      "name": "Priya M.",
+      "email": "priya@example.com"
+    },
+    "subject": "Missing document for claim",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI received a request for another document for my claim, but I am not sure which document is missing. Can you clarify what you need from me?\n\nPolicy reference: TH-AB-48085\nCustomer reference: CUST-10085\n\nThanks,\nPriya",
+    "tags": [
+      "claim",
+      "documents"
+    ]
+  },
+  {
+    "id": "itm_086",
+    "received_at": "2026-03-17T23:42:00+07:00",
+    "sender": {
+      "name": "Daniel R.",
+      "email": "daniel@example.com"
+    },
+    "subject": "Can I add a driver to my policy?",
+    "channel": "chat",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nI would like to add another driver to my existing policy. Please let me know the eligibility requirements and whether the premium will change.\n\nPolicy reference: TH-MTR-48086\nCustomer reference: CUST-10086\n\nThanks,\nDaniel",
+    "tags": [
+      "policy",
+      "driver"
+    ]
+  },
+  {
+    "id": "itm_087",
+    "received_at": "2026-03-18T02:59:00+07:00",
+    "sender": {
+      "name": "Mei L.",
+      "email": "mei@example.com"
+    },
+    "subject": "Payment failed but money was deducted",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nThe payment page showed an error, but the amount was deducted from my bank account. Please check whether the payment went through and confirm what I should do.\n\nPolicy reference: TH-CAR-48087\nCustomer reference: CUST-10087\n\nThanks,\nMei",
+    "tags": [
+      "billing",
+      "payment"
+    ]
+  },
+  {
+    "id": "itm_088",
+    "received_at": "2026-03-18T06:16:00+07:00",
+    "sender": {
+      "name": "Krit T.",
+      "email": "krit@company.co.th"
+    },
+    "subject": "Request for policy cancellation",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI would like to cancel my current policy. Please explain the cancellation process, effective date, and whether there is any refund.\n\nPolicy reference: TH-POL-48088\nCustomer reference: CUST-10088\n\nThanks,\nKrit",
+    "tags": [
+      "cancellation",
+      "policy"
+    ]
+  },
+  {
+    "id": "itm_089",
+    "received_at": "2026-03-18T08:33:00+07:00",
+    "sender": {
+      "name": "Sarah W.",
+      "email": "sarah@example.com"
+    },
+    "subject": "Where can I download my policy documents?",
+    "channel": "chat",
+    "status": "Done",
+    "priority": "P3",
+    "body": "Hi team,\n\nI need a copy of my current policy documents. Where can I download them from the customer portal?\n\nPolicy reference: TH-INS-48089\nCustomer reference: CUST-10089\n\nThanks,\nSarah",
+    "tags": [
+      "documents",
+      "policy"
+    ]
+  },
+  {
+    "id": "itm_090",
+    "received_at": "2026-03-18T11:50:00+07:00",
+    "sender": {
+      "name": "James C.",
+      "email": "james@example.com"
+    },
+    "subject": "Accident claim — vehicle damage",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI was involved in an accident and my vehicle has significant damage. I need to understand how to start a claim and which evidence I should provide.\n\nPolicy reference: TH-AB-48090\nCustomer reference: CUST-10090\n\nThanks,\nJames",
+    "tags": [
+      "claim",
+      "accident"
+    ]
+  },
+  {
+    "id": "itm_091",
+    "received_at": "2026-03-18T15:07:00+07:00",
+    "sender": {
+      "name": "Maya S.",
+      "email": "maya@example.com"
+    },
+    "subject": "Renewal premium issue and missing payment receipt",
+    "channel": "email",
+    "status": "New",
+    "priority": "P2",
+    "body": "Hi team,\n\nMy renewal premium appears higher than expected, and I also cannot find the payment receipt in the portal. Could you check both the premium calculation and payment record?\n\nPolicy reference: TH-MTR-48091\nCustomer reference: CUST-10091\n\nThanks,\nMaya",
+    "tags": [
+      "renewal",
+      "pricing",
+      "billing"
+    ]
+  },
+  {
+    "id": "itm_092",
+    "received_at": "2026-03-18T17:24:00+07:00",
+    "sender": {
+      "name": "Ravi N.",
+      "email": "ravi@example.com"
+    },
+    "subject": "Renewal reminder received",
+    "channel": "chat",
+    "status": "Done",
+    "priority": "P3",
+    "body": "Hi team,\n\nI received a renewal reminder. Can you confirm the renewal date and whether I need to take any action?\n\nPolicy reference: TH-CAR-48092\nCustomer reference: CUST-10092\n\nThanks,\nRavi",
+    "tags": [
+      "renewal"
+    ]
+  },
+  {
+    "id": "itm_093",
+    "received_at": "2026-03-18T20:41:00+07:00",
+    "sender": {
+      "name": "Emily B.",
+      "email": "emily@example.com"
+    },
+    "subject": "Premium increased after vehicle change",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nAfter updating my vehicle information, my premium increased substantially. Please explain how the new premium was calculated.\n\nPolicy reference: TH-POL-48093\nCustomer reference: CUST-10093\n\nThanks,\nEmily",
+    "tags": [
+      "pricing",
+      "vehicle"
+    ]
+  },
+  {
+    "id": "itm_094",
+    "received_at": "2026-03-18T23:58:00+07:00",
+    "sender": {
+      "name": "Tom H.",
+      "email": "tom@example.com"
+    },
+    "subject": "Incorrect billing amount",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nThe invoice amount does not match the amount shown when I purchased the policy. Please review the billing details and correct the invoice if necessary.\n\nPolicy reference: TH-INS-48094\nCustomer reference: CUST-10094\n\nThanks,\nTom",
+    "tags": [
+      "billing",
+      "invoice"
+    ]
+  },
+  {
+    "id": "itm_095",
+    "received_at": "2026-03-19T03:15:00+07:00",
+    "sender": {
+      "name": "Lisa P.",
+      "email": "lisa@example.com"
+    },
+    "subject": "General question about coverage",
+    "channel": "chat",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nCould you explain what is covered under my current policy and whether roadside assistance is included?\n\nPolicy reference: TH-AB-48095\nCustomer reference: CUST-10095\n\nThanks,\nLisa",
+    "tags": [
+      "coverage",
+      "general"
+    ]
+  },
+  {
+    "id": "itm_096",
+    "received_at": "2026-03-19T05:32:00+07:00",
+    "sender": {
+      "name": "Michael D.",
+      "email": "michael@example.com"
+    },
+    "subject": "Urgent claim assistance needed",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI need urgent help with a claim because the incident has just occurred and the vehicle is currently not safe to drive.\n\nPolicy reference: TH-MTR-48096\nCustomer reference: CUST-10096\n\nThanks,\nMichael",
+    "tags": [
+      "urgent",
+      "claim"
+    ]
+  },
+  {
+    "id": "itm_097",
+    "received_at": "2026-03-15T08:49:00+07:00",
+    "sender": {
+      "name": "Ploy N.",
+      "email": "ploy@company.co.th"
+    },
+    "subject": "Please update beneficiary details",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nI need to update the beneficiary information associated with my policy. Please tell me what forms or supporting documents are required.\n\nPolicy reference: TH-CAR-48097\nCustomer reference: CUST-10097\n\nThanks,\nPloy",
+    "tags": [
+      "endorsement",
+      "beneficiary"
+    ]
+  },
+  {
+    "id": "itm_098",
+    "received_at": "2026-03-15T12:06:00+07:00",
+    "sender": {
+      "name": "Ben A.",
+      "email": "ben@example.com"
+    },
+    "subject": "Spam: Congratulations, you won",
+    "channel": "email",
+    "status": "New",
+    "priority": "P3",
+    "body": "Hi team,\n\nCongratulations! You have won a large cash prize. Send your account details to claim your reward immediately.\n\nPolicy reference: TH-POL-48098\nCustomer reference: CUST-10098\n\nThanks,\nBen",
+    "tags": [
+      "spam",
+      "suspicious"
+    ]
+  },
+  {
+    "id": "itm_099",
+    "received_at": "2026-03-15T14:23:00+07:00",
+    "sender": {
+      "name": "Sofia G.",
+      "email": "sofia@example.com"
+    },
+    "subject": "Duplicate charge on card",
+    "channel": "email",
+    "status": "New",
+    "priority": "P1",
+    "body": "Hi team,\n\nI can see two charges for the same policy payment on my card statement. Please investigate and confirm whether one of the charges will be refunded.\n\nPolicy reference: TH-INS-48099\nCustomer reference: CUST-10099\n\nThanks,\nSofia",
+    "tags": [
+      "billing",
+      "duplicate"
+    ]
+  },
+  {
+    "id": "itm_100",
+    "received_at": "2026-03-15T17:40:00+07:00",
+    "sender": {
+      "name": "Chris J.",
+      "email": "chris@example.com"
+    },
+    "subject": "Policy details look incorrect",
+    "channel": "email",
+    "status": "In Progress",
+    "priority": "P2",
+    "body": "Hi team,\n\nSome of the personal and vehicle details shown in my policy document are incorrect. I would like to have them corrected.\n\nPolicy reference: TH-AB-48100\nCustomer reference: CUST-10100\n\nThanks,\nChris",
+    "tags": [
+      "policy",
+      "correction"
+    ]
+  }
+]
