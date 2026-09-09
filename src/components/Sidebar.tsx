@@ -1,9 +1,14 @@
 import data from "../data.json";
-
-export default function Sidebar() {
+type SidebarProps = {
+  onCompose: () => void;
+};
+export default function Sidebar({ onCompose }: SidebarProps) {
   return (
     <aside className="w-60 border-r border-gray-200 p-4">
-      <button className="bg-blue-100 hover:bg-blue-200 rounded-2xl px-6 py-3 mb-5 text-sm font-medium">
+      <button
+        className="bg-blue-100 hover:bg-blue-200 rounded-2xl px-6 py-3 mb-5 text-sm font-medium"
+        onClick={onCompose}
+      >
         ＋ Compose
       </button>
 

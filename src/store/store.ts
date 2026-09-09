@@ -1,2 +1,3 @@
 export { useSentEmailStore } from "./SentStore";
-export { useDraftEmailStore } from "./DraftEmail";
+export { useDraftEmailStore } from "./DraftStore";
+export { useInboxEmailStore } from "./InboxStore";
