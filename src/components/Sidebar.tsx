@@ -1,3 +1,9 @@
+import {
+  useInboxEmailStore,
+  useDraftEmailStore,
+  useSentEmailStore,
+} from "../store/store";
+
 import data from "../data.json";
 
 type SidebarProps = {
@@ -13,6 +19,18 @@ export default function Sidebar({
   onSent,
   onInbox,
 }: SidebarProps) {
+  const inboxEmails = useInboxEmailStore(
+    (state) => state.inboxEmails,
+  );
+
+  const draftEmails = useDraftEmailStore(
+    (state) => state.draftEmails,
+  );
+
+  const sentEmails = useSentEmailStore(
+    (state) => state.sentEmails,
+  );
+
   return (
     <aside className="w-60 border-r border-gray-200 p-4">
       <button
@@ -29,7 +47,7 @@ export default function Sidebar({
         >
           <span>📥</span>
           <span>Inbox</span>
-          <span className="ml-auto">{data.length}</span>
+          <span className="ml-auto">{inboxEmails.length}</span>
         </div>
 
         <div className="flex items-center gap-3 px-4 py-2.5 rounded-r-full hover:bg-gray-100 text-sm cursor-pointer">
@@ -48,6 +66,7 @@ export default function Sidebar({
         >
           <span>📤</span>
           <span>Sent</span>
+          <span className="ml-auto">{sentEmails.length}</span>
         </div>
 
         <div
@@ -56,6 +75,7 @@ export default function Sidebar({
         >
           <span>📝</span>
           <span>Drafts</span>
+          <span className="ml-auto">{draftEmails.length}</span>
         </div>
       </nav>
     </aside>

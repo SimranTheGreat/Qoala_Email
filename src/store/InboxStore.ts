@@ -5,6 +5,8 @@ import type { Email } from "../types";
 type InboxEmailStore = {
   inboxEmails: Email[];
   addInboxEmail: (email: Email) => void;
+  setInboxEmails: (emails: Email[]) => void;
+  deleteInboxEmail: (id: string) => void;
 };
 
 export const useInboxEmailStore = create<InboxEmailStore>()(
@@ -15,6 +17,18 @@ export const useInboxEmailStore = create<InboxEmailStore>()(
       addInboxEmail: (email) =>
         set((state) => ({
           inboxEmails: [...state.inboxEmails, email],
+        })),
+
+      setInboxEmails: (emails) =>
+        set({
+          inboxEmails: emails,
+        }),
+
+      deleteInboxEmail: (id) =>
+        set((state) => ({
+          inboxEmails: state.inboxEmails.filter(
+            (email) => email.id !== id,
+          ),
         })),
     }),
     {
