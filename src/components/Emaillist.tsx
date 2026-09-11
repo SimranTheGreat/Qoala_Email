@@ -1,14 +1,15 @@
-import data from "../data.json";
 import EmailRow from "./Emailrow";
+import type { Email } from "../types";
 
-export default function EmailList() {
+type EmailListProps = {
+  emails: Email[];
+};
+
+export default function EmailList({ emails }: EmailListProps) {
   return (
     <div>
-      {data.map((item) => (
-        <EmailRow
-          key={item.id}
-          item={item}
-        />
+      {emails.map((item) => (
+        <EmailRow key={item.id} item={item} />
       ))}
     </div>
   );

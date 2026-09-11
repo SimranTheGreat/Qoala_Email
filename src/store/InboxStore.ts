@@ -19,6 +19,6 @@ export const useInboxEmailStore = create<InboxEmailStore>()(
     }),
     {
       name: "inbox-emails",
-    }
-  )
+    },
+  ),
 );

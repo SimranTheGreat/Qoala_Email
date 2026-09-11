@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDraftEmailStore, useSentEmailStore } from "../store/store";
 import { EmailSchema } from "../types";
+
 type ComposeProps = {
   isOpen: boolean;
   onClose: () => void;
@@ -11,13 +12,9 @@ export default function ComposeScreen({ isOpen, onClose }: ComposeProps) {
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
 
-  const addSentEmail = useSentEmailStore(
-    (state) => state.addSentEmail
-  );
+  const addSentEmail = useSentEmailStore((state) => state.addSentEmail);
 
-  const addDraftEmail = useDraftEmailStore(
-    (state) => state.addDraftEmail
-  );
+  const addDraftEmail = useDraftEmailStore((state) => state.addDraftEmail);
 
   const resetForm = () => {
     setTo("");
@@ -91,11 +88,11 @@ export default function ComposeScreen({ isOpen, onClose }: ComposeProps) {
     }
 
     addSentEmail(result.data);
-
     resetForm();
   };
 
-  const handleClose = () => {
+  const saveDraft = () => {
+    // Nothing entered → just close
     if (!to.trim() && !subject.trim() && !body.trim()) {
       resetForm();
       return;
@@ -106,16 +103,13 @@ export default function ComposeScreen({ isOpen, onClose }: ComposeProps) {
     const draft = {
       id: `draft_${Date.now()}`,
       folder: "draft" as const,
-      received_at: new Date().toISOString(),
 
       sender: {
         name: "Support Team",
         email: "support@example.com",
       },
 
-      recipients: recipient.email
-        ? [recipient]
-        : [],
+      recipients: recipient.email ? [recipient] : [],
 
       subject: subject.trim(),
       channel: "email" as const,
@@ -133,25 +127,23 @@ export default function ComposeScreen({ isOpen, onClose }: ComposeProps) {
     }
 
     addDraftEmail(result.data);
-
     resetForm();
   };
 
+  const handleClose = () => {
+    saveDraft();
+  };
+
   const handleDiscard = () => {
-    resetForm();
+    saveDraft();
   };
 
   return (
     <>
-     
-
       {isOpen && (
         <div className="fixed bottom-0 right-8 z-50 w-[520px] overflow-hidden rounded-t-xl bg-white shadow-2xl ring-1 ring-gray-200">
-
           <div className="flex items-center justify-between bg-gray-100 px-4 py-3">
-            <h2 className="text-sm font-semibold text-gray-800">
-              New Message
-            </h2>
+            <h2 className="text-sm font-semibold text-gray-800">New Message</h2>
 
             <button
               onClick={handleClose}

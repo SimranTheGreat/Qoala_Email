@@ -1,7 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import type { Email } from "../types";
-
 type DraftEmailStore = {
   draftEmails: Email[];
   addDraftEmail: (email: Email) => void;
@@ -22,21 +21,17 @@ export const useDraftEmailStore = create<DraftEmailStore>()(
       updateDraftEmail: (id, updates) =>
         set((state) => ({
           draftEmails: state.draftEmails.map((email) =>
-            email.id === id
-              ? { ...email, ...updates }
-              : email
+            email.id === id ? { ...email, ...updates } : email,
           ),
         })),
 
       deleteDraftEmail: (id) =>
         set((state) => ({
-          draftEmails: state.draftEmails.filter(
-            (email) => email.id !== id
-          ),
+          draftEmails: state.draftEmails.filter((email) => email.id !== id),
         })),
     }),
     {
       name: "draft-emails",
-    }
-  )
+    },
+  ),
 );

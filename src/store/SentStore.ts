@@ -19,6 +19,6 @@ export const useSentEmailStore = create<SentEmailStore>()(
     }),
     {
       name: "sent-emails",
-    }
-  )
+    },
+  ),
 );

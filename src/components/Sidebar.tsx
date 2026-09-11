@@ -1,8 +1,18 @@
 import data from "../data.json";
+
 type SidebarProps = {
   onCompose: () => void;
+  onDrafts: () => void;
+  onSent: () => void;
+  onInbox: () => void;
 };
-export default function Sidebar({ onCompose }: SidebarProps) {
+
+export default function Sidebar({
+  onCompose,
+  onDrafts,
+  onSent,
+  onInbox,
+}: SidebarProps) {
   return (
     <aside className="w-60 border-r border-gray-200 p-4">
       <button
@@ -13,12 +23,13 @@ export default function Sidebar({ onCompose }: SidebarProps) {
       </button>
 
       <nav className="space-y-1">
-        <div className="flex items-center gap-3 px-4 py-2.5 rounded-r-full bg-blue-100 font-semibold text-sm">
+        <div
+          onClick={onInbox}
+          className="flex items-center gap-3 px-4 py-2.5 rounded-r-full bg-blue-100 font-semibold text-sm cursor-pointer"
+        >
           <span>📥</span>
           <span>Inbox</span>
-          <span className="ml-auto">
-            {data.length}
-          </span>
+          <span className="ml-auto">{data.length}</span>
         </div>
 
         <div className="flex items-center gap-3 px-4 py-2.5 rounded-r-full hover:bg-gray-100 text-sm cursor-pointer">
@@ -31,12 +42,18 @@ export default function Sidebar({ onCompose }: SidebarProps) {
           <span>Snoozed</span>
         </div>
 
-        <div className="flex items-center gap-3 px-4 py-2.5 rounded-r-full hover:bg-gray-100 text-sm cursor-pointer">
+        <div
+          onClick={onSent}
+          className="flex items-center gap-3 px-4 py-2.5 rounded-r-full hover:bg-gray-100 text-sm cursor-pointer"
+        >
           <span>📤</span>
           <span>Sent</span>
         </div>
 
-        <div className="flex items-center gap-3 px-4 py-2.5 rounded-r-full hover:bg-gray-100 text-sm cursor-pointer">
+        <div
+          onClick={onDrafts}
+          className="flex items-center gap-3 px-4 py-2.5 rounded-r-full hover:bg-gray-100 text-sm cursor-pointer"
+        >
           <span>📝</span>
           <span>Drafts</span>
         </div>

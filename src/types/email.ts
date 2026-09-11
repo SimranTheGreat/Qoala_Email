@@ -3,7 +3,7 @@ import { z } from "zod";
 export const EmailSchema = z.object({
   id: z.string(),
 
-  folder: z.enum(["inbox", "sent", "draft"]),
+  folder: z.enum(["inbox", "sent", "draft"]).optional(),
 
   received_at: z.string().optional(),
   sent_at: z.string().optional(),
@@ -13,16 +13,18 @@ export const EmailSchema = z.object({
     email: z.email(),
   }),
 
-  recipients: z.array(
-    z.object({
-      name: z.string(),
-      email: z.email(),
-    })
-  ),
+  recipients: z
+    .array(
+      z.object({
+        name: z.string(),
+        email: z.email(),
+      }),
+    )
+    .optional(),
 
   subject: z.string(),
 
-  channel: z.enum(["email", "chat"]),
+  channel: z.enum(["email", "chat", "phone"]),
 
   status: z.enum(["New", "In Progress", "Done", "Draft"]),
 

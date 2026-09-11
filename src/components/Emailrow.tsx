@@ -34,9 +34,7 @@ export default function EmailRow({ item }: EmailRowProps) {
       </div>
 
       <div className="flex-1 min-w-0 text-sm truncate">
-        <span className="font-semibold">
-          {item.subject}
-        </span>
+        <span className="font-semibold">{item.subject}</span>
 
         <span className="text-gray-500">
           {" — "}
@@ -49,16 +47,14 @@ export default function EmailRow({ item }: EmailRowProps) {
           item.status === "New"
             ? "bg-blue-100 text-blue-700"
             : item.status === "Closed"
-            ? "bg-green-100 text-green-700"
-            : "bg-yellow-100 text-yellow-700"
+              ? "bg-green-100 text-green-700"
+              : "bg-yellow-100 text-yellow-700"
         }`}
       >
         {item.status}
       </span>
 
-      <button className="hidden group-hover:block text-gray-500">
-        🗑
-      </button>
+      <button className="hidden group-hover:block text-gray-500">🗑</button>
     </div>
   );
 }
