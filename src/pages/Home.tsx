@@ -24,21 +24,13 @@ export default function Home() {
   const [statusFilter, setStatusFilter] = useState("");
   const [priorityFilter, setPriorityFilter] = useState("");
 
-  const inboxEmails = useInboxEmailStore(
-    (state) => state.inboxEmails,
-  );
+  const inboxEmails = useInboxEmailStore((state) => state.inboxEmails);
 
-  const setInboxEmails = useInboxEmailStore(
-    (state) => state.setInboxEmails,
-  );
+  const setInboxEmails = useInboxEmailStore((state) => state.setInboxEmails);
 
-  const draftEmails = useDraftEmailStore(
-    (state) => state.draftEmails,
-  );
+  const draftEmails = useDraftEmailStore((state) => state.draftEmails);
 
-  const sentEmails = useSentEmailStore(
-    (state) => state.sentEmails,
-  );
+  const sentEmails = useSentEmailStore((state) => state.sentEmails);
 
   // Load data.json into Zustand when the inbox is empty
   useEffect(() => {
@@ -63,21 +55,14 @@ export default function Home() {
   const filteredEmails = currentEmails.filter((email) => {
     const matchesSender =
       !senderFilter ||
-      email.sender.name
-        .toLowerCase()
-        .includes(senderFilter.toLowerCase());
+      email.sender.name.toLowerCase().includes(senderFilter.toLowerCase());
 
-    const matchesStatus =
-      !statusFilter || email.status === statusFilter;
+    const matchesStatus = !statusFilter || email.status === statusFilter;
 
     const matchesPriority =
       !priorityFilter || email.priority === priorityFilter;
 
-    return (
-      matchesSender &&
-      matchesStatus &&
-      matchesPriority
-    );
+    return matchesSender && matchesStatus && matchesPriority;
   });
 
   const clearFilters = () => {
@@ -119,33 +104,25 @@ export default function Home() {
                 type="text"
                 placeholder="Filter by sender"
                 value={senderFilter}
-                onChange={(e) =>
-                  setSenderFilter(e.target.value)
-                }
+                onChange={(e) => setSenderFilter(e.target.value)}
                 className="rounded-lg border px-3 py-2 text-sm outline-none"
               />
 
               <select
                 value={statusFilter}
-                onChange={(e) =>
-                  setStatusFilter(e.target.value)
-                }
+                onChange={(e) => setStatusFilter(e.target.value)}
                 className="rounded-lg border px-3 py-2 text-sm"
               >
                 <option value="">All Statuses</option>
                 <option value="New">New</option>
-                <option value="In Progress">
-                  In Progress
-                </option>
+                <option value="In Progress">In Progress</option>
                 <option value="Done">Done</option>
                 <option value="Draft">Draft</option>
               </select>
 
               <select
                 value={priorityFilter}
-                onChange={(e) =>
-                  setPriorityFilter(e.target.value)
-                }
+                onChange={(e) => setPriorityFilter(e.target.value)}
                 className="rounded-lg border px-3 py-2 text-sm"
               >
                 <option value="">All Priorities</option>
@@ -156,17 +133,11 @@ export default function Home() {
             </div>
           )}
 
-          {inboxOpen && (
-            <EmailList emails={filteredEmails} />
-          )}
+          {inboxOpen && <EmailList emails={filteredEmails} />}
 
-          {draftsOpen && (
-            <EmailList emails={filteredEmails} />
-          )}
+          {draftsOpen && <EmailList emails={filteredEmails} />}
 
-          {sentOpen && (
-            <EmailList emails={filteredEmails} />
-          )}
+          {sentOpen && <EmailList emails={filteredEmails} />}
         </main>
 
         <ComposeScreen

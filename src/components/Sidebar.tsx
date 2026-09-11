@@ -4,8 +4,6 @@ import {
   useSentEmailStore,
 } from "../store/store";
 
-import data from "../data.json";
-
 type SidebarProps = {
   onCompose: () => void;
   onDrafts: () => void;
@@ -19,17 +17,11 @@ export default function Sidebar({
   onSent,
   onInbox,
 }: SidebarProps) {
-  const inboxEmails = useInboxEmailStore(
-    (state) => state.inboxEmails,
-  );
+  const inboxEmails = useInboxEmailStore((state) => state.inboxEmails);
 
-  const draftEmails = useDraftEmailStore(
-    (state) => state.draftEmails,
-  );
+  const draftEmails = useDraftEmailStore((state) => state.draftEmails);
 
-  const sentEmails = useSentEmailStore(
-    (state) => state.sentEmails,
-  );
+  const sentEmails = useSentEmailStore((state) => state.sentEmails);
 
   return (
     <aside className="w-60 border-r border-gray-200 p-4">

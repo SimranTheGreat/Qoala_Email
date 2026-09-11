@@ -20,9 +20,7 @@ export const useSentEmailStore = create<SentEmailStore>()(
 
       deleteSentEmail: (id) =>
         set((state) => ({
-          sentEmails: state.sentEmails.filter(
-            (email) => email.id !== id,
-          ),
+          sentEmails: state.sentEmails.filter((email) => email.id !== id),
         })),
     }),
     {

@@ -26,9 +26,7 @@ export const useInboxEmailStore = create<InboxEmailStore>()(
 
       deleteInboxEmail: (id) =>
         set((state) => ({
-          inboxEmails: state.inboxEmails.filter(
-            (email) => email.id !== id,
-          ),
+          inboxEmails: state.inboxEmails.filter((email) => email.id !== id),
         })),
     }),
     {
