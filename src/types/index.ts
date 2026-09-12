@@ -1,2 +1,3 @@
-export { EmailSchema } from "./email";
-export type { Email } from "./email";
+
+export { EmailSchema, type Email } from "./email";
+export { AIResponseSchema, type AIResponse } from "./aiResponse";

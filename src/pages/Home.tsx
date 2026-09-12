@@ -133,7 +133,7 @@ export default function Home() {
             </div>
           )}
 
-          {inboxOpen && <EmailList emails={filteredEmails} />}
+          {inboxOpen && <EmailList emails={filteredEmails}  />}
 
           {draftsOpen && <EmailList emails={filteredEmails} />}
 

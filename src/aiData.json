@@ -1,0 +1,211 @@
+[
+  {
+    "emailId": "itm_001",
+    "summary": [
+      "Customer reports a higher renewal premium than the previous period.",
+      "Vehicle details are unchanged according to the customer.",
+      "Customer wants the premium calculation reviewed."
+    ],
+    "category": "Billing",
+    "suggestedAction": "Review the renewal calculation and confirm the correct premium.",
+    "draftReply": "Hi Nok, we’ll review the renewal premium calculation and confirm the correct amount. We’ll get back to you shortly."
+  },
+  {
+    "emailId": "itm_002",
+    "summary": [
+      "Customer is asking about a claim that has not yet been resolved.",
+      "They want an update on the current claim status."
+    ],
+    "category": "Claims",
+    "suggestedAction": "Check the claim status and provide the customer with an update.",
+    "draftReply": "Hi, we’re checking the current status of your claim and will provide you with an update shortly."
+  },
+  {
+    "emailId": "itm_003",
+    "summary": [
+      "Customer wants to change information on an existing policy.",
+      "The requested change requires an endorsement.",
+      "Customer is asking which documents are required."
+    ],
+    "category": "Endorsement",
+    "suggestedAction": "Confirm the endorsement requirements and required supporting documents.",
+    "draftReply": "Hi, we can help with the requested policy change. We’ll confirm the required documents and next steps for the endorsement."
+  },
+  {
+    "emailId": "itm_004",
+    "summary": [
+      "Customer is requesting general information about their policy.",
+      "No urgent issue or claim is mentioned."
+    ],
+    "category": "General",
+    "suggestedAction": "Review the policy details and provide the requested information.",
+    "draftReply": "Hi, thanks for contacting us. We’ll review your policy details and provide the information you requested."
+  },
+  {
+    "emailId": "itm_005",
+    "summary": [
+      "Customer reports an issue requiring immediate attention.",
+      "The message indicates a potentially time-sensitive situation.",
+      "Customer is requesting urgent assistance."
+    ],
+    "category": "Urgent",
+    "suggestedAction": "Prioritize the request and contact the customer as soon as possible.",
+    "draftReply": "Hi, we’ve received your request and are treating it as a priority. Our team will review it and assist you as soon as possible."
+  },
+  {
+    "emailId": "itm_006",
+    "summary": [
+      "Message contains promotional or suspicious content unrelated to customer support.",
+      "The sender is requesting engagement with an external offer."
+    ],
+    "category": "Spam",
+    "suggestedAction": "Do not respond and classify the message as spam.",
+    "draftReply": ""
+  },
+  {
+    "emailId": "itm_007",
+    "summary": [
+      "Customer is asking why a payment was charged to their account.",
+      "They want confirmation of the transaction details."
+    ],
+    "category": "Billing",
+    "suggestedAction": "Verify the payment transaction and explain the charge.",
+    "draftReply": "Hi, we’ll verify the transaction associated with your account and clarify the charge for you."
+  },
+  {
+    "emailId": "itm_008",
+    "summary": [
+      "Customer submitted information related to a recent claim.",
+      "They are waiting for confirmation that the documents were received.",
+      "No additional issue is reported."
+    ],
+    "category": "Claims",
+    "suggestedAction": "Verify document receipt and confirm whether anything else is required.",
+    "draftReply": "Hi, we’ll confirm receipt of your claim documents and let you know if any additional information is required."
+  },
+  {
+    "emailId": "itm_009",
+    "summary": [
+      "Customer wants to update their vehicle information.",
+      "The change appears to require a policy endorsement."
+    ],
+    "category": "Endorsement",
+    "suggestedAction": "Process or review the requested vehicle endorsement.",
+    "draftReply": "Hi, we can assist with updating your vehicle information. We’ll review the endorsement request and confirm the next steps."
+  },
+  {
+    "emailId": "itm_010",
+    "summary": [
+      "Customer is asking about available policy coverage.",
+      "They have not reported a claim or billing issue."
+    ],
+    "category": "General",
+    "suggestedAction": "Provide the customer with the relevant coverage information.",
+    "draftReply": "Hi, thanks for reaching out. We’ll provide the relevant coverage details and answer any questions you have."
+  },
+  {
+    "emailId": "itm_011",
+    "summary": [
+      "Customer reports a problem that may affect their immediate coverage.",
+      "They are requesting assistance without delay."
+    ],
+    "category": "Urgent",
+    "suggestedAction": "Escalate the request for immediate review.",
+    "draftReply": "Hi, we understand this requires immediate attention. We’ve prioritized your request and will review it as soon as possible."
+  },
+  {
+    "emailId": "itm_012",
+    "summary": [
+      "Message appears to be an unsolicited promotional offer.",
+      "The content does not relate to an insurance support request."
+    ],
+    "category": "Spam",
+    "suggestedAction": "Mark the message as spam and do not respond.",
+    "draftReply": ""
+  },
+  {
+    "emailId": "itm_013",
+    "summary": [
+      "Customer disputes the amount shown on their invoice.",
+      "They are asking for the billing calculation to be checked.",
+      "The request concerns a policy-related charge."
+    ],
+    "category": "Billing",
+    "suggestedAction": "Review the invoice and reconcile the disputed amount.",
+    "draftReply": "Hi, we’ll review the invoice and billing calculation to verify the amount charged. We’ll update you once this has been checked."
+  },
+  {
+    "emailId": "itm_014",
+    "summary": [
+      "Customer is following up on an existing insurance claim.",
+      "They have not received the expected update.",
+      "They are requesting information about the next step."
+    ],
+    "category": "Claims",
+    "suggestedAction": "Review the claim record and provide the latest status and next step.",
+    "draftReply": "Hi, we’ll check your claim record and provide the latest status along with the next steps."
+  },
+  {
+    "emailId": "itm_015",
+    "summary": [
+      "Customer requests a change to their policy details.",
+      "The requested modification needs to be recorded against the existing policy."
+    ],
+    "category": "Endorsement",
+    "suggestedAction": "Review the requested policy change and initiate the endorsement process.",
+    "draftReply": "Hi, we’ll review the requested policy change and confirm the endorsement process and any documents required."
+  },
+  {
+    "emailId": "itm_016",
+    "summary": [
+      "Customer is asking how a policy feature works.",
+      "The message does not indicate an urgent problem."
+    ],
+    "category": "General",
+    "suggestedAction": "Answer the customer's question using the applicable policy information.",
+    "draftReply": "Hi, thanks for your question. We’ll review the applicable policy information and provide you with the relevant details."
+  },
+  {
+    "emailId": "itm_017",
+    "summary": [
+      "Customer requests an endorsement to change their vehicle plate.",
+      "Both the old and new plate numbers have been provided.",
+      "Customer is asking which documents are needed."
+    ],
+    "category": "Endorsement",
+    "suggestedAction": "Confirm the required documents and process the plate-change endorsement.",
+    "draftReply": "Hi Somchai, we can assist with the vehicle plate change. We’ll confirm the required documents and the next steps for the endorsement."
+  },
+  {
+    "emailId": "itm_018",
+    "summary": [
+      "Customer reports a serious issue requiring immediate assistance.",
+      "The request may have implications for active policy coverage.",
+      "Customer expects a prompt response."
+    ],
+    "category": "Urgent",
+    "suggestedAction": "Escalate the request and provide an immediate response.",
+    "draftReply": "Hi, we’ve received your request and have prioritized it for immediate review. Our team will assist you as soon as possible."
+  },
+  {
+    "emailId": "itm_019",
+    "summary": [
+      "Customer received a message requesting payment through an unusual channel.",
+      "The content appears suspicious and unrelated to a normal support workflow."
+    ],
+    "category": "Spam",
+    "suggestedAction": "Flag the message as spam and avoid interacting with the external request.",
+    "draftReply": ""
+  },
+  {
+    "emailId": "itm_020",
+    "summary": [
+      "Customer has questions involving both their premium and policy coverage.",
+      "The primary concern appears to be understanding the amount being charged.",
+      "Further review of the policy and billing information is required."
+    ],
+    "category": "Billing",
+    "suggestedAction": "Review the policy and billing details before responding to the customer.",
+    "draftReply": "Hi, we’ll review both your policy and billing details to clarify the premium and coverage information. We’ll get back to you with the details."
+  }
+]
