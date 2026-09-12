@@ -1,17 +1,12 @@
 import { useEffect, useState } from "react";
 import data from "../data.json";
-import {
-  Header,
-  Sidebar,
-  Toolbar,
-  EmailList,
-  ComposeScreen,
-} from "../components";
+import { Sidebar, Toolbar, EmailList, ComposeScreen } from "../components";
 import { EmailSchema } from "../types";
 import {
   useSentEmailStore,
   useDraftEmailStore,
   useInboxEmailStore,
+  useStarredEmailStore,
 } from "../store/store";
 
 export default function Home() {
@@ -19,20 +14,16 @@ export default function Home() {
   const [draftsOpen, setDraftsOpen] = useState(false);
   const [sentOpen, setSentOpen] = useState(false);
   const [inboxOpen, setInboxOpen] = useState(true);
-
+  const [starredOpen, setStarredOpen] = useState(false);
   const [senderFilter, setSenderFilter] = useState("");
   const [statusFilter, setStatusFilter] = useState("");
   const [priorityFilter, setPriorityFilter] = useState("");
-
   const inboxEmails = useInboxEmailStore((state) => state.inboxEmails);
-
   const setInboxEmails = useInboxEmailStore((state) => state.setInboxEmails);
-
   const draftEmails = useDraftEmailStore((state) => state.draftEmails);
-
   const sentEmails = useSentEmailStore((state) => state.sentEmails);
+  const starredEmails = useStarredEmailStore((state) => state.starredEmails);
 
-  // Load data.json into Zustand when the inbox is empty
   useEffect(() => {
     if (inboxEmails.length === 0) {
       const parsedEmails = data.map((email) =>
@@ -73,8 +64,6 @@ export default function Home() {
 
   return (
     <div className="h-screen bg-white text-gray-800">
-      <Header onRefresh={clearFilters} />
-
       <div className="flex h-[calc(100vh-64px)]">
         <Sidebar
           onCompose={() => setComposeOpen(true)}
@@ -90,6 +79,12 @@ export default function Home() {
           }}
           onInbox={() => {
             setInboxOpen(true);
+            setDraftsOpen(false);
+            setSentOpen(false);
+          }}
+          onStarred={() => {
+            setStarredOpen(true);
+            setInboxOpen(false);
             setDraftsOpen(false);
             setSentOpen(false);
           }}
@@ -130,6 +125,13 @@ export default function Home() {
                 <option value="P2">P2</option>
                 <option value="P3">P3</option>
               </select>
+
+              <button
+                onClick={clearFilters}
+                className="rounded-lg bg-gray-200 px-3 py-2 text-sm hover:bg-gray-300"
+              >
+                Clear Filters
+              </button>
             </div>
           )}
 
@@ -138,6 +140,8 @@ export default function Home() {
           {draftsOpen && <EmailList emails={filteredEmails} />}
 
           {sentOpen && <EmailList emails={filteredEmails} />}
+
+          {starredOpen && <EmailList emails={starredEmails} />}
         </main>
 
         <ComposeScreen

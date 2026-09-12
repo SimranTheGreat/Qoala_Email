@@ -2,6 +2,7 @@ import {
   useInboxEmailStore,
   useDraftEmailStore,
   useSentEmailStore,
+  useStarredEmailStore,
 } from "../store/store";
 
 type SidebarProps = {
@@ -9,6 +10,7 @@ type SidebarProps = {
   onDrafts: () => void;
   onSent: () => void;
   onInbox: () => void;
+  onStarred: () => void;
 };
 
 export default function Sidebar({
@@ -16,12 +18,15 @@ export default function Sidebar({
   onDrafts,
   onSent,
   onInbox,
+  onStarred,
 }: SidebarProps) {
   const inboxEmails = useInboxEmailStore((state) => state.inboxEmails);
 
   const draftEmails = useDraftEmailStore((state) => state.draftEmails);
 
   const sentEmails = useSentEmailStore((state) => state.sentEmails);
+
+  const starredEmails = useStarredEmailStore((state) => state.starredEmails);
 
   return (
     <aside className="w-60 border-r border-gray-200 p-4">
@@ -42,14 +47,13 @@ export default function Sidebar({
           <span className="ml-auto">{inboxEmails.length}</span>
         </div>
 
-        <div className="flex items-center gap-3 px-4 py-2.5 rounded-r-full hover:bg-gray-100 text-sm cursor-pointer">
+        <div
+          onClick={onStarred}
+          className="flex items-center gap-3 px-4 py-2.5 rounded-r-full hover:bg-gray-100 text-sm cursor-pointer"
+        >
           <span>⭐</span>
           <span>Starred</span>
-        </div>
-
-        <div className="flex items-center gap-3 px-4 py-2.5 rounded-r-full hover:bg-gray-100 text-sm cursor-pointer">
-          <span>🕐</span>
-          <span>Snoozed</span>
+          <span className="ml-auto">{starredEmails.length}</span>
         </div>
 
         <div

@@ -7,6 +7,7 @@ type InboxEmailStore = {
   addInboxEmail: (email: Email) => void;
   setInboxEmails: (emails: Email[]) => void;
   deleteInboxEmail: (id: string) => void;
+  updateInboxEmail: (id: string, updates: Partial<Email>) => void;
 };
 
 export const useInboxEmailStore = create<InboxEmailStore>()(
@@ -27,6 +28,13 @@ export const useInboxEmailStore = create<InboxEmailStore>()(
       deleteInboxEmail: (id) =>
         set((state) => ({
           inboxEmails: state.inboxEmails.filter((email) => email.id !== id),
+        })),
+
+      updateInboxEmail: (id, updates) =>
+        set((state) => ({
+          inboxEmails: state.inboxEmails.map((email) =>
+            email.id === id ? { ...email, ...updates } : email,
+          ),
         })),
     }),
     {

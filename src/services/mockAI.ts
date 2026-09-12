@@ -1,13 +1,7 @@
 import aiResponses from "../aiData.json";
-import {
-  AIResponseSchema,
-  type AIResponse,
-} from "../types";
+import { AIResponseSchema, type AIResponse } from "../types";
 
-const delay = (
-  ms: number,
-  signal?: AbortSignal,
-) =>
+const delay = (ms: number, signal?: AbortSignal) =>
   new Promise<void>((resolve, reject) => {
     const timer = setTimeout(resolve, ms);
 
@@ -15,12 +9,7 @@ const delay = (
       "abort",
       () => {
         clearTimeout(timer);
-        reject(
-          new DOMException(
-            "Request aborted",
-            "AbortError",
-          ),
-        );
+        reject(new DOMException("Request aborted", "AbortError"));
       },
       { once: true },
     );
@@ -34,37 +23,26 @@ export async function generateAIResponse(
   raw?: unknown;
   error?: string;
 }> {
-  const latency =
-    Math.floor(Math.random() * 1001) + 200;
+  const latency = Math.floor(Math.random() * 1001) + 200;
 
   await delay(latency, signal);
 
   if (signal?.aborted) {
-    throw new DOMException(
-      "Request aborted",
-      "AbortError",
-    );
+    throw new DOMException("Request aborted", "AbortError");
   }
 
-  const mockResponse = aiResponses.find(
-    (item) => item.emailId === emailId,
-  );
+  const mockResponse = aiResponses.find((item) => item.emailId === emailId);
 
   if (!mockResponse) {
     return {
-      error:
-        "No mock AI response found for this email.",
+      error: "No mock AI response found for this email.",
     };
   }
 
   const shouldFail =
-    emailId
-      .split("")
-      .reduce(
-        (sum, char) =>
-          sum + char.charCodeAt(0),
-        0,
-      ) % 10 === 0;
+    emailId.split("").reduce((sum, char) => sum + char.charCodeAt(0), 0) %
+      10 ===
+    0;
 
   if (shouldFail) {
     const invalidResponse = {
@@ -72,10 +50,7 @@ export async function generateAIResponse(
       category: "InvalidCategory",
     };
 
-    const result =
-      AIResponseSchema.safeParse(
-        invalidResponse,
-      );
+    const result = AIResponseSchema.safeParse(invalidResponse);
 
     return {
       raw: invalidResponse,
@@ -85,16 +60,12 @@ export async function generateAIResponse(
     };
   }
 
-  const result =
-    AIResponseSchema.safeParse(
-      mockResponse,
-    );
+  const result = AIResponseSchema.safeParse(mockResponse);
 
   if (!result.success) {
     return {
       raw: mockResponse,
-      error:
-        "AI response failed schema validation.",
+      error: "AI response failed schema validation.",
     };
   }
 
