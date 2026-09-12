@@ -18,9 +18,7 @@ export default function EmailRow({ item }: EmailRowProps) {
     (state) => state.deleteInboxEmail,
   );
 
-  const deleteSentEmail = useSentEmailStore(
-    (state) => state.deleteSentEmail,
-  );
+  const deleteSentEmail = useSentEmailStore((state) => state.deleteSentEmail);
 
   const deleteDraftEmail = useDraftEmailStore(
     (state) => state.deleteDraftEmail,

@@ -1,12 +1,9 @@
 import aiResponses from "../aiData.json";
 import { AIResponseSchema, type AIResponse } from "../types";
 
-const delay = (ms: number) =>
-  new Promise((resolve) => setTimeout(resolve, ms));
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-export async function generateAIResponse(
-  emailId: string,
-): Promise<{
+export async function generateAIResponse(emailId: string): Promise<{
   response?: AIResponse;
   raw?: unknown;
   error?: string;
@@ -15,9 +12,7 @@ export async function generateAIResponse(
 
   await delay(latency);
 
-  const mockResponse = aiResponses.find(
-    (item) => item.emailId === emailId,
-  );
+  const mockResponse = aiResponses.find((item) => item.emailId === emailId);
 
   if (!mockResponse) {
     return {
