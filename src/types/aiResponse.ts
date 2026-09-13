@@ -12,11 +12,7 @@ export const AIResponseSchema = z.object({
     "Spam",
   ]),
 
-  priority: z.enum([
-    "P1",
-    "P2",
-    "P3",
-  ]),
+  priority: z.enum(["P1", "P2", "P3"]),
 
   suggested_action: z.string(),
 
