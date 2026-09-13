@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import EmailRow from "./Emailrow";
 import type { Email } from "../types";
 import {
@@ -13,6 +13,7 @@ type EmailListProps = {
 
 export default function EmailList({ emails }: EmailListProps) {
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const updateInboxEmail = useInboxEmailStore(
     (state) => state.updateInboxEmail,
@@ -72,6 +73,70 @@ export default function EmailList({ emails }: EmailListProps) {
     setSelectedIds([]);
   };
 
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (
+        event.target instanceof HTMLInputElement ||
+        event.target instanceof HTMLTextAreaElement ||
+        event.target instanceof HTMLSelectElement
+      ) {
+        return;
+      }
+
+      if (emails.length === 0) return;
+
+      if (event.key.toLowerCase() === "j") {
+        event.preventDefault();
+
+        setActiveIndex((current) =>
+          current < emails.length - 1 ? current + 1 : current,
+        );
+      }
+
+      if (event.key.toLowerCase() === "k") {
+        event.preventDefault();
+
+        setActiveIndex((current) => (current > 0 ? current - 1 : current));
+      }
+
+      const activeEmail = emails[activeIndex];
+
+      if (!activeEmail) return;
+
+      if (event.key.toLowerCase() === "x") {
+        event.preventDefault();
+        toggleSelect(activeEmail.id);
+      }
+
+      if (event.key.toLowerCase() === "d") {
+        event.preventDefault();
+
+        if (activeEmail.folder === "inbox") {
+          updateInboxEmail(activeEmail.id, {
+            status: "Done",
+          });
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [emails, activeIndex, updateInboxEmail]);
+
+  useEffect(() => {
+    if (emails.length === 0) {
+      setActiveIndex(0);
+      return;
+    }
+
+    if (activeIndex >= emails.length) {
+      setActiveIndex(emails.length - 1);
+    }
+  }, [emails.length, activeIndex]);
+
   return (
     <div>
       {/* Bulk toolbar */}
@@ -83,6 +148,10 @@ export default function EmailList({ emails }: EmailListProps) {
           className="h-4 w-4"
           aria-label="Select all emails"
         />
+
+        <span className="text-xs text-gray-500">
+          J/K Navigate · X Select · D Done
+        </span>
 
         {selectedIds.length > 0 && (
           <>
@@ -108,13 +177,20 @@ export default function EmailList({ emails }: EmailListProps) {
       </div>
 
       {/* Email rows */}
-      {emails.map((item) => (
-        <EmailRow
+      {emails.map((item, index) => (
+        <div
           key={item.id}
-          item={item}
-          selected={selectedIds.includes(item.id)}
-          onSelect={toggleSelect}
-        />
+          className={
+            index === activeIndex ? "border-l-4 border-blue-500 bg-blue-50" : ""
+          }
+          onMouseEnter={() => setActiveIndex(index)}
+        >
+          <EmailRow
+            item={item}
+            selected={selectedIds.includes(item.id)}
+            onSelect={toggleSelect}
+          />
+        </div>
       ))}
     </div>
   );

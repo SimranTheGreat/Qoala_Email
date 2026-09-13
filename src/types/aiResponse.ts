@@ -1,9 +1,7 @@
 import { z } from "zod";
 
 export const AIResponseSchema = z.object({
-  emailId: z.string(),
-
-  summary: z.array(z.string()).min(2).max(4),
+  summary_bullets: z.array(z.string()).min(2).max(4),
 
   category: z.enum([
     "Billing",
@@ -14,9 +12,17 @@ export const AIResponseSchema = z.object({
     "Spam",
   ]),
 
-  suggestedAction: z.string(),
+  priority: z.enum([
+    "P1",
+    "P2",
+    "P3",
+  ]),
 
-  draftReply: z.string(),
+  suggested_action: z.string(),
+
+  draft_reply: z.string(),
+
+  confidence: z.number().min(0).max(1),
 });
 
 export type AIResponse = z.infer<typeof AIResponseSchema>;

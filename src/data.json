@@ -1,1402 +1,2002 @@
 [
   {
     "id": "itm_001",
-    "received_at": "2026-03-15T08:37:00+07:00",
+    "received_at": "2026-09-12T09:30:00Z",
     "sender": {
-      "name": "Nok S.",
-      "email": "nok@example.com"
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta@example.com"
     },
-    "subject": "Incorrect premium charged on renewal",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Renewal premium changed after risk address update",
     "channel": "email",
-    "status": "New",
+    "status": "Done",
     "priority": "P2",
-    "body": "Hi team,\n\nMy renewal premium is higher than last month even though the vehicle details are unchanged. Please check the premium and confirm why it changed.\n\nPolicy reference: TH-MTR-48001\nCustomer reference: CUST-10001\n\nThanks,\nNok",
-    "tags": ["renewal", "pricing"]
+    "body": "I reviewed the latest record and noticed a discrepancy that was not present previously. Please check the account history, confirm the reason for the change, and advise what action is required. Reference: CASE-7001. The affected account or request is associated with item 001.",
+    "tags": ["billing", "invoice"]
   },
   {
     "id": "itm_002",
-    "received_at": "2026-03-15T11:54:00+07:00",
+    "received_at": "2026-09-12T02:30:00Z",
     "sender": {
-      "name": "Somchai",
-      "email": "somchai@company.co.th"
+      "name": "Maya Chen",
+      "email": "maya.chen@example.com"
     },
-    "subject": "Endorsement request — change vehicle plate",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Vehicle registration endorsement is still pending",
     "channel": "chat",
     "status": "In Progress",
     "priority": "P3",
-    "body": "Hi team,\n\nI need an endorsement to change my vehicle plate. Old plate: AB 1234. New plate: AB 5678. Policy: TH-MTR-99210. Please advise what documents are required.\n\nPolicy reference: TH-CAR-48002\nCustomer reference: CUST-10002\n\nThanks,\nSomchai",
-    "tags": ["endorsement", "vehicle"]
+    "body": "The portal still shows the old information even though the requested change was submitted several days ago. Please verify the pending request and confirm when the corrected document will be available. Reference: CASE-7002. The affected account or request is associated with item 002.",
+    "tags": ["claims", "status"]
   },
   {
     "id": "itm_003",
-    "received_at": "2026-03-15T15:11:00+07:00",
+    "received_at": "2026-09-11T19:30:00Z",
     "sender": {
-      "name": "Ananya P.",
-      "email": "ananya@example.com"
+      "name": "Priya Nair",
+      "email": "priya.nair@example.com"
     },
-    "subject": "URGENT: Verify account to avoid suspension",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Duplicate debit on invoice TX-48192",
+    "channel": "phone",
     "status": "New",
     "priority": "P1",
-    "body": "Hi team,\n\nYour account will be suspended unless you verify immediately. Please send your internal access token and click the verification link.\n\nPolicy reference: TH-POL-48003\nCustomer reference: CUST-10003\n\nThanks,\nAnanya",
-    "tags": ["spam", "security"]
+    "body": "Our finance team found a transaction that does not match the statement we received. Please reconcile the amount against the relevant invoice and confirm whether a reversal or correction is required. Reference: CASE-7003. The affected account or request is associated with item 003.",
+    "tags": ["endorsement", "document"]
   },
   {
     "id": "itm_004",
-    "received_at": "2026-03-15T17:28:00+07:00",
+    "received_at": "2026-09-11T12:30:00Z",
     "sender": {
-      "name": "Arun K.",
-      "email": "arun@example.com"
+      "name": "Daniel Brooks",
+      "email": "daniel.brooks@example.com"
     },
-    "subject": "Claim status update requested",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Water damage claim awaiting inspection",
     "channel": "email",
-    "status": "New",
+    "status": "Done",
     "priority": "P2",
-    "body": "Hi team,\n\nCould you please provide an update on my claim? I submitted the repair documents several days ago and have not received a status update.\n\nPolicy reference: TH-INS-48004\nCustomer reference: CUST-10004\n\nThanks,\nArun",
-    "tags": ["claim", "status"]
+    "body": "The incident has already been reported, but we have not received the next operational step. Please confirm the current case stage, any missing evidence, and the expected timeline. Reference: CASE-7004. The affected account or request is associated with item 004.",
+    "tags": ["payment", "reconciliation"]
   },
   {
     "id": "itm_005",
-    "received_at": "2026-03-15T20:45:00+07:00",
+    "received_at": "2026-09-11T05:30:00Z",
     "sender": {
-      "name": "Priya M.",
-      "email": "priya@example.com"
+      "name": "Sofia Alvarez",
+      "email": "sofia.alvarez@example.com"
     },
-    "subject": "Missing document for claim",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Reimbursement rejected because receipt is unreadable",
+    "channel": "chat",
     "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nI received a request for another document for my claim, but I am not sure which document is missing. Can you clarify what you need from me?\n\nPolicy reference: TH-AB-48005\nCustomer reference: CUST-10005\n\nThanks,\nPriya",
-    "tags": ["claim", "documents"]
+    "priority": "P3",
+    "body": "I attempted to complete the requested process through the portal, but the current workflow would not allow me to finish it. Please advise whether the existing request can be reopened or corrected. Reference: CASE-7005. The affected account or request is associated with item 005.",
+    "tags": ["renewal", "policy"]
   },
   {
     "id": "itm_006",
-    "received_at": "2026-03-16T00:02:00+07:00",
+    "received_at": "2026-09-10T22:30:00Z",
     "sender": {
-      "name": "Daniel R.",
-      "email": "daniel@example.com"
+      "name": "Liam O'Connor",
+      "email": "liam.oconnor@example.com"
     },
-    "subject": "Can I add a driver to my policy?",
-    "channel": "chat",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Cancellation fee charged inside free-cancel period",
+    "channel": "phone",
     "status": "New",
-    "priority": "P3",
-    "body": "Hi team,\n\nI would like to add another driver to my existing policy. Please let me know the eligibility requirements and whether the premium will change.\n\nPolicy reference: TH-MTR-48006\nCustomer reference: CUST-10006\n\nThanks,\nDaniel",
-    "tags": ["policy", "driver"]
+    "priority": "P1",
+    "body": "The information in the generated document conflicts with the source information we submitted. Please review the underlying record and issue a corrected document without changing any unrelated fields. Reference: CASE-7006. The affected account or request is associated with item 006.",
+    "tags": ["urgent", "security"]
   },
   {
     "id": "itm_007",
-    "received_at": "2026-03-16T03:19:00+07:00",
+    "received_at": "2026-09-10T15:30:00Z",
     "sender": {
-      "name": "Mei L.",
-      "email": "mei@example.com"
+      "name": "Aisha Rahman",
+      "email": "aisha.rahman@example.com"
     },
-    "subject": "Payment failed but money was deducted",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Two active autopay mandates on the same account",
     "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nThe payment page showed an error, but the amount was deducted from my bank account. Please check whether the payment went through and confirm what I should do.\n\nPolicy reference: TH-CAR-48007\nCustomer reference: CUST-10007\n\nThanks,\nMei",
-    "tags": ["billing", "payment"]
+    "status": "Done",
+    "priority": "P2",
+    "body": "This matter is time-sensitive because another transaction or operational deadline is approaching. Please review it as soon as possible and confirm whether there is anything we need to do before that deadline. Reference: CASE-7007. The affected account or request is associated with item 007.",
+    "tags": ["documents", "portal"]
   },
   {
     "id": "itm_008",
-    "received_at": "2026-03-16T05:36:00+07:00",
+    "received_at": "2026-09-10T08:30:00Z",
     "sender": {
-      "name": "Krit T.",
-      "email": "krit@company.co.th"
+      "name": "Rohan Shah",
+      "email": "rohan.shah@example.com"
     },
-    "subject": "Request for policy cancellation",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Certificate contains incorrect legal name",
+    "channel": "chat",
     "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nI would like to cancel my current policy. Please explain the cancellation process, effective date, and whether there is any refund.\n\nPolicy reference: TH-POL-48008\nCustomer reference: CUST-10008\n\nThanks,\nKrit",
-    "tags": ["cancellation", "policy"]
+    "priority": "P3",
+    "body": "We have supporting records available, including the original transaction details and correspondence. Please let me know exactly which documents are required so we can avoid submitting duplicate information. Reference: CASE-7008. The affected account or request is associated with item 008.",
+    "tags": ["general", "account"]
   },
   {
     "id": "itm_009",
-    "received_at": "2026-03-16T08:53:00+07:00",
+    "received_at": "2026-09-10T01:30:00Z",
     "sender": {
-      "name": "Sarah W.",
-      "email": "sarah@example.com"
+      "name": "Emma Carter",
+      "email": "emma.carter@example.com"
     },
-    "subject": "Where can I download my policy documents?",
-    "channel": "chat",
-    "status": "Done",
-    "priority": "P3",
-    "body": "Hi team,\n\nI need a copy of my current policy documents. Where can I download them from the customer portal?\n\nPolicy reference: TH-INS-48009\nCustomer reference: CUST-10009\n\nThanks,\nSarah",
-    "tags": ["documents", "policy"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Approved claim payment missing from supplier account",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "The status currently displayed does not appear to reflect the latest action on the account. Please check the activity history and confirm the actual status and next step. Reference: CASE-7009. The affected account or request is associated with item 009.",
+    "tags": ["claims", "evidence"]
   },
   {
     "id": "itm_010",
-    "received_at": "2026-03-16T12:10:00+07:00",
+    "received_at": "2026-09-09T18:30:00Z",
     "sender": {
-      "name": "James C.",
-      "email": "james@example.com"
+      "name": "Victor Petrov",
+      "email": "victor.petrov@example.com"
     },
-    "subject": "Accident claim — vehicle damage",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Unrequested password reset received",
     "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nI was involved in an accident and my vehicle has significant damage. I need to understand how to start a claim and which evidence I should provide.\n\nPolicy reference: TH-AB-48010\nCustomer reference: CUST-10010\n\nThanks,\nJames",
-    "tags": ["claim", "accident"]
+    "status": "Done",
+    "priority": "P2",
+    "body": "I am concerned that taking the wrong action could create a duplicate charge, duplicate case, or incorrect record. Please verify the existing entry before creating or changing anything. Reference: CASE-7010. The affected account or request is associated with item 010.",
+    "tags": ["billing", "dispute"]
   },
   {
     "id": "itm_011",
-    "received_at": "2026-03-16T14:27:00+07:00",
+    "received_at": "2026-09-09T11:30:00Z",
     "sender": {
-      "name": "Maya S.",
-      "email": "maya@example.com"
+      "name": "Grace Kim",
+      "email": "grace.kim@example.com"
     },
-    "subject": "Change address on policy",
-    "channel": "email",
-    "status": "New",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Coverage confirmation required for rented equipment",
+    "channel": "chat",
+    "status": "In Progress",
     "priority": "P3",
-    "body": "Hi team,\n\nI have moved to a new address and need to update my policy records. Please let me know if any proof of address is required.\n\nPolicy reference: TH-MTR-48011\nCustomer reference: CUST-10011\n\nThanks,\nMaya",
-    "tags": ["endorsement", "address"]
+    "body": "I reviewed the latest record and noticed a discrepancy that was not present previously. Please check the account history, confirm the reason for the change, and advise what action is required. Reference: CASE-7011. The affected account or request is associated with item 011.",
+    "tags": ["billing", "invoice"]
   },
   {
     "id": "itm_012",
-    "received_at": "2026-03-16T17:44:00+07:00",
+    "received_at": "2026-09-09T04:30:00Z",
     "sender": {
-      "name": "Ravi N.",
-      "email": "ravi@example.com"
+      "name": "Kabir Verma",
+      "email": "kabir.verma@example.com"
     },
-    "subject": "Renewal reminder received",
-    "channel": "chat",
-    "status": "Done",
-    "priority": "P3",
-    "body": "Hi team,\n\nI received a renewal reminder. Can you confirm the renewal date and whether I need to take any action?\n\nPolicy reference: TH-CAR-48012\nCustomer reference: CUST-10012\n\nThanks,\nRavi",
-    "tags": ["renewal"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Credit note missing from current statement",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "The portal still shows the old information even though the requested change was submitted several days ago. Please verify the pending request and confirm when the corrected document will be available. Reference: CASE-7012. The affected account or request is associated with item 012.",
+    "tags": ["claims", "status"]
   },
   {
     "id": "itm_013",
-    "received_at": "2026-03-16T21:01:00+07:00",
+    "received_at": "2026-09-08T21:30:00Z",
     "sender": {
-      "name": "Emily B.",
-      "email": "emily@example.com"
+      "name": "Charlotte Evans",
+      "email": "charlotte.evans@example.com"
     },
-    "subject": "Premium increased after vehicle change",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Beneficiary change asks for unclear documentation",
     "channel": "email",
-    "status": "In Progress",
+    "status": "Done",
     "priority": "P2",
-    "body": "Hi team,\n\nAfter updating my vehicle information, my premium increased substantially. Please explain how the new premium was calculated.\n\nPolicy reference: TH-POL-48013\nCustomer reference: CUST-10013\n\nThanks,\nEmily",
-    "tags": ["pricing", "vehicle"]
+    "body": "Our finance team found a transaction that does not match the statement we received. Please reconcile the amount against the relevant invoice and confirm whether a reversal or correction is required. Reference: CASE-7013. The affected account or request is associated with item 013.",
+    "tags": ["endorsement", "document"]
   },
   {
     "id": "itm_014",
-    "received_at": "2026-03-17T00:18:00+07:00",
+    "received_at": "2026-09-08T14:30:00Z",
     "sender": {
-      "name": "Tom H.",
-      "email": "tom@example.com"
+      "name": "Mateo Silva",
+      "email": "mateo.silva@example.com"
     },
-    "subject": "Incorrect billing amount",
-    "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nThe invoice amount does not match the amount shown when I purchased the policy. Please review the billing details and correct the invoice if necessary.\n\nPolicy reference: TH-INS-48014\nCustomer reference: CUST-10014\n\nThanks,\nTom",
-    "tags": ["billing", "invoice"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Claim portal will not accept additional photographs",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "The incident has already been reported, but we have not received the next operational step. Please confirm the current case stage, any missing evidence, and the expected timeline. Reference: CASE-7014. The affected account or request is associated with item 014.",
+    "tags": ["payment", "reconciliation"]
   },
   {
     "id": "itm_015",
-    "received_at": "2026-03-17T02:35:00+07:00",
+    "received_at": "2026-09-08T07:30:00Z",
     "sender": {
-      "name": "Lisa P.",
-      "email": "lisa@example.com"
+      "name": "Hannah Lee",
+      "email": "hannah.lee@example.com"
     },
-    "subject": "General question about coverage",
-    "channel": "chat",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "New administrative fee appeared on renewal invoice",
+    "channel": "phone",
     "status": "New",
-    "priority": "P3",
-    "body": "Hi team,\n\nCould you explain what is covered under my current policy and whether roadside assistance is included?\n\nPolicy reference: TH-AB-48015\nCustomer reference: CUST-10015\n\nThanks,\nLisa",
-    "tags": ["coverage", "general"]
+    "priority": "P1",
+    "body": "I attempted to complete the requested process through the portal, but the current workflow would not allow me to finish it. Please advise whether the existing request can be reopened or corrected. Reference: CASE-7015. The affected account or request is associated with item 015.",
+    "tags": ["renewal", "policy"]
   },
   {
     "id": "itm_016",
-    "received_at": "2026-03-17T05:52:00+07:00",
+    "received_at": "2026-09-08T00:30:00Z",
     "sender": {
-      "name": "Michael D.",
-      "email": "michael@example.com"
+      "name": "Aditya Rao",
+      "email": "aditya.rao@example.com"
     },
-    "subject": "Urgent claim assistance needed",
-    "channel": "phone",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nI need urgent help with a claim because the incident has just occurred and the vehicle is currently not safe to drive.\n\nPolicy reference: TH-MTR-48016\nCustomer reference: CUST-10016\n\nThanks,\nMichael",
-    "tags": ["urgent", "claim"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Add leased laptop to insured equipment schedule",
+    "channel": "email",
+    "status": "Done",
+    "priority": "P2",
+    "body": "The information in the generated document conflicts with the source information we submitted. Please review the underlying record and issue a corrected document without changing any unrelated fields. Reference: CASE-7016. The affected account or request is associated with item 016.",
+    "tags": ["urgent", "security"]
   },
   {
     "id": "itm_017",
-    "received_at": "2026-03-17T09:09:00+07:00",
+    "received_at": "2026-09-07T17:30:00Z",
     "sender": {
-      "name": "Ploy N.",
-      "email": "ploy@company.co.th"
+      "name": "Nora Jensen",
+      "email": "nora.jensen@example.com"
     },
-    "subject": "Please update beneficiary details",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Settled claim unexpectedly reopened",
+    "channel": "chat",
     "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nI need to update the beneficiary information associated with my policy. Please tell me what forms or supporting documents are required.\n\nPolicy reference: TH-CAR-48017\nCustomer reference: CUST-10017\n\nThanks,\nPloy",
-    "tags": ["endorsement", "beneficiary"]
+    "priority": "P3",
+    "body": "This matter is time-sensitive because another transaction or operational deadline is approaching. Please review it as soon as possible and confirm whether there is anything we need to do before that deadline. Reference: CASE-7017. The affected account or request is associated with item 017.",
+    "tags": ["documents", "portal"]
   },
   {
     "id": "itm_018",
-    "received_at": "2026-03-17T11:26:00+07:00",
+    "received_at": "2026-09-07T10:30:00Z",
     "sender": {
-      "name": "Ben A.",
-      "email": "ben@example.com"
+      "name": "Marcus Green",
+      "email": "marcus.green@example.com"
     },
-    "subject": "Spam: Congratulations, you won",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Bank transfer completed but account remains overdue",
+    "channel": "phone",
     "status": "New",
-    "priority": "P3",
-    "body": "Hi team,\n\nCongratulations! You have won a large cash prize. Send your account details to claim your reward immediately.\n\nPolicy reference: TH-POL-48018\nCustomer reference: CUST-10018\n\nThanks,\nBen",
-    "tags": ["spam", "suspicious"]
+    "priority": "P1",
+    "body": "We have supporting records available, including the original transaction details and correspondence. Please let me know exactly which documents are required so we can avoid submitting duplicate information. Reference: CASE-7018. The affected account or request is associated with item 018.",
+    "tags": ["general", "account"]
   },
   {
     "id": "itm_019",
-    "received_at": "2026-03-17T14:43:00+07:00",
+    "received_at": "2026-09-07T03:30:00Z",
     "sender": {
-      "name": "Sofia G.",
-      "email": "sofia@example.com"
+      "name": "Fatima Khan",
+      "email": "fatima.khan@example.com"
     },
-    "subject": "Duplicate charge on card",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Change correspondence email without changing login",
     "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nI can see two charges for the same policy payment on my card statement. Please investigate and confirm whether one of the charges will be refunded.\n\nPolicy reference: TH-INS-48019\nCustomer reference: CUST-10019\n\nThanks,\nSofia",
-    "tags": ["billing", "duplicate"]
+    "status": "Done",
+    "priority": "P2",
+    "body": "The status currently displayed does not appear to reflect the latest action on the account. Please check the activity history and confirm the actual status and next step. Reference: CASE-7019. The affected account or request is associated with item 019.",
+    "tags": ["claims", "evidence"]
   },
   {
     "id": "itm_020",
-    "received_at": "2026-03-17T18:00:00+07:00",
+    "received_at": "2026-09-06T20:30:00Z",
     "sender": {
-      "name": "Chris J.",
-      "email": "chris@example.com"
+      "name": "Oliver Brown",
+      "email": "oliver.brown@example.com"
     },
-    "subject": "Policy details look incorrect",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Urgent relocation costs after office water leak",
+    "channel": "chat",
     "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nSome of the personal and vehicle details shown in my policy document are incorrect. I would like to have them corrected.\n\nPolicy reference: TH-AB-48020\nCustomer reference: CUST-10020\n\nThanks,\nChris",
-    "tags": ["policy", "correction"]
+    "priority": "P3",
+    "body": "I am concerned that taking the wrong action could create a duplicate charge, duplicate case, or incorrect record. Please verify the existing entry before creating or changing anything. Reference: CASE-7020. The affected account or request is associated with item 020.",
+    "tags": ["billing", "dispute"]
   },
   {
     "id": "itm_021",
-    "received_at": "2026-03-17T21:17:00+07:00",
+    "received_at": "2026-09-06T13:30:00Z",
     "sender": {
-      "name": "Nok S.",
-      "email": "nok@example.com"
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta@example.com"
     },
-    "subject": "Incorrect premium charged on renewal",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Claim estimate shows wrong deductible",
+    "channel": "phone",
     "status": "New",
-    "priority": "P2",
-    "body": "Hi team,\n\nMy renewal premium is higher than last month even though the vehicle details are unchanged. Please check the premium and confirm why it changed.\n\nPolicy reference: TH-MTR-48021\nCustomer reference: CUST-10021\n\nThanks,\nNok",
-    "tags": ["renewal", "pricing"]
+    "priority": "P1",
+    "body": "I reviewed the latest record and noticed a discrepancy that was not present previously. Please check the account history, confirm the reason for the change, and advise what action is required. Reference: CASE-7021. The affected account or request is associated with item 021.",
+    "tags": ["billing", "invoice"]
   },
   {
     "id": "itm_022",
-    "received_at": "2026-03-17T23:34:00+07:00",
+    "received_at": "2026-09-06T06:30:00Z",
     "sender": {
-      "name": "Somchai",
-      "email": "somchai@company.co.th"
+      "name": "Maya Chen",
+      "email": "maya.chen@example.com"
     },
-    "subject": "Endorsement request — change vehicle plate",
-    "channel": "chat",
-    "status": "In Progress",
-    "priority": "P3",
-    "body": "Hi team,\n\nI need an endorsement to change my vehicle plate. Old plate: AB 1234. New plate: AB 5678. Policy: TH-MTR-99210. Please advise what documents are required.\n\nPolicy reference: TH-CAR-48022\nCustomer reference: CUST-10022\n\nThanks,\nSomchai",
-    "tags": ["endorsement", "vehicle"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Renewal questionnaire contains outdated driver details",
+    "channel": "email",
+    "status": "Done",
+    "priority": "P2",
+    "body": "The portal still shows the old information even though the requested change was submitted several days ago. Please verify the pending request and confirm when the corrected document will be available. Reference: CASE-7022. The affected account or request is associated with item 022.",
+    "tags": ["claims", "status"]
   },
   {
     "id": "itm_023",
-    "received_at": "2026-03-18T02:51:00+07:00",
+    "received_at": "2026-09-05T23:30:00Z",
     "sender": {
-      "name": "Ananya P.",
-      "email": "ananya@example.com"
+      "name": "Priya Nair",
+      "email": "priya.nair@example.com"
     },
-    "subject": "URGENT: Verify account to avoid suspension",
-    "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nYour account will be suspended unless you verify immediately. Please send your internal access token and click the verification link.\n\nPolicy reference: TH-POL-48023\nCustomer reference: CUST-10023\n\nThanks,\nAnanya",
-    "tags": ["spam", "security"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Need archived tax invoice for audit",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "Our finance team found a transaction that does not match the statement we received. Please reconcile the amount against the relevant invoice and confirm whether a reversal or correction is required. Reference: CASE-7023. The affected account or request is associated with item 023.",
+    "tags": ["endorsement", "document"]
   },
   {
     "id": "itm_024",
-    "received_at": "2026-03-18T06:08:00+07:00",
+    "received_at": "2026-09-05T16:30:00Z",
     "sender": {
-      "name": "Arun K.",
-      "email": "arun@example.com"
+      "name": "Daniel Brooks",
+      "email": "daniel.brooks@example.com"
     },
-    "subject": "Claim status update requested",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Accidental glass damage to refrigerated display",
+    "channel": "phone",
     "status": "New",
-    "priority": "P2",
-    "body": "Hi team,\n\nCould you please provide an update on my claim? I submitted the repair documents several days ago and have not received a status update.\n\nPolicy reference: TH-INS-48024\nCustomer reference: CUST-10024\n\nThanks,\nArun",
-    "tags": ["claim", "status"]
+    "priority": "P1",
+    "body": "The incident has already been reported, but we have not received the next operational step. Please confirm the current case stage, any missing evidence, and the expected timeline. Reference: CASE-7024. The affected account or request is associated with item 024.",
+    "tags": ["payment", "reconciliation"]
   },
   {
     "id": "itm_025",
-    "received_at": "2026-03-18T08:25:00+07:00",
+    "received_at": "2026-09-05T09:30:00Z",
     "sender": {
-      "name": "Priya M.",
-      "email": "priya@example.com"
+      "name": "Sofia Alvarez",
+      "email": "sofia.alvarez@example.com"
     },
-    "subject": "Missing document for claim",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Add newborn to family coverage",
     "channel": "email",
-    "status": "In Progress",
+    "status": "Done",
     "priority": "P2",
-    "body": "Hi team,\n\nI received a request for another document for my claim, but I am not sure which document is missing. Can you clarify what you need from me?\n\nPolicy reference: TH-AB-48025\nCustomer reference: CUST-10025\n\nThanks,\nPriya",
-    "tags": ["claim", "documents"]
+    "body": "I attempted to complete the requested process through the portal, but the current workflow would not allow me to finish it. Please advise whether the existing request can be reopened or corrected. Reference: CASE-7025. The affected account or request is associated with item 025.",
+    "tags": ["renewal", "policy"]
   },
   {
     "id": "itm_026",
-    "received_at": "2026-03-18T11:42:00+07:00",
+    "received_at": "2026-09-05T02:30:00Z",
     "sender": {
-      "name": "Daniel R.",
-      "email": "daniel@example.com"
+      "name": "Liam O'Connor",
+      "email": "liam.oconnor@example.com"
     },
-    "subject": "Can I add a driver to my policy?",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Endorsement document differs from approved wording",
     "channel": "chat",
-    "status": "New",
+    "status": "In Progress",
     "priority": "P3",
-    "body": "Hi team,\n\nI would like to add another driver to my existing policy. Please let me know the eligibility requirements and whether the premium will change.\n\nPolicy reference: TH-MTR-48026\nCustomer reference: CUST-10026\n\nThanks,\nDaniel",
-    "tags": ["policy", "driver"]
+    "body": "The information in the generated document conflicts with the source information we submitted. Please review the underlying record and issue a corrected document without changing any unrelated fields. Reference: CASE-7026. The affected account or request is associated with item 026.",
+    "tags": ["urgent", "security"]
   },
   {
     "id": "itm_027",
-    "received_at": "2026-03-18T14:59:00+07:00",
+    "received_at": "2026-09-04T19:30:00Z",
     "sender": {
-      "name": "Mei L.",
-      "email": "mei@example.com"
+      "name": "Aisha Rahman",
+      "email": "aisha.rahman@example.com"
     },
-    "subject": "Renewal premium issue and missing payment receipt",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Refund requested after failed payment",
+    "channel": "phone",
     "status": "New",
-    "priority": "P2",
-    "body": "Hi team,\n\nMy renewal premium appears higher than expected, and I also cannot find the payment receipt in the portal. Could you check both the premium calculation and payment record?\n\nPolicy reference: TH-CAR-48027\nCustomer reference: CUST-10027\n\nThanks,\nMei",
-    "tags": ["renewal", "pricing", "billing"]
+    "priority": "P1",
+    "body": "This matter is time-sensitive because another transaction or operational deadline is approaching. Please review it as soon as possible and confirm whether there is anything we need to do before that deadline. Reference: CASE-7027. The affected account or request is associated with item 027.",
+    "tags": ["documents", "portal"]
   },
   {
     "id": "itm_028",
-    "received_at": "2026-03-18T18:16:00+07:00",
+    "received_at": "2026-09-04T12:30:00Z",
     "sender": {
-      "name": "Krit T.",
-      "email": "krit@company.co.th"
+      "name": "Rohan Shah",
+      "email": "rohan.shah@example.com"
     },
-    "subject": "Request for policy cancellation",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Company phone lost during business travel",
     "channel": "email",
-    "status": "In Progress",
+    "status": "Done",
     "priority": "P2",
-    "body": "Hi team,\n\nI would like to cancel my current policy. Please explain the cancellation process, effective date, and whether there is any refund.\n\nPolicy reference: TH-POL-48028\nCustomer reference: CUST-10028\n\nThanks,\nKrit",
-    "tags": ["cancellation", "policy"]
+    "body": "We have supporting records available, including the original transaction details and correspondence. Please let me know exactly which documents are required so we can avoid submitting duplicate information. Reference: CASE-7028. The affected account or request is associated with item 028.",
+    "tags": ["general", "account"]
   },
   {
     "id": "itm_029",
-    "received_at": "2026-03-18T20:33:00+07:00",
+    "received_at": "2026-09-04T05:30:00Z",
     "sender": {
-      "name": "Sarah W.",
-      "email": "sarah@example.com"
+      "name": "Emma Carter",
+      "email": "emma.carter@example.com"
     },
-    "subject": "Where can I download my policy documents?",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Renewal link reports expired too early",
     "channel": "chat",
-    "status": "Done",
+    "status": "In Progress",
     "priority": "P3",
-    "body": "Hi team,\n\nI need a copy of my current policy documents. Where can I download them from the customer portal?\n\nPolicy reference: TH-INS-48029\nCustomer reference: CUST-10029\n\nThanks,\nSarah",
-    "tags": ["documents", "policy"]
+    "body": "The status currently displayed does not appear to reflect the latest action on the account. Please check the activity history and confirm the actual status and next step. Reference: CASE-7029. The affected account or request is associated with item 029.",
+    "tags": ["claims", "evidence"]
   },
   {
     "id": "itm_030",
-    "received_at": "2026-03-18T23:50:00+07:00",
+    "received_at": "2026-09-03T22:30:00Z",
     "sender": {
-      "name": "James C.",
-      "email": "james@example.com"
+      "name": "Victor Petrov",
+      "email": "victor.petrov@example.com"
     },
-    "subject": "Accident claim — vehicle damage",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Cargo claim requests unavailable original packing list",
+    "channel": "phone",
     "status": "New",
     "priority": "P1",
-    "body": "Hi team,\n\nI was involved in an accident and my vehicle has significant damage. I need to understand how to start a claim and which evidence I should provide.\n\nPolicy reference: TH-AB-48030\nCustomer reference: CUST-10030\n\nThanks,\nJames",
-    "tags": ["claim", "accident"]
+    "body": "I am concerned that taking the wrong action could create a duplicate charge, duplicate case, or incorrect record. Please verify the existing entry before creating or changing anything. Reference: CASE-7030. The affected account or request is associated with item 030.",
+    "tags": ["billing", "dispute"]
   },
   {
     "id": "itm_031",
-    "received_at": "2026-03-19T03:07:00+07:00",
+    "received_at": "2026-09-03T15:30:00Z",
     "sender": {
-      "name": "Maya S.",
-      "email": "maya@example.com"
+      "name": "Grace Kim",
+      "email": "grace.kim@example.com"
     },
-    "subject": "Change address on policy",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Guest incident requires liability guidance",
     "channel": "email",
-    "status": "New",
-    "priority": "P3",
-    "body": "Hi team,\n\nI have moved to a new address and need to update my policy records. Please let me know if any proof of address is required.\n\nPolicy reference: TH-MTR-48031\nCustomer reference: CUST-10031\n\nThanks,\nMaya",
-    "tags": ["endorsement", "address"]
+    "status": "Done",
+    "priority": "P2",
+    "body": "I reviewed the latest record and noticed a discrepancy that was not present previously. Please check the account history, confirm the reason for the change, and advise what action is required. Reference: CASE-7031. The affected account or request is associated with item 031.",
+    "tags": ["billing", "invoice"]
   },
   {
     "id": "itm_032",
-    "received_at": "2026-03-19T05:24:00+07:00",
+    "received_at": "2026-09-03T08:30:00Z",
     "sender": {
-      "name": "Ravi N.",
-      "email": "ravi@example.com"
+      "name": "Kabir Verma",
+      "email": "kabir.verma@example.com"
     },
-    "subject": "Renewal reminder received",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Invoice issued in wrong currency",
     "channel": "chat",
-    "status": "Done",
+    "status": "In Progress",
     "priority": "P3",
-    "body": "Hi team,\n\nI received a renewal reminder. Can you confirm the renewal date and whether I need to take any action?\n\nPolicy reference: TH-CAR-48032\nCustomer reference: CUST-10032\n\nThanks,\nRavi",
-    "tags": ["renewal"]
+    "body": "The portal still shows the old information even though the requested change was submitted several days ago. Please verify the pending request and confirm when the corrected document will be available. Reference: CASE-7032. The affected account or request is associated with item 032.",
+    "tags": ["claims", "status"]
   },
   {
     "id": "itm_033",
-    "received_at": "2026-03-15T08:41:00+07:00",
+    "received_at": "2026-09-03T01:30:00Z",
     "sender": {
-      "name": "Emily B.",
-      "email": "emily@example.com"
+      "name": "Charlotte Evans",
+      "email": "charlotte.evans@example.com"
     },
-    "subject": "Premium increased after vehicle change",
-    "channel": "email",
-    "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nAfter updating my vehicle information, my premium increased substantially. Please explain how the new premium was calculated.\n\nPolicy reference: TH-POL-48033\nCustomer reference: CUST-10033\n\nThanks,\nEmily",
-    "tags": ["pricing", "vehicle"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Request extension for police report submission",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "Our finance team found a transaction that does not match the statement we received. Please reconcile the amount against the relevant invoice and confirm whether a reversal or correction is required. Reference: CASE-7033. The affected account or request is associated with item 033.",
+    "tags": ["endorsement", "document"]
   },
   {
     "id": "itm_034",
-    "received_at": "2026-03-15T11:58:00+07:00",
+    "received_at": "2026-09-02T18:30:00Z",
     "sender": {
-      "name": "Tom H.",
-      "email": "tom@example.com"
+      "name": "Mateo Silva",
+      "email": "mateo.silva@example.com"
     },
-    "subject": "URGENT: Accident claim and roadside assistance",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Finance administrator locked out",
     "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hello,\n\nThis is urgent. I was involved in an accident and need to know how to open a claim and whether roadside assistance can arrange towing. Please respond as soon as possible.\n\nPolicy reference: TH-INS-48034\nCustomer reference: CUST-10034\n\nRegards,\nTom",
-    "tags": ["urgent", "claim", "roadside"]
+    "status": "Done",
+    "priority": "P2",
+    "body": "The incident has already been reported, but we have not received the next operational step. Please confirm the current case stage, any missing evidence, and the expected timeline. Reference: CASE-7034. The affected account or request is associated with item 034.",
+    "tags": ["payment", "reconciliation"]
   },
   {
     "id": "itm_035",
-    "received_at": "2026-03-15T15:15:00+07:00",
+    "received_at": "2026-09-02T11:30:00Z",
     "sender": {
-      "name": "Lisa P.",
-      "email": "lisa@example.com"
+      "name": "Hannah Lee",
+      "email": "hannah.lee@example.com"
     },
-    "subject": "General question about coverage",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Insured item description is incorrect",
     "channel": "chat",
-    "status": "New",
+    "status": "In Progress",
     "priority": "P3",
-    "body": "Hi team,\n\nCould you explain what is covered under my current policy and whether roadside assistance is included?\n\nPolicy reference: TH-AB-48035\nCustomer reference: CUST-10035\n\nThanks,\nLisa",
-    "tags": ["coverage", "general"]
+    "body": "I attempted to complete the requested process through the portal, but the current workflow would not allow me to finish it. Please advise whether the existing request can be reopened or corrected. Reference: CASE-7035. The affected account or request is associated with item 035.",
+    "tags": ["renewal", "policy"]
   },
   {
     "id": "itm_036",
-    "received_at": "2026-03-15T17:32:00+07:00",
+    "received_at": "2026-09-02T04:30:00Z",
     "sender": {
-      "name": "Michael D.",
-      "email": "michael@example.com"
+      "name": "Aditya Rao",
+      "email": "aditya.rao@example.com"
     },
-    "subject": "Urgent claim assistance needed",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Downgrade invoice has unexpected prorated charge",
     "channel": "phone",
     "status": "New",
     "priority": "P1",
-    "body": "Hi team,\n\nI need urgent help with a claim because the incident has just occurred and the vehicle is currently not safe to drive.\n\nPolicy reference: TH-MTR-48036\nCustomer reference: CUST-10036\n\nThanks,\nMichael",
-    "tags": ["urgent", "claim"]
+    "body": "The information in the generated document conflicts with the source information we submitted. Please review the underlying record and issue a corrected document without changing any unrelated fields. Reference: CASE-7036. The affected account or request is associated with item 036.",
+    "tags": ["urgent", "security"]
   },
   {
     "id": "itm_037",
-    "received_at": "2026-03-15T20:49:00+07:00",
+    "received_at": "2026-09-01T21:30:00Z",
     "sender": {
-      "name": "Ploy N.",
-      "email": "ploy@company.co.th"
+      "name": "Nora Jensen",
+      "email": "nora.jensen@example.com"
     },
-    "subject": "Please update beneficiary details",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Meter reading on statement does not match photograph",
     "channel": "email",
-    "status": "In Progress",
+    "status": "Done",
     "priority": "P2",
-    "body": "Hi team,\n\nI need to update the beneficiary information associated with my policy. Please tell me what forms or supporting documents are required.\n\nPolicy reference: TH-CAR-48037\nCustomer reference: CUST-10037\n\nThanks,\nPloy",
-    "tags": ["endorsement", "beneficiary"]
+    "body": "This matter is time-sensitive because another transaction or operational deadline is approaching. Please review it as soon as possible and confirm whether there is anything we need to do before that deadline. Reference: CASE-7037. The affected account or request is associated with item 037.",
+    "tags": ["documents", "portal"]
   },
   {
     "id": "itm_038",
-    "received_at": "2026-03-16T00:06:00+07:00",
+    "received_at": "2026-09-01T14:30:00Z",
     "sender": {
-      "name": "Ben A.",
-      "email": "ben@example.com"
+      "name": "Marcus Green",
+      "email": "marcus.green@example.com"
     },
-    "subject": "Spam: Congratulations, you won",
-    "channel": "email",
-    "status": "New",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Warehouse location changed within same industrial park",
+    "channel": "chat",
+    "status": "In Progress",
     "priority": "P3",
-    "body": "Hi team,\n\nCongratulations! You have won a large cash prize. Send your account details to claim your reward immediately.\n\nPolicy reference: TH-POL-48038\nCustomer reference: CUST-10038\n\nThanks,\nBen",
-    "tags": ["spam", "suspicious"]
+    "body": "We have supporting records available, including the original transaction details and correspondence. Please let me know exactly which documents are required so we can avoid submitting duplicate information. Reference: CASE-7038. The affected account or request is associated with item 038.",
+    "tags": ["general", "account"]
   },
   {
     "id": "itm_039",
-    "received_at": "2026-03-16T02:23:00+07:00",
+    "received_at": "2026-09-01T07:30:00Z",
     "sender": {
-      "name": "Sofia G.",
-      "email": "sofia@example.com"
+      "name": "Fatima Khan",
+      "email": "fatima.khan@example.com"
     },
-    "subject": "Duplicate charge on card",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Claim correspondence still goes to former employee",
+    "channel": "phone",
     "status": "New",
     "priority": "P1",
-    "body": "Hi team,\n\nI can see two charges for the same policy payment on my card statement. Please investigate and confirm whether one of the charges will be refunded.\n\nPolicy reference: TH-INS-48039\nCustomer reference: CUST-10039\n\nThanks,\nSofia",
-    "tags": ["billing", "duplicate"]
+    "body": "The status currently displayed does not appear to reflect the latest action on the account. Please check the activity history and confirm the actual status and next step. Reference: CASE-7039. The affected account or request is associated with item 039.",
+    "tags": ["claims", "evidence"]
   },
   {
     "id": "itm_040",
-    "received_at": "2026-03-16T05:40:00+07:00",
+    "received_at": "2026-09-01T00:30:00Z",
     "sender": {
-      "name": "Chris J.",
-      "email": "chris@example.com"
+      "name": "Oliver Brown",
+      "email": "oliver.brown@example.com"
     },
-    "subject": "Policy details look incorrect",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Repair request declined as wear and tear",
     "channel": "email",
-    "status": "In Progress",
+    "status": "Done",
     "priority": "P2",
-    "body": "Hi team,\n\nSome of the personal and vehicle details shown in my policy document are incorrect. I would like to have them corrected.\n\nPolicy reference: TH-AB-48040\nCustomer reference: CUST-10040\n\nThanks,\nChris",
-    "tags": ["policy", "correction"]
+    "body": "I am concerned that taking the wrong action could create a duplicate charge, duplicate case, or incorrect record. Please verify the existing entry before creating or changing anything. Reference: CASE-7040. The affected account or request is associated with item 040.",
+    "tags": ["billing", "dispute"]
   },
   {
     "id": "itm_041",
-    "received_at": "2026-03-16T08:57:00+07:00",
+    "received_at": "2026-08-31T17:30:00Z",
     "sender": {
-      "name": "Nok S.",
-      "email": "nok@example.com"
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta@example.com"
     },
-    "subject": "Incorrect premium charged on renewal",
-    "channel": "email",
-    "status": "New",
-    "priority": "P2",
-    "body": "Hi team,\n\nMy renewal premium is higher than last month even though the vehicle details are unchanged. Please check the premium and confirm why it changed.\n\nPolicy reference: TH-MTR-48041\nCustomer reference: CUST-10041\n\nThanks,\nNok",
-    "tags": ["renewal", "pricing"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Four transactions do not reconcile with ledger",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "I reviewed the latest record and noticed a discrepancy that was not present previously. Please check the account history, confirm the reason for the change, and advise what action is required. Reference: CASE-7041. The affected account or request is associated with item 041.",
+    "tags": ["billing", "invoice"]
   },
   {
     "id": "itm_042",
-    "received_at": "2026-03-16T12:14:00+07:00",
+    "received_at": "2026-08-31T10:30:00Z",
     "sender": {
-      "name": "Somchai",
-      "email": "somchai@company.co.th"
+      "name": "Maya Chen",
+      "email": "maya.chen@example.com"
     },
-    "subject": "Endorsement request — change vehicle plate",
-    "channel": "chat",
-    "status": "In Progress",
-    "priority": "P3",
-    "body": "Hi team,\n\nI need an endorsement to change my vehicle plate. Old plate: AB 1234. New plate: AB 5678. Policy: TH-MTR-99210. Please advise what documents are required.\n\nPolicy reference: TH-CAR-48042\nCustomer reference: CUST-10042\n\nThanks,\nSomchai",
-    "tags": ["endorsement", "vehicle"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Certificate expiry date conflicts with renewal notice",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "The portal still shows the old information even though the requested change was submitted several days ago. Please verify the pending request and confirm when the corrected document will be available. Reference: CASE-7042. The affected account or request is associated with item 042.",
+    "tags": ["claims", "status"]
   },
   {
     "id": "itm_043",
-    "received_at": "2026-03-16T14:31:00+07:00",
+    "received_at": "2026-08-31T03:30:00Z",
     "sender": {
-      "name": "Ananya P.",
-      "email": "ananya@example.com"
+      "name": "Priya Nair",
+      "email": "priya.nair@example.com"
     },
-    "subject": "Suspicious email asking for login credentials",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "No claim update received for twelve days",
     "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nI received an email asking me to provide my password and verification code to prevent policy suspension. Is this legitimate?\n\nPolicy reference: TH-POL-48043\n\nThanks,\nAnanya",
-    "tags": ["security", "spam", "suspicious"]
+    "status": "Done",
+    "priority": "P2",
+    "body": "Our finance team found a transaction that does not match the statement we received. Please reconcile the amount against the relevant invoice and confirm whether a reversal or correction is required. Reference: CASE-7043. The affected account or request is associated with item 043.",
+    "tags": ["endorsement", "document"]
   },
   {
     "id": "itm_044",
-    "received_at": "2026-03-16T17:48:00+07:00",
+    "received_at": "2026-08-30T20:30:00Z",
     "sender": {
-      "name": "Arun K.",
-      "email": "arun@example.com"
+      "name": "Daniel Brooks",
+      "email": "daniel.brooks@example.com"
     },
-    "subject": "Claim status update requested",
-    "channel": "email",
-    "status": "New",
-    "priority": "P2",
-    "body": "Hi team,\n\nCould you please provide an update on my claim? I submitted the repair documents several days ago and have not received a status update.\n\nPolicy reference: TH-INS-48044\nCustomer reference: CUST-10044\n\nThanks,\nArun",
-    "tags": ["claim", "status"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Potential phishing invoice asks for bank change",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "The incident has already been reported, but we have not received the next operational step. Please confirm the current case stage, any missing evidence, and the expected timeline. Reference: CASE-7044. The affected account or request is associated with item 044.",
+    "tags": ["payment", "reconciliation"]
   },
   {
     "id": "itm_045",
-    "received_at": "2026-03-16T21:05:00+07:00",
+    "received_at": "2026-08-30T13:30:00Z",
     "sender": {
-      "name": "Priya M.",
-      "email": "priya@example.com"
+      "name": "Sofia Alvarez",
+      "email": "sofia.alvarez@example.com"
     },
-    "subject": "Missing document for claim",
-    "channel": "email",
-    "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nI received a request for another document for my claim, but I am not sure which document is missing. Can you clarify what you need from me?\n\nPolicy reference: TH-AB-48045\nCustomer reference: CUST-10045\n\nThanks,\nPriya",
-    "tags": ["claim", "documents"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Add electric scooter to property schedule",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "I attempted to complete the requested process through the portal, but the current workflow would not allow me to finish it. Please advise whether the existing request can be reopened or corrected. Reference: CASE-7045. The affected account or request is associated with item 045.",
+    "tags": ["renewal", "policy"]
   },
   {
     "id": "itm_046",
-    "received_at": "2026-03-16T23:22:00+07:00",
+    "received_at": "2026-08-30T06:30:00Z",
     "sender": {
-      "name": "Daniel R.",
-      "email": "daniel@example.com"
+      "name": "Liam O'Connor",
+      "email": "liam.oconnor@example.com"
     },
-    "subject": "Can I add a driver to my policy?",
-    "channel": "chat",
-    "status": "New",
-    "priority": "P3",
-    "body": "Hi team,\n\nI would like to add another driver to my existing policy. Please let me know the eligibility requirements and whether the premium will change.\n\nPolicy reference: TH-MTR-48046\nCustomer reference: CUST-10046\n\nThanks,\nDaniel",
-    "tags": ["policy", "driver"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Production stopped after equipment overheating",
+    "channel": "email",
+    "status": "Done",
+    "priority": "P2",
+    "body": "The information in the generated document conflicts with the source information we submitted. Please review the underlying record and issue a corrected document without changing any unrelated fields. Reference: CASE-7046. The affected account or request is associated with item 046.",
+    "tags": ["urgent", "security"]
   },
   {
     "id": "itm_047",
-    "received_at": "2026-03-17T02:39:00+07:00",
+    "received_at": "2026-08-29T23:30:00Z",
     "sender": {
-      "name": "Mei L.",
-      "email": "mei@example.com"
+      "name": "Aisha Rahman",
+      "email": "aisha.rahman@example.com"
     },
-    "subject": "Payment failed but money was deducted",
-    "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nThe payment page showed an error, but the amount was deducted from my bank account. Please check whether the payment went through and confirm what I should do.\n\nPolicy reference: TH-CAR-48047\nCustomer reference: CUST-10047\n\nThanks,\nMei",
-    "tags": ["billing", "payment"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Duplicate dependent appears on family schedule",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "This matter is time-sensitive because another transaction or operational deadline is approaching. Please review it as soon as possible and confirm whether there is anything we need to do before that deadline. Reference: CASE-7047. The affected account or request is associated with item 047.",
+    "tags": ["documents", "portal"]
   },
   {
     "id": "itm_048",
-    "received_at": "2026-03-17T05:56:00+07:00",
+    "received_at": "2026-08-29T16:30:00Z",
     "sender": {
-      "name": "Krit T.",
-      "email": "krit@company.co.th"
+      "name": "Rohan Shah",
+      "email": "rohan.shah@example.com"
     },
-    "subject": "Request for policy cancellation",
-    "channel": "email",
-    "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nI would like to cancel my current policy. Please explain the cancellation process, effective date, and whether there is any refund.\n\nPolicy reference: TH-POL-48048\nCustomer reference: CUST-10048\n\nThanks,\nKrit",
-    "tags": ["cancellation", "policy"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Invoice issued after service was cancelled",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "We have supporting records available, including the original transaction details and correspondence. Please let me know exactly which documents are required so we can avoid submitting duplicate information. Reference: CASE-7048. The affected account or request is associated with item 048.",
+    "tags": ["general", "account"]
   },
   {
     "id": "itm_049",
-    "received_at": "2026-03-17T09:13:00+07:00",
+    "received_at": "2026-08-29T09:30:00Z",
     "sender": {
-      "name": "Sarah W.",
-      "email": "sarah@example.com"
+      "name": "Emma Carter",
+      "email": "emma.carter@example.com"
     },
-    "subject": "Where can I download my policy documents?",
-    "channel": "chat",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Repairer asks for higher amount than approved estimate",
+    "channel": "email",
     "status": "Done",
-    "priority": "P3",
-    "body": "Hi team,\n\nI need a copy of my current policy documents. Where can I download them from the customer portal?\n\nPolicy reference: TH-INS-48049\nCustomer reference: CUST-10049\n\nThanks,\nSarah",
-    "tags": ["documents", "policy"]
+    "priority": "P2",
+    "body": "The status currently displayed does not appear to reflect the latest action on the account. Please check the activity history and confirm the actual status and next step. Reference: CASE-7049. The affected account or request is associated with item 049.",
+    "tags": ["claims", "evidence"]
   },
   {
     "id": "itm_050",
-    "received_at": "2026-03-17T11:30:00+07:00",
+    "received_at": "2026-08-29T02:30:00Z",
     "sender": {
-      "name": "James C.",
-      "email": "james@example.com"
+      "name": "Victor Petrov",
+      "email": "victor.petrov@example.com"
     },
-    "subject": "Accident claim — vehicle damage",
-    "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nI was involved in an accident and my vehicle has significant damage. I need to understand how to start a claim and which evidence I should provide.\n\nPolicy reference: TH-AB-48050\nCustomer reference: CUST-10050\n\nThanks,\nJames",
-    "tags": ["claim", "accident"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Legal entity changed but policy remains active",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "I am concerned that taking the wrong action could create a duplicate charge, duplicate case, or incorrect record. Please verify the existing entry before creating or changing anything. Reference: CASE-7050. The affected account or request is associated with item 050.",
+    "tags": ["billing", "dispute"]
   },
   {
     "id": "itm_051",
-    "received_at": "2026-03-17T14:47:00+07:00",
+    "received_at": "2026-08-28T19:30:00Z",
     "sender": {
-      "name": "Maya S.",
-      "email": "maya@example.com"
+      "name": "Grace Kim",
+      "email": "grace.kim@example.com"
     },
-    "subject": "Change address on policy",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Bank verification remains pending after upload",
+    "channel": "phone",
     "status": "New",
-    "priority": "P3",
-    "body": "Hi team,\n\nI have moved to a new address and need to update my policy records. Please let me know if any proof of address is required.\n\nPolicy reference: TH-MTR-48051\nCustomer reference: CUST-10051\n\nThanks,\nMaya",
-    "tags": ["endorsement", "address"]
+    "priority": "P1",
+    "body": "I reviewed the latest record and noticed a discrepancy that was not present previously. Please check the account history, confirm the reason for the change, and advise what action is required. Reference: CASE-7051. The affected account or request is associated with item 051.",
+    "tags": ["billing", "invoice"]
   },
   {
     "id": "itm_052",
-    "received_at": "2026-03-17T18:04:00+07:00",
+    "received_at": "2026-08-28T12:30:00Z",
     "sender": {
-      "name": "Ravi N.",
-      "email": "ravi@example.com"
+      "name": "Kabir Verma",
+      "email": "kabir.verma@example.com"
     },
-    "subject": "Renewal reminder received",
-    "channel": "chat",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Final repair invoice exceeds approved estimate",
+    "channel": "email",
     "status": "Done",
-    "priority": "P3",
-    "body": "Hi team,\n\nI received a renewal reminder. Can you confirm the renewal date and whether I need to take any action?\n\nPolicy reference: TH-CAR-48052\nCustomer reference: CUST-10052\n\nThanks,\nRavi",
-    "tags": ["renewal"]
+    "priority": "P2",
+    "body": "The portal still shows the old information even though the requested change was submitted several days ago. Please verify the pending request and confirm when the corrected document will be available. Reference: CASE-7052. The affected account or request is associated with item 052.",
+    "tags": ["claims", "status"]
   },
   {
     "id": "itm_053",
-    "received_at": "2026-03-17T20:21:00+07:00",
+    "received_at": "2026-08-28T05:30:00Z",
     "sender": {
-      "name": "Emily B.",
-      "email": "emily@example.com"
+      "name": "Charlotte Evans",
+      "email": "charlotte.evans@example.com"
     },
-    "subject": "Premium increased after vehicle change",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Middle surname missing from certificate",
+    "channel": "chat",
     "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nAfter updating my vehicle information, my premium increased substantially. Please explain how the new premium was calculated.\n\nPolicy reference: TH-POL-48053\nCustomer reference: CUST-10053\n\nThanks,\nEmily",
-    "tags": ["pricing", "vehicle"]
+    "priority": "P3",
+    "body": "Our finance team found a transaction that does not match the statement we received. Please reconcile the amount against the relevant invoice and confirm whether a reversal or correction is required. Reference: CASE-7053. The affected account or request is associated with item 053.",
+    "tags": ["endorsement", "document"]
   },
   {
     "id": "itm_054",
-    "received_at": "2026-03-17T23:38:00+07:00",
+    "received_at": "2026-08-27T22:30:00Z",
     "sender": {
-      "name": "Tom H.",
-      "email": "tom@example.com"
+      "name": "Mateo Silva",
+      "email": "mateo.silva@example.com"
     },
-    "subject": "Incorrect billing amount",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Landlord needs address-specific coverage letter",
+    "channel": "phone",
     "status": "New",
     "priority": "P1",
-    "body": "Hi team,\n\nThe invoice amount does not match the amount shown when I purchased the policy. Please review the billing details and correct the invoice if necessary.\n\nPolicy reference: TH-INS-48054\nCustomer reference: CUST-10054\n\nThanks,\nTom",
-    "tags": ["billing", "invoice"]
+    "body": "The incident has already been reported, but we have not received the next operational step. Please confirm the current case stage, any missing evidence, and the expected timeline. Reference: CASE-7054. The affected account or request is associated with item 054.",
+    "tags": ["payment", "reconciliation"]
   },
   {
     "id": "itm_055",
-    "received_at": "2026-03-18T02:55:00+07:00",
+    "received_at": "2026-08-27T15:30:00Z",
     "sender": {
-      "name": "Lisa P.",
-      "email": "lisa@example.com"
+      "name": "Hannah Lee",
+      "email": "hannah.lee@example.com"
     },
-    "subject": "General question about coverage",
-    "channel": "chat",
-    "status": "New",
-    "priority": "P3",
-    "body": "Hi team,\n\nCould you explain what is covered under my current policy and whether roadside assistance is included?\n\nPolicy reference: TH-AB-48055\nCustomer reference: CUST-10055\n\nThanks,\nLisa",
-    "tags": ["coverage", "general"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Claim was opened against the wrong vehicle",
+    "channel": "email",
+    "status": "Done",
+    "priority": "P2",
+    "body": "I attempted to complete the requested process through the portal, but the current workflow would not allow me to finish it. Please advise whether the existing request can be reopened or corrected. Reference: CASE-7055. The affected account or request is associated with item 055.",
+    "tags": ["renewal", "policy"]
   },
   {
     "id": "itm_056",
-    "received_at": "2026-03-18T06:12:00+07:00",
+    "received_at": "2026-08-27T08:30:00Z",
     "sender": {
-      "name": "Michael D.",
-      "email": "michael@example.com"
+      "name": "Aditya Rao",
+      "email": "aditya.rao@example.com"
     },
-    "subject": "Urgent claim assistance needed",
-    "channel": "phone",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nI need urgent help with a claim because the incident has just occurred and the vehicle is currently not safe to drive.\n\nPolicy reference: TH-MTR-48056\nCustomer reference: CUST-10056\n\nThanks,\nMichael",
-    "tags": ["urgent", "claim"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Payment reminder sent after settlement",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "The information in the generated document conflicts with the source information we submitted. Please review the underlying record and issue a corrected document without changing any unrelated fields. Reference: CASE-7056. The affected account or request is associated with item 056.",
+    "tags": ["urgent", "security"]
   },
   {
     "id": "itm_057",
-    "received_at": "2026-03-18T08:29:00+07:00",
+    "received_at": "2026-08-27T01:30:00Z",
     "sender": {
-      "name": "Ploy N.",
-      "email": "ploy@company.co.th"
+      "name": "Nora Jensen",
+      "email": "nora.jensen@example.com"
     },
-    "subject": "Please update beneficiary details",
-    "channel": "email",
-    "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nI need to update the beneficiary information associated with my policy. Please tell me what forms or supporting documents are required.\n\nPolicy reference: TH-CAR-48057\nCustomer reference: CUST-10057\n\nThanks,\nPloy",
-    "tags": ["endorsement", "beneficiary"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Medical PDF rejected by claims portal",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "This matter is time-sensitive because another transaction or operational deadline is approaching. Please review it as soon as possible and confirm whether there is anything we need to do before that deadline. Reference: CASE-7057. The affected account or request is associated with item 057.",
+    "tags": ["documents", "portal"]
   },
   {
     "id": "itm_058",
-    "received_at": "2026-03-18T11:46:00+07:00",
+    "received_at": "2026-08-26T18:30:00Z",
     "sender": {
-      "name": "Ben A.",
-      "email": "ben@example.com"
+      "name": "Marcus Green",
+      "email": "marcus.green@example.com"
     },
-    "subject": "Renewal premium issue and missing payment receipt",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Split payment does not fully clear invoice",
     "channel": "email",
-    "status": "New",
+    "status": "Done",
     "priority": "P2",
-    "body": "Hi team,\n\nMy renewal premium appears higher than expected, and I also cannot find the payment receipt in the portal. Could you check both the premium calculation and payment record?\n\nPolicy reference: TH-POL-48058\nCustomer reference: CUST-10058\n\nThanks,\nBen",
-    "tags": ["renewal", "pricing", "billing"]
+    "body": "We have supporting records available, including the original transaction details and correspondence. Please let me know exactly which documents are required so we can avoid submitting duplicate information. Reference: CASE-7058. The affected account or request is associated with item 058.",
+    "tags": ["general", "account"]
   },
   {
     "id": "itm_059",
-    "received_at": "2026-03-18T15:03:00+07:00",
+    "received_at": "2026-08-26T11:30:00Z",
     "sender": {
-      "name": "Sofia G.",
-      "email": "sofia@example.com"
+      "name": "Fatima Khan",
+      "email": "fatima.khan@example.com"
     },
-    "subject": "Duplicate charge on card",
-    "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nI can see two charges for the same policy payment on my card statement. Please investigate and confirm whether one of the charges will be refunded.\n\nPolicy reference: TH-INS-48059\nCustomer reference: CUST-10059\n\nThanks,\nSofia",
-    "tags": ["billing", "duplicate"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Pause automatic renewal while terms are negotiated",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "The status currently displayed does not appear to reflect the latest action on the account. Please check the activity history and confirm the actual status and next step. Reference: CASE-7059. The affected account or request is associated with item 059.",
+    "tags": ["claims", "evidence"]
   },
   {
     "id": "itm_060",
-    "received_at": "2026-03-18T17:20:00+07:00",
+    "received_at": "2026-08-26T04:30:00Z",
     "sender": {
-      "name": "Chris J.",
-      "email": "chris@example.com"
+      "name": "Oliver Brown",
+      "email": "oliver.brown@example.com"
     },
-    "subject": "Policy details look incorrect",
-    "channel": "email",
-    "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nSome of the personal and vehicle details shown in my policy document are incorrect. I would like to have them corrected.\n\nPolicy reference: TH-AB-48060\nCustomer reference: CUST-10060\n\nThanks,\nChris",
-    "tags": ["policy", "correction"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Claim contains conflicting incident descriptions",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "I am concerned that taking the wrong action could create a duplicate charge, duplicate case, or incorrect record. Please verify the existing entry before creating or changing anything. Reference: CASE-7060. The affected account or request is associated with item 060.",
+    "tags": ["billing", "dispute"]
   },
   {
     "id": "itm_061",
-    "received_at": "2026-03-18T20:37:00+07:00",
+    "received_at": "2026-08-25T21:30:00Z",
     "sender": {
-      "name": "Nok S.",
-      "email": "nok@example.com"
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta@example.com"
     },
-    "subject": "Incorrect premium charged on renewal",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Audit requires complete endorsement history",
     "channel": "email",
-    "status": "New",
+    "status": "Done",
     "priority": "P2",
-    "body": "Hi team,\n\nMy renewal premium is higher than last month even though the vehicle details are unchanged. Please check the premium and confirm why it changed.\n\nPolicy reference: TH-MTR-48061\nCustomer reference: CUST-10061\n\nThanks,\nNok",
-    "tags": ["renewal", "pricing"]
+    "body": "I reviewed the latest record and noticed a discrepancy that was not present previously. Please check the account history, confirm the reason for the change, and advise what action is required. Reference: CASE-7061. The affected account or request is associated with item 061.",
+    "tags": ["billing", "invoice"]
   },
   {
     "id": "itm_062",
-    "received_at": "2026-03-18T23:54:00+07:00",
+    "received_at": "2026-08-25T14:30:00Z",
     "sender": {
-      "name": "Somchai",
-      "email": "somchai@company.co.th"
+      "name": "Maya Chen",
+      "email": "maya.chen@example.com"
     },
-    "subject": "Endorsement request — change vehicle plate",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Refund marked completed but funds are missing",
     "channel": "chat",
     "status": "In Progress",
     "priority": "P3",
-    "body": "Hi team,\n\nI need an endorsement to change my vehicle plate. Old plate: AB 1234. New plate: AB 5678. Policy: TH-MTR-99210. Please advise what documents are required.\n\nPolicy reference: TH-CAR-48062\nCustomer reference: CUST-10062\n\nThanks,\nSomchai",
-    "tags": ["endorsement", "vehicle"]
+    "body": "The portal still shows the old information even though the requested change was submitted several days ago. Please verify the pending request and confirm when the corrected document will be available. Reference: CASE-7062. The affected account or request is associated with item 062.",
+    "tags": ["claims", "status"]
   },
   {
     "id": "itm_063",
-    "received_at": "2026-03-19T03:11:00+07:00",
+    "received_at": "2026-08-25T07:30:00Z",
     "sender": {
-      "name": "Ananya P.",
-      "email": "ananya@example.com"
+      "name": "Priya Nair",
+      "email": "priya.nair@example.com"
     },
-    "subject": "URGENT: Verify account to avoid suspension",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Automated payment calls continue on paid account",
+    "channel": "phone",
     "status": "New",
     "priority": "P1",
-    "body": "Hi team,\n\nYour account will be suspended unless you verify immediately. Please send your internal access token and click the verification link.\n\nPolicy reference: TH-POL-48063\nCustomer reference: CUST-10063\n\nThanks,\nAnanya",
-    "tags": ["spam", "security"]
+    "body": "Our finance team found a transaction that does not match the statement we received. Please reconcile the amount against the relevant invoice and confirm whether a reversal or correction is required. Reference: CASE-7063. The affected account or request is associated with item 063.",
+    "tags": ["endorsement", "document"]
   },
   {
     "id": "itm_064",
-    "received_at": "2026-03-19T05:28:00+07:00",
+    "received_at": "2026-08-25T00:30:00Z",
     "sender": {
-      "name": "Arun K.",
-      "email": "arun@example.com"
+      "name": "Daniel Brooks",
+      "email": "daniel.brooks@example.com"
     },
-    "subject": "Claim status update requested",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Safety incident has incorrect triage priority",
     "channel": "email",
-    "status": "New",
+    "status": "Done",
     "priority": "P2",
-    "body": "Hi team,\n\nCould you please provide an update on my claim? I submitted the repair documents several days ago and have not received a status update.\n\nPolicy reference: TH-INS-48064\nCustomer reference: CUST-10064\n\nThanks,\nArun",
-    "tags": ["claim", "status"]
+    "body": "The incident has already been reported, but we have not received the next operational step. Please confirm the current case stage, any missing evidence, and the expected timeline. Reference: CASE-7064. The affected account or request is associated with item 064.",
+    "tags": ["payment", "reconciliation"]
   },
   {
     "id": "itm_065",
-    "received_at": "2026-03-15T08:45:00+07:00",
+    "received_at": "2026-08-24T17:30:00Z",
     "sender": {
-      "name": "Priya M.",
-      "email": "priya@example.com"
+      "name": "Sofia Alvarez",
+      "email": "sofia.alvarez@example.com"
     },
-    "subject": "Missing document for claim",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Company registration number is outdated",
+    "channel": "chat",
     "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nI received a request for another document for my claim, but I am not sure which document is missing. Can you clarify what you need from me?\n\nPolicy reference: TH-AB-48065\nCustomer reference: CUST-10065\n\nThanks,\nPriya",
-    "tags": ["claim", "documents"]
+    "priority": "P3",
+    "body": "I attempted to complete the requested process through the portal, but the current workflow would not allow me to finish it. Please advise whether the existing request can be reopened or corrected. Reference: CASE-7065. The affected account or request is associated with item 065.",
+    "tags": ["renewal", "policy"]
   },
   {
     "id": "itm_066",
-    "received_at": "2026-03-15T12:02:00+07:00",
+    "received_at": "2026-08-24T10:30:00Z",
     "sender": {
-      "name": "Daniel R.",
-      "email": "daniel@example.com"
+      "name": "Liam O'Connor",
+      "email": "liam.oconnor@example.com"
     },
-    "subject": "Can I add a driver to my policy?",
-    "channel": "chat",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Browser timeout created duplicate claims",
+    "channel": "phone",
     "status": "New",
-    "priority": "P3",
-    "body": "Hi team,\n\nI would like to add another driver to my existing policy. Please let me know the eligibility requirements and whether the premium will change.\n\nPolicy reference: TH-MTR-48066\nCustomer reference: CUST-10066\n\nThanks,\nDaniel",
-    "tags": ["policy", "driver"]
+    "priority": "P1",
+    "body": "The information in the generated document conflicts with the source information we submitted. Please review the underlying record and issue a corrected document without changing any unrelated fields. Reference: CASE-7066. The affected account or request is associated with item 066.",
+    "tags": ["urgent", "security"]
   },
   {
     "id": "itm_067",
-    "received_at": "2026-03-15T15:19:00+07:00",
+    "received_at": "2026-08-24T03:30:00Z",
     "sender": {
-      "name": "Mei L.",
-      "email": "mei@example.com"
+      "name": "Aisha Rahman",
+      "email": "aisha.rahman@example.com"
     },
-    "subject": "Payment failed but money was deducted",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Cosmetic damage exclusion needs clarification",
     "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nThe payment page showed an error, but the amount was deducted from my bank account. Please check whether the payment went through and confirm what I should do.\n\nPolicy reference: TH-CAR-48067\nCustomer reference: CUST-10067\n\nThanks,\nMei",
-    "tags": ["billing", "payment"]
+    "status": "Done",
+    "priority": "P2",
+    "body": "This matter is time-sensitive because another transaction or operational deadline is approaching. Please review it as soon as possible and confirm whether there is anything we need to do before that deadline. Reference: CASE-7067. The affected account or request is associated with item 067.",
+    "tags": ["documents", "portal"]
   },
   {
     "id": "itm_068",
-    "received_at": "2026-03-15T17:36:00+07:00",
+    "received_at": "2026-08-23T20:30:00Z",
     "sender": {
-      "name": "Krit T.",
-      "email": "krit@company.co.th"
+      "name": "Rohan Shah",
+      "email": "rohan.shah@example.com"
     },
-    "subject": "Request for policy cancellation",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Audit confirmation needed for settled invoice",
+    "channel": "chat",
     "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nI would like to cancel my current policy. Please explain the cancellation process, effective date, and whether there is any refund.\n\nPolicy reference: TH-POL-48068\nCustomer reference: CUST-10068\n\nThanks,\nKrit",
-    "tags": ["cancellation", "policy"]
+    "priority": "P3",
+    "body": "We have supporting records available, including the original transaction details and correspondence. Please let me know exactly which documents are required so we can avoid submitting duplicate information. Reference: CASE-7068. The affected account or request is associated with item 068.",
+    "tags": ["general", "account"]
   },
   {
     "id": "itm_069",
-    "received_at": "2026-03-15T20:53:00+07:00",
+    "received_at": "2026-08-23T13:30:00Z",
     "sender": {
-      "name": "Sarah W.",
-      "email": "sarah@example.com"
+      "name": "Emma Carter",
+      "email": "emma.carter@example.com"
     },
-    "subject": "Where can I download my policy documents?",
-    "channel": "chat",
-    "status": "Done",
-    "priority": "P3",
-    "body": "Hi team,\n\nI need a copy of my current policy documents. Where can I download them from the customer portal?\n\nPolicy reference: TH-INS-48069\nCustomer reference: CUST-10069\n\nThanks,\nSarah",
-    "tags": ["documents", "policy"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Nominee allocation needs to change from 50/50",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "The status currently displayed does not appear to reflect the latest action on the account. Please check the activity history and confirm the actual status and next step. Reference: CASE-7069. The affected account or request is associated with item 069.",
+    "tags": ["claims", "evidence"]
   },
   {
     "id": "itm_070",
-    "received_at": "2026-03-16T00:10:00+07:00",
+    "received_at": "2026-08-23T06:30:00Z",
     "sender": {
-      "name": "James C.",
-      "email": "james@example.com"
+      "name": "Victor Petrov",
+      "email": "victor.petrov@example.com"
     },
-    "subject": "Accident claim — vehicle damage",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Possible personal data exposure in case attachment",
     "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nI was involved in an accident and my vehicle has significant damage. I need to understand how to start a claim and which evidence I should provide.\n\nPolicy reference: TH-AB-48070\nCustomer reference: CUST-10070\n\nThanks,\nJames",
-    "tags": ["claim", "accident"]
+    "status": "Done",
+    "priority": "P2",
+    "body": "I am concerned that taking the wrong action could create a duplicate charge, duplicate case, or incorrect record. Please verify the existing entry before creating or changing anything. Reference: CASE-7070. The affected account or request is associated with item 070.",
+    "tags": ["billing", "dispute"]
   },
   {
     "id": "itm_071",
-    "received_at": "2026-03-16T02:27:00+07:00",
+    "received_at": "2026-08-22T23:30:00Z",
     "sender": {
-      "name": "Maya S.",
-      "email": "maya@example.com"
+      "name": "Grace Kim",
+      "email": "grace.kim@example.com"
     },
-    "subject": "Change address on policy",
-    "channel": "email",
-    "status": "New",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Invoice number changed after payment",
+    "channel": "chat",
+    "status": "In Progress",
     "priority": "P3",
-    "body": "Hi team,\n\nI have moved to a new address and need to update my policy records. Please let me know if any proof of address is required.\n\nPolicy reference: TH-MTR-48071\nCustomer reference: CUST-10071\n\nThanks,\nMaya",
-    "tags": ["endorsement", "address"]
+    "body": "I reviewed the latest record and noticed a discrepancy that was not present previously. Please check the account history, confirm the reason for the change, and advise what action is required. Reference: CASE-7071. The affected account or request is associated with item 071.",
+    "tags": ["billing", "invoice"]
   },
   {
     "id": "itm_072",
-    "received_at": "2026-03-16T05:44:00+07:00",
+    "received_at": "2026-08-22T16:30:00Z",
     "sender": {
-      "name": "Ravi N.",
-      "email": "ravi@example.com"
+      "name": "Kabir Verma",
+      "email": "kabir.verma@example.com"
     },
-    "subject": "URGENT: Accident claim and roadside assistance",
-    "channel": "chat",
-    "status": "Done",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Temporary equipment limit increase required",
+    "channel": "phone",
+    "status": "New",
     "priority": "P1",
-    "body": "Hello,\n\nThis is urgent. I was involved in an accident and need to know how to open a claim and whether roadside assistance can arrange towing. Please respond as soon as possible.\n\nPolicy reference: TH-CAR-48072\nCustomer reference: CUST-10072\n\nRegards,\nRavi",
-    "tags": ["urgent", "claim", "roadside"]
+    "body": "The portal still shows the old information even though the requested change was submitted several days ago. Please verify the pending request and confirm when the corrected document will be available. Reference: CASE-7072. The affected account or request is associated with item 072.",
+    "tags": ["claims", "status"]
   },
   {
     "id": "itm_073",
-    "received_at": "2026-03-16T09:01:00+07:00",
+    "received_at": "2026-08-22T09:30:00Z",
     "sender": {
-      "name": "Emily B.",
-      "email": "emily@example.com"
+      "name": "Charlotte Evans",
+      "email": "charlotte.evans@example.com"
     },
-    "subject": "Premium increased after vehicle change",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Settlement was sent to a closed bank account",
     "channel": "email",
-    "status": "In Progress",
+    "status": "Done",
     "priority": "P2",
-    "body": "Hi team,\n\nAfter updating my vehicle information, my premium increased substantially. Please explain how the new premium was calculated.\n\nPolicy reference: TH-POL-48073\nCustomer reference: CUST-10073\n\nThanks,\nEmily",
-    "tags": ["pricing", "vehicle"]
+    "body": "Our finance team found a transaction that does not match the statement we received. Please reconcile the amount against the relevant invoice and confirm whether a reversal or correction is required. Reference: CASE-7073. The affected account or request is associated with item 073.",
+    "tags": ["endorsement", "document"]
   },
   {
     "id": "itm_074",
-    "received_at": "2026-03-16T12:18:00+07:00",
+    "received_at": "2026-08-22T02:30:00Z",
     "sender": {
-      "name": "Tom H.",
-      "email": "tom@example.com"
+      "name": "Mateo Silva",
+      "email": "mateo.silva@example.com"
     },
-    "subject": "Incorrect billing amount",
-    "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nThe invoice amount does not match the amount shown when I purchased the policy. Please review the billing details and correct the invoice if necessary.\n\nPolicy reference: TH-INS-48074\nCustomer reference: CUST-10074\n\nThanks,\nTom",
-    "tags": ["billing", "invoice"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Payment receipt has company-name typo",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "The incident has already been reported, but we have not received the next operational step. Please confirm the current case stage, any missing evidence, and the expected timeline. Reference: CASE-7074. The affected account or request is associated with item 074.",
+    "tags": ["payment", "reconciliation"]
   },
   {
     "id": "itm_075",
-    "received_at": "2026-03-16T14:35:00+07:00",
+    "received_at": "2026-08-21T19:30:00Z",
     "sender": {
-      "name": "Lisa P.",
-      "email": "lisa@example.com"
+      "name": "Hannah Lee",
+      "email": "hannah.lee@example.com"
     },
-    "subject": "General question about coverage",
-    "channel": "chat",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Service request closed without a technician visit",
+    "channel": "phone",
     "status": "New",
-    "priority": "P3",
-    "body": "Hi team,\n\nCould you explain what is covered under my current policy and whether roadside assistance is included?\n\nPolicy reference: TH-AB-48075\nCustomer reference: CUST-10075\n\nThanks,\nLisa",
-    "tags": ["coverage", "general"]
+    "priority": "P1",
+    "body": "I attempted to complete the requested process through the portal, but the current workflow would not allow me to finish it. Please advise whether the existing request can be reopened or corrected. Reference: CASE-7075. The affected account or request is associated with item 075.",
+    "tags": ["renewal", "policy"]
   },
   {
     "id": "itm_076",
-    "received_at": "2026-03-16T17:52:00+07:00",
+    "received_at": "2026-08-21T12:30:00Z",
     "sender": {
-      "name": "Michael D.",
-      "email": "michael@example.com"
+      "name": "Aditya Rao",
+      "email": "aditya.rao@example.com"
     },
-    "subject": "Urgent claim assistance needed",
-    "channel": "phone",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nI need urgent help with a claim because the incident has just occurred and the vehicle is currently not safe to drive.\n\nPolicy reference: TH-MTR-48076\nCustomer reference: CUST-10076\n\nThanks,\nMichael",
-    "tags": ["urgent", "claim"]
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Evidence deadline occurs before inspection",
+    "channel": "email",
+    "status": "Done",
+    "priority": "P2",
+    "body": "The information in the generated document conflicts with the source information we submitted. Please review the underlying record and issue a corrected document without changing any unrelated fields. Reference: CASE-7076. The affected account or request is associated with item 076.",
+    "tags": ["urgent", "security"]
   },
   {
     "id": "itm_077",
-    "received_at": "2026-03-16T21:09:00+07:00",
+    "received_at": "2026-08-21T05:30:00Z",
     "sender": {
-      "name": "Ploy N.",
-      "email": "ploy@company.co.th"
+      "name": "Nora Jensen",
+      "email": "nora.jensen@example.com"
     },
-    "subject": "Please update beneficiary details",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Annual charge applied instead of monthly billing",
+    "channel": "chat",
     "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nI need to update the beneficiary information associated with my policy. Please tell me what forms or supporting documents are required.\n\nPolicy reference: TH-CAR-48077\nCustomer reference: CUST-10077\n\nThanks,\nPloy",
-    "tags": ["endorsement", "beneficiary"]
+    "priority": "P3",
+    "body": "This matter is time-sensitive because another transaction or operational deadline is approaching. Please review it as soon as possible and confirm whether there is anything we need to do before that deadline. Reference: CASE-7077. The affected account or request is associated with item 077.",
+    "tags": ["documents", "portal"]
   },
   {
     "id": "itm_078",
-    "received_at": "2026-03-16T23:26:00+07:00",
+    "received_at": "2026-08-20T22:30:00Z",
     "sender": {
-      "name": "Ben A.",
-      "email": "ben@example.com"
+      "name": "Marcus Green",
+      "email": "marcus.green@example.com"
     },
-    "subject": "Spam: Congratulations, you won",
-    "channel": "email",
-    "status": "New",
-    "priority": "P3",
-    "body": "Hi team,\n\nCongratulations! You have won a large cash prize. Send your account details to claim your reward immediately.\n\nPolicy reference: TH-POL-48078\nCustomer reference: CUST-10078\n\nThanks,\nBen",
-    "tags": ["spam", "suspicious"]
-  },
-  {
-    "id": "itm_079",
-    "received_at": "2026-03-17T02:43:00+07:00",
-    "sender": {
-      "name": "Sofia G.",
-      "email": "sofia@example.com"
-    },
-    "subject": "Duplicate charge on card",
-    "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nI can see two charges for the same policy payment on my card statement. Please investigate and confirm whether one of the charges will be refunded.\n\nPolicy reference: TH-INS-48079\nCustomer reference: CUST-10079\n\nThanks,\nSofia",
-    "tags": ["billing", "duplicate"]
-  },
-  {
-    "id": "itm_080",
-    "received_at": "2026-03-17T06:00:00+07:00",
-    "sender": {
-      "name": "Chris J.",
-      "email": "chris@example.com"
-    },
-    "subject": "Policy details look incorrect",
-    "channel": "email",
-    "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nSome of the personal and vehicle details shown in my policy document are incorrect. I would like to have them corrected.\n\nPolicy reference: TH-AB-48080\nCustomer reference: CUST-10080\n\nThanks,\nChris",
-    "tags": ["policy", "correction"]
-  },
-  {
-    "id": "itm_081",
-    "received_at": "2026-03-17T09:17:00+07:00",
-    "sender": {
-      "name": "Nok S.",
-      "email": "nok@example.com"
-    },
-    "subject": "Incorrect premium charged on renewal",
-    "channel": "email",
-    "status": "New",
-    "priority": "P2",
-    "body": "Hi team,\n\nMy renewal premium is higher than last month even though the vehicle details are unchanged. Please check the premium and confirm why it changed.\n\nPolicy reference: TH-MTR-48081\nCustomer reference: CUST-10081\n\nThanks,\nNok",
-    "tags": ["renewal", "pricing"]
-  },
-  {
-    "id": "itm_082",
-    "received_at": "2026-03-17T11:34:00+07:00",
-    "sender": {
-      "name": "Somchai",
-      "email": "somchai@company.co.th"
-    },
-    "subject": "Endorsement request — change vehicle plate",
-    "channel": "chat",
-    "status": "In Progress",
-    "priority": "P3",
-    "body": "Hi team,\n\nI need an endorsement to change my vehicle plate. Old plate: AB 1234. New plate: AB 5678. Policy: TH-MTR-99210. Please advise what documents are required.\n\nPolicy reference: TH-CAR-48082\nCustomer reference: CUST-10082\n\nThanks,\nSomchai",
-    "tags": ["endorsement", "vehicle"]
-  },
-  {
-    "id": "itm_083",
-    "received_at": "2026-03-17T14:51:00+07:00",
-    "sender": {
-      "name": "Ananya P.",
-      "email": "ananya@example.com"
-    },
-    "subject": "URGENT: Verify account to avoid suspension",
-    "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nYour account will be suspended unless you verify immediately. Please send your internal access token and click the verification link.\n\nPolicy reference: TH-POL-48083\nCustomer reference: CUST-10083\n\nThanks,\nAnanya",
-    "tags": ["spam", "security"]
-  },
-  {
-    "id": "itm_084",
-    "received_at": "2026-03-17T18:08:00+07:00",
-    "sender": {
-      "name": "Arun K.",
-      "email": "arun@example.com"
-    },
-    "subject": "Suspicious email asking for login credentials",
-    "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nI received an email asking me to provide my password and verification code to prevent policy suspension. Is this legitimate?\n\nPolicy reference: TH-INS-48084\n\nThanks,\nArun",
-    "tags": ["security", "spam", "suspicious"]
-  },
-  {
-    "id": "itm_085",
-    "received_at": "2026-03-17T20:25:00+07:00",
-    "sender": {
-      "name": "Priya M.",
-      "email": "priya@example.com"
-    },
-    "subject": "Missing document for claim",
-    "channel": "email",
-    "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nI received a request for another document for my claim, but I am not sure which document is missing. Can you clarify what you need from me?\n\nPolicy reference: TH-AB-48085\nCustomer reference: CUST-10085\n\nThanks,\nPriya",
-    "tags": ["claim", "documents"]
-  },
-  {
-    "id": "itm_086",
-    "received_at": "2026-03-17T23:42:00+07:00",
-    "sender": {
-      "name": "Daniel R.",
-      "email": "daniel@example.com"
-    },
-    "subject": "Can I add a driver to my policy?",
-    "channel": "chat",
-    "status": "New",
-    "priority": "P3",
-    "body": "Hi team,\n\nI would like to add another driver to my existing policy. Please let me know the eligibility requirements and whether the premium will change.\n\nPolicy reference: TH-MTR-48086\nCustomer reference: CUST-10086\n\nThanks,\nDaniel",
-    "tags": ["policy", "driver"]
-  },
-  {
-    "id": "itm_087",
-    "received_at": "2026-03-18T02:59:00+07:00",
-    "sender": {
-      "name": "Mei L.",
-      "email": "mei@example.com"
-    },
-    "subject": "Payment failed but money was deducted",
-    "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nThe payment page showed an error, but the amount was deducted from my bank account. Please check whether the payment went through and confirm what I should do.\n\nPolicy reference: TH-CAR-48087\nCustomer reference: CUST-10087\n\nThanks,\nMei",
-    "tags": ["billing", "payment"]
-  },
-  {
-    "id": "itm_088",
-    "received_at": "2026-03-18T06:16:00+07:00",
-    "sender": {
-      "name": "Krit T.",
-      "email": "krit@company.co.th"
-    },
-    "subject": "Request for policy cancellation",
-    "channel": "email",
-    "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nI would like to cancel my current policy. Please explain the cancellation process, effective date, and whether there is any refund.\n\nPolicy reference: TH-POL-48088\nCustomer reference: CUST-10088\n\nThanks,\nKrit",
-    "tags": ["cancellation", "policy"]
-  },
-  {
-    "id": "itm_089",
-    "received_at": "2026-03-18T08:33:00+07:00",
-    "sender": {
-      "name": "Sarah W.",
-      "email": "sarah@example.com"
-    },
-    "subject": "Where can I download my policy documents?",
-    "channel": "chat",
-    "status": "Done",
-    "priority": "P3",
-    "body": "Hi team,\n\nI need a copy of my current policy documents. Where can I download them from the customer portal?\n\nPolicy reference: TH-INS-48089\nCustomer reference: CUST-10089\n\nThanks,\nSarah",
-    "tags": ["documents", "policy"]
-  },
-  {
-    "id": "itm_090",
-    "received_at": "2026-03-18T11:50:00+07:00",
-    "sender": {
-      "name": "James C.",
-      "email": "james@example.com"
-    },
-    "subject": "Accident claim — vehicle damage",
-    "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nI was involved in an accident and my vehicle has significant damage. I need to understand how to start a claim and which evidence I should provide.\n\nPolicy reference: TH-AB-48090\nCustomer reference: CUST-10090\n\nThanks,\nJames",
-    "tags": ["claim", "accident"]
-  },
-  {
-    "id": "itm_091",
-    "received_at": "2026-03-18T15:07:00+07:00",
-    "sender": {
-      "name": "Maya S.",
-      "email": "maya@example.com"
-    },
-    "subject": "Renewal premium issue and missing payment receipt",
-    "channel": "email",
-    "status": "New",
-    "priority": "P2",
-    "body": "Hi team,\n\nMy renewal premium appears higher than expected, and I also cannot find the payment receipt in the portal. Could you check both the premium calculation and payment record?\n\nPolicy reference: TH-MTR-48091\nCustomer reference: CUST-10091\n\nThanks,\nMaya",
-    "tags": ["renewal", "pricing", "billing"]
-  },
-  {
-    "id": "itm_092",
-    "received_at": "2026-03-18T17:24:00+07:00",
-    "sender": {
-      "name": "Ravi N.",
-      "email": "ravi@example.com"
-    },
-    "subject": "Renewal reminder received",
-    "channel": "chat",
-    "status": "Done",
-    "priority": "P3",
-    "body": "Hi team,\n\nI received a renewal reminder. Can you confirm the renewal date and whether I need to take any action?\n\nPolicy reference: TH-CAR-48092\nCustomer reference: CUST-10092\n\nThanks,\nRavi",
-    "tags": ["renewal"]
-  },
-  {
-    "id": "itm_093",
-    "received_at": "2026-03-18T20:41:00+07:00",
-    "sender": {
-      "name": "Emily B.",
-      "email": "emily@example.com"
-    },
-    "subject": "Premium increased after vehicle change",
-    "channel": "email",
-    "status": "In Progress",
-    "priority": "P2",
-    "body": "Hi team,\n\nAfter updating my vehicle information, my premium increased substantially. Please explain how the new premium was calculated.\n\nPolicy reference: TH-POL-48093\nCustomer reference: CUST-10093\n\nThanks,\nEmily",
-    "tags": ["pricing", "vehicle"]
-  },
-  {
-    "id": "itm_094",
-    "received_at": "2026-03-18T23:58:00+07:00",
-    "sender": {
-      "name": "Tom H.",
-      "email": "tom@example.com"
-    },
-    "subject": "Incorrect billing amount",
-    "channel": "email",
-    "status": "New",
-    "priority": "P1",
-    "body": "Hi team,\n\nThe invoice amount does not match the amount shown when I purchased the policy. Please review the billing details and correct the invoice if necessary.\n\nPolicy reference: TH-INS-48094\nCustomer reference: CUST-10094\n\nThanks,\nTom",
-    "tags": ["billing", "invoice"]
-  },
-  {
-    "id": "itm_095",
-    "received_at": "2026-03-19T03:15:00+07:00",
-    "sender": {
-      "name": "Lisa P.",
-      "email": "lisa@example.com"
-    },
-    "subject": "General question about coverage",
-    "channel": "chat",
-    "status": "New",
-    "priority": "P3",
-    "body": "Hi team,\n\nCould you explain what is covered under my current policy and whether roadside assistance is included?\n\nPolicy reference: TH-AB-48095\nCustomer reference: CUST-10095\n\nThanks,\nLisa",
-    "tags": ["coverage", "general"]
-  },
-  {
-    "id": "itm_096",
-    "received_at": "2026-03-19T05:32:00+07:00",
-    "sender": {
-      "name": "Michael D.",
-      "email": "michael@example.com"
-    },
-    "subject": "Urgent claim assistance needed",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Medical authorization remains pending",
     "channel": "phone",
     "status": "New",
     "priority": "P1",
-    "body": "Hi team,\n\nI need urgent help with a claim because the incident has just occurred and the vehicle is currently not safe to drive.\n\nPolicy reference: TH-MTR-48096\nCustomer reference: CUST-10096\n\nThanks,\nMichael",
-    "tags": ["urgent", "claim"]
+    "body": "We have supporting records available, including the original transaction details and correspondence. Please let me know exactly which documents are required so we can avoid submitting duplicate information. Reference: CASE-7078. The affected account or request is associated with item 078.",
+    "tags": ["general", "account"]
+  },
+  {
+    "id": "itm_079",
+    "received_at": "2026-08-20T15:30:00Z",
+    "sender": {
+      "name": "Fatima Khan",
+      "email": "fatima.khan@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Policy portal shows duplicate customer profiles",
+    "channel": "email",
+    "status": "Done",
+    "priority": "P2",
+    "body": "The status currently displayed does not appear to reflect the latest action on the account. Please check the activity history and confirm the actual status and next step. Reference: CASE-7079. The affected account or request is associated with item 079.",
+    "tags": ["claims", "evidence"]
+  },
+  {
+    "id": "itm_080",
+    "received_at": "2026-08-20T08:30:00Z",
+    "sender": {
+      "name": "Oliver Brown",
+      "email": "oliver.brown@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Claim document deadline needs extension",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "I am concerned that taking the wrong action could create a duplicate charge, duplicate case, or incorrect record. Please verify the existing entry before creating or changing anything. Reference: CASE-7080. The affected account or request is associated with item 080.",
+    "tags": ["billing", "dispute"]
+  },
+  {
+    "id": "itm_081",
+    "received_at": "2026-08-20T01:30:00Z",
+    "sender": {
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Coverage certificate download is blank on mobile",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "I reviewed the latest record and noticed a discrepancy that was not present previously. Please check the account history, confirm the reason for the change, and advise what action is required. Reference: CASE-7081. The affected account or request is associated with item 081.",
+    "tags": ["billing", "invoice"]
+  },
+  {
+    "id": "itm_082",
+    "received_at": "2026-08-19T18:30:00Z",
+    "sender": {
+      "name": "Maya Chen",
+      "email": "maya.chen@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Payment was collected after account hold",
+    "channel": "email",
+    "status": "Done",
+    "priority": "P2",
+    "body": "The portal still shows the old information even though the requested change was submitted several days ago. Please verify the pending request and confirm when the corrected document will be available. Reference: CASE-7082. The affected account or request is associated with item 082.",
+    "tags": ["claims", "status"]
+  },
+  {
+    "id": "itm_083",
+    "received_at": "2026-08-19T11:30:00Z",
+    "sender": {
+      "name": "Priya Nair",
+      "email": "priya.nair@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Supplier invoice attached to wrong claim",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "Our finance team found a transaction that does not match the statement we received. Please reconcile the amount against the relevant invoice and confirm whether a reversal or correction is required. Reference: CASE-7083. The affected account or request is associated with item 083.",
+    "tags": ["endorsement", "document"]
+  },
+  {
+    "id": "itm_084",
+    "received_at": "2026-08-19T04:30:00Z",
+    "sender": {
+      "name": "Daniel Brooks",
+      "email": "daniel.brooks@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Renewal quote disappeared from portal",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "The incident has already been reported, but we have not received the next operational step. Please confirm the current case stage, any missing evidence, and the expected timeline. Reference: CASE-7084. The affected account or request is associated with item 084.",
+    "tags": ["payment", "reconciliation"]
+  },
+  {
+    "id": "itm_085",
+    "received_at": "2026-08-18T21:30:00Z",
+    "sender": {
+      "name": "Sofia Alvarez",
+      "email": "sofia.alvarez@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Claim settlement calculation is unclear",
+    "channel": "email",
+    "status": "Done",
+    "priority": "P2",
+    "body": "I attempted to complete the requested process through the portal, but the current workflow would not allow me to finish it. Please advise whether the existing request can be reopened or corrected. Reference: CASE-7085. The affected account or request is associated with item 085.",
+    "tags": ["renewal", "policy"]
+  },
+  {
+    "id": "itm_086",
+    "received_at": "2026-08-18T14:30:00Z",
+    "sender": {
+      "name": "Liam O'Connor",
+      "email": "liam.oconnor@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Account still lists former administrator",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "The information in the generated document conflicts with the source information we submitted. Please review the underlying record and issue a corrected document without changing any unrelated fields. Reference: CASE-7086. The affected account or request is associated with item 086.",
+    "tags": ["urgent", "security"]
+  },
+  {
+    "id": "itm_087",
+    "received_at": "2026-08-18T07:30:00Z",
+    "sender": {
+      "name": "Aisha Rahman",
+      "email": "aisha.rahman@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Temporary storage premises need endorsement",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "This matter is time-sensitive because another transaction or operational deadline is approaching. Please review it as soon as possible and confirm whether there is anything we need to do before that deadline. Reference: CASE-7087. The affected account or request is associated with item 087.",
+    "tags": ["documents", "portal"]
+  },
+  {
+    "id": "itm_088",
+    "received_at": "2026-08-18T00:30:00Z",
+    "sender": {
+      "name": "Rohan Shah",
+      "email": "rohan.shah@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Refund amount differs from approved amount",
+    "channel": "email",
+    "status": "Done",
+    "priority": "P2",
+    "body": "We have supporting records available, including the original transaction details and correspondence. Please let me know exactly which documents are required so we can avoid submitting duplicate information. Reference: CASE-7088. The affected account or request is associated with item 088.",
+    "tags": ["general", "account"]
+  },
+  {
+    "id": "itm_089",
+    "received_at": "2026-08-17T17:30:00Z",
+    "sender": {
+      "name": "Emma Carter",
+      "email": "emma.carter@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Claim status changed after document upload",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "The status currently displayed does not appear to reflect the latest action on the account. Please check the activity history and confirm the actual status and next step. Reference: CASE-7089. The affected account or request is associated with item 089.",
+    "tags": ["claims", "evidence"]
+  },
+  {
+    "id": "itm_090",
+    "received_at": "2026-08-17T10:30:00Z",
+    "sender": {
+      "name": "Victor Petrov",
+      "email": "victor.petrov@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Request copy of prior policy schedule",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "I am concerned that taking the wrong action could create a duplicate charge, duplicate case, or incorrect record. Please verify the existing entry before creating or changing anything. Reference: CASE-7090. The affected account or request is associated with item 090.",
+    "tags": ["billing", "dispute"]
+  },
+  {
+    "id": "itm_091",
+    "received_at": "2026-08-17T03:30:00Z",
+    "sender": {
+      "name": "Grace Kim",
+      "email": "grace.kim@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Card payment succeeded but order is missing",
+    "channel": "email",
+    "status": "Done",
+    "priority": "P2",
+    "body": "I reviewed the latest record and noticed a discrepancy that was not present previously. Please check the account history, confirm the reason for the change, and advise what action is required. Reference: CASE-7091. The affected account or request is associated with item 091.",
+    "tags": ["billing", "invoice"]
+  },
+  {
+    "id": "itm_092",
+    "received_at": "2026-08-16T20:30:00Z",
+    "sender": {
+      "name": "Kabir Verma",
+      "email": "kabir.verma@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Incorrect tax registration on invoice",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "The portal still shows the old information even though the requested change was submitted several days ago. Please verify the pending request and confirm when the corrected document will be available. Reference: CASE-7092. The affected account or request is associated with item 092.",
+    "tags": ["claims", "status"]
+  },
+  {
+    "id": "itm_093",
+    "received_at": "2026-08-16T13:30:00Z",
+    "sender": {
+      "name": "Charlotte Evans",
+      "email": "charlotte.evans@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Emergency locksmith expense after break-in",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "Our finance team found a transaction that does not match the statement we received. Please reconcile the amount against the relevant invoice and confirm whether a reversal or correction is required. Reference: CASE-7093. The affected account or request is associated with item 093.",
+    "tags": ["endorsement", "document"]
+  },
+  {
+    "id": "itm_094",
+    "received_at": "2026-08-16T06:30:00Z",
+    "sender": {
+      "name": "Mateo Silva",
+      "email": "mateo.silva@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Policy terms changed without requested amendment",
+    "channel": "email",
+    "status": "Done",
+    "priority": "P2",
+    "body": "The incident has already been reported, but we have not received the next operational step. Please confirm the current case stage, any missing evidence, and the expected timeline. Reference: CASE-7094. The affected account or request is associated with item 094.",
+    "tags": ["payment", "reconciliation"]
+  },
+  {
+    "id": "itm_095",
+    "received_at": "2026-08-15T23:30:00Z",
+    "sender": {
+      "name": "Hannah Lee",
+      "email": "hannah.lee@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Suspicious login from unknown location",
+    "channel": "chat",
+    "status": "In Progress",
+    "priority": "P3",
+    "body": "I attempted to complete the requested process through the portal, but the current workflow would not allow me to finish it. Please advise whether the existing request can be reopened or corrected. Reference: CASE-7095. The affected account or request is associated with item 095.",
+    "tags": ["renewal", "policy"]
+  },
+  {
+    "id": "itm_096",
+    "received_at": "2026-08-15T16:30:00Z",
+    "sender": {
+      "name": "Aditya Rao",
+      "email": "aditya.rao@example.com"
+    },
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Claim repair authorization link returns 403",
+    "channel": "phone",
+    "status": "New",
+    "priority": "P1",
+    "body": "The information in the generated document conflicts with the source information we submitted. Please review the underlying record and issue a corrected document without changing any unrelated fields. Reference: CASE-7096. The affected account or request is associated with item 096.",
+    "tags": ["urgent", "security"]
   },
   {
     "id": "itm_097",
-    "received_at": "2026-03-15T08:49:00+07:00",
+    "received_at": "2026-08-15T09:30:00Z",
     "sender": {
-      "name": "Ploy N.",
-      "email": "ploy@company.co.th"
+      "name": "Nora Jensen",
+      "email": "nora.jensen@example.com"
     },
-    "subject": "Please update beneficiary details",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Customer disputes signature on submitted form",
     "channel": "email",
-    "status": "In Progress",
+    "status": "Done",
     "priority": "P2",
-    "body": "Hi team,\n\nI need to update the beneficiary information associated with my policy. Please tell me what forms or supporting documents are required.\n\nPolicy reference: TH-CAR-48097\nCustomer reference: CUST-10097\n\nThanks,\nPloy",
-    "tags": ["endorsement", "beneficiary"]
+    "body": "This matter is time-sensitive because another transaction or operational deadline is approaching. Please review it as soon as possible and confirm whether there is anything we need to do before that deadline. Reference: CASE-7097. The affected account or request is associated with item 097.",
+    "tags": ["documents", "portal"]
   },
   {
     "id": "itm_098",
-    "received_at": "2026-03-15T12:06:00+07:00",
+    "received_at": "2026-08-15T02:30:00Z",
     "sender": {
-      "name": "Ben A.",
-      "email": "ben@example.com"
+      "name": "Marcus Green",
+      "email": "marcus.green@example.com"
     },
-    "subject": "Spam: Congratulations, you won",
-    "channel": "email",
-    "status": "New",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Request preferred notification channel change",
+    "channel": "chat",
+    "status": "In Progress",
     "priority": "P3",
-    "body": "Hi team,\n\nCongratulations! You have won a large cash prize. Send your account details to claim your reward immediately.\n\nPolicy reference: TH-POL-48098\nCustomer reference: CUST-10098\n\nThanks,\nBen",
-    "tags": ["spam", "suspicious"]
+    "body": "We have supporting records available, including the original transaction details and correspondence. Please let me know exactly which documents are required so we can avoid submitting duplicate information. Reference: CASE-7098. The affected account or request is associated with item 098.",
+    "tags": ["general", "account"]
   },
   {
     "id": "itm_099",
-    "received_at": "2026-03-15T14:23:00+07:00",
+    "received_at": "2026-08-14T19:30:00Z",
     "sender": {
-      "name": "Sofia G.",
-      "email": "sofia@example.com"
+      "name": "Fatima Khan",
+      "email": "fatima.khan@example.com"
     },
-    "subject": "Duplicate charge on card",
-    "channel": "email",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Policy limit reduced unexpectedly at renewal",
+    "channel": "phone",
     "status": "New",
     "priority": "P1",
-    "body": "Hi team,\n\nI can see two charges for the same policy payment on my card statement. Please investigate and confirm whether one of the charges will be refunded.\n\nPolicy reference: TH-INS-48099\nCustomer reference: CUST-10099\n\nThanks,\nSofia",
-    "tags": ["billing", "duplicate"]
+    "body": "The status currently displayed does not appear to reflect the latest action on the account. Please check the activity history and confirm the actual status and next step. Reference: CASE-7099. The affected account or request is associated with item 099.",
+    "tags": ["claims", "evidence"]
   },
   {
     "id": "itm_100",
-    "received_at": "2026-03-15T17:40:00+07:00",
+    "received_at": "2026-08-14T12:30:00Z",
     "sender": {
-      "name": "Chris J.",
-      "email": "chris@example.com"
+      "name": "Oliver Brown",
+      "email": "oliver.brown@example.com"
     },
-    "subject": "Policy details look incorrect",
+    "recipients": [
+      {
+        "name": "Triage Team",
+        "email": "triage@example.com"
+      }
+    ],
+    "subject": "Need corrected effective date on endorsement",
     "channel": "email",
-    "status": "In Progress",
+    "status": "Done",
     "priority": "P2",
-    "body": "Hi team,\n\nSome of the personal and vehicle details shown in my policy document are incorrect. I would like to have them corrected.\n\nPolicy reference: TH-AB-48100\nCustomer reference: CUST-10100\n\nThanks,\nChris",
-    "tags": ["policy", "correction"]
+    "body": "I am concerned that taking the wrong action could create a duplicate charge, duplicate case, or incorrect record. Please verify the existing entry before creating or changing anything. Reference: CASE-7100. The affected account or request is associated with item 100.",
+    "tags": ["billing", "dispute"]
   }
 ]

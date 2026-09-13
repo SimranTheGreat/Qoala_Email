@@ -11,17 +11,25 @@ import {
 
 export default function Home() {
   const [composeOpen, setComposeOpen] = useState(false);
+
   const [draftsOpen, setDraftsOpen] = useState(false);
   const [sentOpen, setSentOpen] = useState(false);
   const [inboxOpen, setInboxOpen] = useState(true);
   const [starredOpen, setStarredOpen] = useState(false);
+
   const [senderFilter, setSenderFilter] = useState("");
   const [statusFilter, setStatusFilter] = useState("");
   const [priorityFilter, setPriorityFilter] = useState("");
+  const [search, setSearch] = useState("");
+
   const inboxEmails = useInboxEmailStore((state) => state.inboxEmails);
+
   const setInboxEmails = useInboxEmailStore((state) => state.setInboxEmails);
+
   const draftEmails = useDraftEmailStore((state) => state.draftEmails);
+
   const sentEmails = useSentEmailStore((state) => state.sentEmails);
+
   const starredEmails = useStarredEmailStore((state) => state.starredEmails);
 
   useEffect(() => {
@@ -41,9 +49,24 @@ export default function Home() {
     ? inboxEmails
     : draftsOpen
       ? draftEmails
-      : sentEmails;
+      : sentOpen
+        ? sentEmails
+        : starredOpen
+          ? starredEmails
+          : [];
 
   const filteredEmails = currentEmails.filter((email) => {
+    const searchText = search.toLowerCase().trim();
+
+    const matchesSearch =
+      !searchText ||
+      email.subject.toLowerCase().includes(searchText) ||
+      email.sender.name.toLowerCase().includes(searchText) ||
+      email.sender.email.toLowerCase().includes(searchText) ||
+      email.body.toLowerCase().includes(searchText) ||
+      email.channel.toLowerCase().includes(searchText) ||
+      email.tags.some((tag) => tag.toLowerCase().includes(searchText));
+
     const matchesSender =
       !senderFilter ||
       email.sender.name.toLowerCase().includes(senderFilter.toLowerCase());
@@ -53,13 +76,42 @@ export default function Home() {
     const matchesPriority =
       !priorityFilter || email.priority === priorityFilter;
 
-    return matchesSender && matchesStatus && matchesPriority;
+    return matchesSearch && matchesSender && matchesStatus && matchesPriority;
   });
 
   const clearFilters = () => {
+    setSearch("");
     setSenderFilter("");
     setStatusFilter("");
     setPriorityFilter("");
+  };
+
+  const openInbox = () => {
+    setInboxOpen(true);
+    setDraftsOpen(false);
+    setSentOpen(false);
+    setStarredOpen(false);
+  };
+
+  const openDrafts = () => {
+    setDraftsOpen(true);
+    setInboxOpen(false);
+    setSentOpen(false);
+    setStarredOpen(false);
+  };
+
+  const openSent = () => {
+    setSentOpen(true);
+    setInboxOpen(false);
+    setDraftsOpen(false);
+    setStarredOpen(false);
+  };
+
+  const openStarred = () => {
+    setStarredOpen(true);
+    setInboxOpen(false);
+    setDraftsOpen(false);
+    setSentOpen(false);
   };
 
   return (
@@ -67,32 +119,16 @@ export default function Home() {
       <div className="flex h-[calc(100vh-64px)]">
         <Sidebar
           onCompose={() => setComposeOpen(true)}
-          onDrafts={() => {
-            setDraftsOpen(true);
-            setSentOpen(false);
-            setInboxOpen(false);
-          }}
-          onSent={() => {
-            setSentOpen(true);
-            setDraftsOpen(false);
-            setInboxOpen(false);
-          }}
-          onInbox={() => {
-            setInboxOpen(true);
-            setDraftsOpen(false);
-            setSentOpen(false);
-          }}
-          onStarred={() => {
-            setStarredOpen(true);
-            setInboxOpen(false);
-            setDraftsOpen(false);
-            setSentOpen(false);
-          }}
+          onDrafts={openDrafts}
+          onSent={openSent}
+          onInbox={openInbox}
+          onStarred={openStarred}
         />
 
         <main className="flex-1 overflow-auto">
-          <Toolbar />
+          <Toolbar search={search} onSearchChange={setSearch} />
 
+          {/* Filters */}
           {inboxOpen && (
             <div className="flex gap-3 border-b border-gray-200 p-4">
               <input
@@ -135,13 +171,10 @@ export default function Home() {
             </div>
           )}
 
-          {inboxOpen && <EmailList emails={filteredEmails} />}
-
-          {draftsOpen && <EmailList emails={filteredEmails} />}
-
-          {sentOpen && <EmailList emails={filteredEmails} />}
-
-          {starredOpen && <EmailList emails={starredEmails} />}
+          {/* Email List */}
+          {(inboxOpen || draftsOpen || sentOpen || starredOpen) && (
+            <EmailList emails={filteredEmails} />
+          )}
         </main>
 
         <ComposeScreen
