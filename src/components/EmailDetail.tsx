@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { AIResponse, Email } from "../types";
 import { generateAIResponse } from "../services/mockAI";
 import { useAIStore } from "../store/store";
@@ -29,6 +29,15 @@ export default function EmailDetail({
   const [rawAIResponse, setRawAIResponse] =
     useState<unknown>(null);
 
+  const [isStreaming, setIsStreaming] =
+    useState(false);
+
+  const abortControllerRef =
+    useRef<AbortController | null>(null);
+
+  const streamTimerRef =
+    useRef<ReturnType<typeof setInterval> | null>(null);
+
   const cachedResponse = useAIStore(
     (state) => state.responses[email.id],
   );
@@ -37,20 +46,78 @@ export default function EmailDetail({
     (state) => state.setResponse,
   );
 
-  const getAIResponse = async (
-    signal?: AbortSignal,
+  const stopStreaming = () => {
+    if (streamTimerRef.current) {
+      clearInterval(streamTimerRef.current);
+      streamTimerRef.current = null;
+    }
+
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+      abortControllerRef.current = null;
+    }
+
+    setIsStreaming(false);
+    setAILoading(false);
+  };
+
+  const streamDraft = (
+    draft: string,
+    signal: AbortSignal,
   ) => {
+    setDraftReply("");
+    setIsStreaming(true);
+
+    let currentIndex = 0;
+
+    streamTimerRef.current = setInterval(() => {
+      if (signal.aborted) {
+        if (streamTimerRef.current) {
+          clearInterval(streamTimerRef.current);
+          streamTimerRef.current = null;
+        }
+
+        setIsStreaming(false);
+        return;
+      }
+
+      currentIndex += 1;
+
+      setDraftReply(
+        draft.slice(0, currentIndex),
+      );
+
+      if (currentIndex >= draft.length) {
+        if (streamTimerRef.current) {
+          clearInterval(streamTimerRef.current);
+          streamTimerRef.current = null;
+        }
+
+        setIsStreaming(false);
+      }
+    }, 25);
+  };
+
+  const getAIResponse = async () => {
+    stopStreaming();
+
+    const controller = new AbortController();
+
+    abortControllerRef.current = controller;
+
     setAILoading(true);
     setAIError(null);
     setAIResponse(null);
+    setRawAIResponse(null);
+    setDraftReply("");
 
     try {
       const result = await generateAIResponse(
         email.id,
-        signal,
+        controller.signal,
       );
 
-      if (signal?.aborted) {
+      if (controller.signal.aborted) {
         return;
       }
 
@@ -65,17 +132,18 @@ export default function EmailDetail({
       if (result.response) {
         setAIResponse(result.response);
 
-        setDraftReply(
-          result.response.draft_reply,
-        );
-
         setAIResponseCache(
           email.id,
           result.response,
         );
-      }
 
-      setAILoading(false);
+        setAILoading(false);
+
+        streamDraft(
+          result.response.draft_reply,
+          controller.signal,
+        );
+      }
     } catch (error) {
       if (
         error instanceof DOMException &&
@@ -84,7 +152,7 @@ export default function EmailDetail({
         return;
       }
 
-      if (signal?.aborted) {
+      if (controller.signal.aborted) {
         return;
       }
 
@@ -93,34 +161,34 @@ export default function EmailDetail({
       );
 
       setAILoading(false);
+      setIsStreaming(false);
     }
   };
 
   useEffect(() => {
-    const controller = new AbortController();
+    setStatus(email.status);
+    setPriority(email.priority);
+    setNotes("");
+
+    stopStreaming();
 
     if (cachedResponse) {
       setAIResponse(cachedResponse);
-
       setDraftReply(
         cachedResponse.draft_reply,
       );
-
-      return () => {
-        controller.abort();
-      };
+      setAILoading(false);
+      setAIError(null);
+      setRawAIResponse(cachedResponse);
+      return;
     }
 
-    getAIResponse(controller.signal);
+    getAIResponse();
 
     return () => {
-      controller.abort();
+      stopStreaming();
     };
-  }, [
-    email.id,
-    cachedResponse,
-    setAIResponseCache,
-  ]);
+  }, [email.id]);
 
   return (
     <div className="fixed inset-0 z-50 bg-white">
@@ -232,14 +300,12 @@ export default function EmailDetail({
               </label>
             </div>
 
-            {/* Loading */}
             {aiLoading && (
               <div className="text-sm text-gray-500">
                 AI is analyzing this email...
               </div>
             )}
 
-            {/* Error */}
             {aiError && !aiLoading && (
               <div className="space-y-3">
                 <p className="text-sm text-red-600">
@@ -247,9 +313,7 @@ export default function EmailDetail({
                 </p>
 
                 <button
-                  onClick={() =>
-                    getAIResponse()
-                  }
+                  onClick={getAIResponse}
                   className="rounded-lg border bg-white px-3 py-2 text-sm hover:bg-gray-100"
                 >
                   Retry
@@ -327,9 +391,21 @@ export default function EmailDetail({
 
                 {/* Draft Reply */}
                 <div>
-                  <p className="mb-1 font-medium">
-                    Draft Reply
-                  </p>
+                  <div className="mb-1 flex items-center justify-between">
+                    <p className="font-medium">
+                      Draft Reply
+                    </p>
+
+                    {isStreaming && (
+                      <button
+                        type="button"
+                        onClick={stopStreaming}
+                        className="rounded-lg border bg-white px-3 py-1 text-xs hover:bg-gray-100"
+                      >
+                        Stop
+                      </button>
+                    )}
+                  </div>
 
                   <textarea
                     value={draftReply}
@@ -341,6 +417,22 @@ export default function EmailDetail({
                     rows={5}
                     className="w-full rounded-lg border bg-white p-3 text-sm outline-none"
                   />
+
+                  {isStreaming && (
+                    <p className="mt-2 text-xs text-gray-500">
+                      Generating draft...
+                    </p>
+                  )}
+
+                  {!isStreaming &&
+                    draftReply.length > 0 &&
+                    draftReply !==
+                      aiResponse.draft_reply && (
+                      <p className="mt-2 text-xs text-gray-500">
+                        Generation stopped. The partial
+                        draft has been preserved.
+                      </p>
+                    )}
                 </div>
               </div>
             )}
@@ -375,10 +467,10 @@ export default function EmailDetail({
                 )}
 
                 <button
-                  onClick={() =>
-                    getAIResponse()
+                  onClick={getAIResponse}
+                  disabled={
+                    aiLoading || isStreaming
                   }
-                  disabled={aiLoading}
                   className="mt-4 rounded-lg border bg-white px-3 py-2 text-sm hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   Retry
